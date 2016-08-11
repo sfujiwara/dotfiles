@@ -16,6 +16,6 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 # The next line updates PATH for the Google Cloud SDK.
-source '/home/shuhei/google-cloud-sdk/path.zsh.inc'
+source "$HOME/google-cloud-sdk/path.zsh.inc"
 # The next line enables shell command completion for gcloud.
-source '/home/shuhei/google-cloud-sdk/completion.zsh.inc'
+source "$HOME/google-cloud-sdk/completion.zsh.inc"

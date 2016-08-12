@@ -1,1 +1,8 @@
 .DS_Store
+
+.emacs.d/elpa
+.emacs.d/eshell
+.emacs.d/auto-save-list
+.emacs.d/.python-environments
+.emacs.d/abbrev_defs
+.emacs.d/ac-comphist.dat

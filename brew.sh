@@ -7,7 +7,7 @@ brew install curl
 brew install wget
 brew install git
 brew install xz
-
+brew install zsh
 brew install pyenv
 
 brew install mecab

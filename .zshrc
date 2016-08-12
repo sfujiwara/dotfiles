@@ -15,6 +15,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 # pyenv-virtualenv
 eval "$(pyenv virtualenv-init -)"
 

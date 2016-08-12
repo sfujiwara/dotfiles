@@ -8,6 +8,9 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen theme gnzh
 antigen apply
 
+# Mac の homebrew 用の記述だけど Ubuntu でも害はないはず
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"

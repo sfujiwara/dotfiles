@@ -30,9 +30,6 @@ sudo apt-get -y install pycharm-community
 # OpenCV
 # sudo apt-get install libopencv-dev python-opencv
 
-# gcloud
-# curl https://sdk.cloud.google.com | bash
-
 # Haskell
 # sudo apt-get -y install haskell-platform
 # sudo apt-get -y install leksah

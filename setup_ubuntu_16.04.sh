@@ -5,10 +5,10 @@ env LANGUAGE=C LC_MESSAGES=C xdg-user-dirs-gtk-update
 dconf write /org/gnome/desktop/input-sources/xkb-options "['ctrl:nocaps']"
 
 # Home に設定ファイルのシンボリックリンクを貼る
-./ln.sh
+sh ln.sh
 
 # apt-get で色々入れる
-./apt.sh
+sh apt.sh
 
 # pyenv
 git clone https://github.com/yyuu/pyenv.git ~/.pyenv

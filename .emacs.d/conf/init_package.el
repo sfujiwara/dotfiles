@@ -9,12 +9,8 @@
   '(
     ;; package list
     auto-complete
-    ecb
-    el-get
     ess
     haskell-mode
-    highlight-indentation
-    ;hl-line+
     jedi
     python-mode
     tabbar

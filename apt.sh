@@ -24,9 +24,9 @@ sudo apt-get update
 sudo apt-get -y install atom
 
 # PyCharm
-sudo add-apt-repository -y ppa:mystic-mirage/pycharm
-sudo apt-get update
-sudo apt-get -y install pycharm-community
+# sudo add-apt-repository -y ppa:mystic-mirage/pycharm
+# sudo apt-get update
+# sudo apt-get -y install pycharm-community
 
 # OpenCV
 # sudo apt-get install libopencv-dev python-opencv

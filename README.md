@@ -1,5 +1,7 @@
 # dotfiles
 
+[![CircleCI](https://circleci.com/gh/sfujiwara/dotfiles.svg?style=svg)](https://circleci.com/gh/sfujiwara/dotfiles)
+
 ```sh
 git clone --recursive https://github.com/sfujiwara/dotfiles.git
 cd dotfiles

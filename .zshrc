@@ -5,7 +5,8 @@ compinit
 source ~/dotfiles/antigen/antigen.zsh
 antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
-antigen theme gnzh
+# antigen theme gnzh
+antigen theme vvakame/dotfiles themes/vv-custom
 antigen apply
 
 # Mac の homebrew 用の記述だけど Ubuntu でも害はないはず

@@ -20,6 +20,9 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 # pyenv-virtualenv
 eval "$(pyenv virtualenv-init -)"
 
+# nodebrew
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
 # The next line updates PATH for the Google Cloud SDK.
 source "$HOME/google-cloud-sdk/path.zsh.inc"
 # The next line enables shell command completion for gcloud.

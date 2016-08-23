@@ -3,3 +3,6 @@
 	name = sfujiwara
 [color]
 	ui = auto
+
+	[help]
+		autocorrect = 1

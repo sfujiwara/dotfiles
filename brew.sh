@@ -12,6 +12,7 @@ brew install pyenv
 
 brew install mecab
 brew install mecab-ipadic
+# brew install apache-spark
 
 brew tap caskroom/cask
 brew cask install skim

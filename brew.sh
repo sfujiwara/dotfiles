@@ -20,6 +20,7 @@ brew cask install iterm2
 brew cask install google-japanese-ime
 brew cask install atom
 brew cask install google-chrome
+brew cask install slack
 # brew cask install dropbox
 brew cask install alfred
 brew cask install libreoffice

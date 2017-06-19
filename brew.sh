@@ -8,6 +8,7 @@ brew install wget
 brew install git
 brew install zsh
 brew install pyenv
+brew install pyenv-virtualenv
 
 # brew install mecab
 # brew install mecab-ipadic

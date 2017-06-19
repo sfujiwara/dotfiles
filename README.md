@@ -3,6 +3,7 @@
 [![CircleCI](https://circleci.com/gh/sfujiwara/dotfiles.svg?style=svg)](https://circleci.com/gh/sfujiwara/dotfiles)
 
 ```sh
+cd ~
 git clone --recursive https://github.com/sfujiwara/dotfiles.git
 cd dotfiles
 ```
@@ -17,4 +18,10 @@ sh setup_ubuntu_16.04.sh
 
 ```sh
 sh setup_mac.sh
+```
+
+# Chenge default shell
+
+```sh
+chsh -s /bin/zsh
 ```

@@ -25,3 +25,4 @@ brew cask install pycharm-ce
 # brew cask install dropbox
 brew cask install alfred
 brew cask install libreoffice
+brew cask install skitch

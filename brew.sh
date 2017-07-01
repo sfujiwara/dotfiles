@@ -9,7 +9,8 @@ brew install git
 brew install zsh
 brew install pyenv
 brew install pyenv-virtualenv
-
+brew install nodebrew
+brew install rbenv
 # brew install mecab
 # brew install mecab-ipadic
 # brew install apache-spark
@@ -26,3 +27,4 @@ brew cask install pycharm-ce
 brew cask install alfred
 brew cask install libreoffice
 brew cask install skitch
+# brew cask install mactex

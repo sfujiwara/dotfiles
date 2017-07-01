@@ -20,6 +20,10 @@ export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 # pyenv-virtualenv
 eval "$(pyenv virtualenv-init -)"
 
+# rbenv
+export PATH=$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init -)"
+
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 

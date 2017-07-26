@@ -28,3 +28,6 @@ brew cask install alfred
 brew cask install libreoffice
 brew cask install skitch
 # brew cask install mactex
+
+brew cask install java
+brew install redpen

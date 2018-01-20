@@ -20,7 +20,7 @@ sh setup_ubuntu_16.04.sh
 sh setup_mac.sh
 ```
 
-# Chenge default shell
+# Change default shell
 
 ```sh
 chsh -s /bin/zsh

@@ -5,3 +5,5 @@
 	ui = auto
 [help]
 	autocorrect = 1
+[diff]
+	colorMoved = zebra

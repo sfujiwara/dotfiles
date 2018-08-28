@@ -22,7 +22,7 @@ brew cask install google-japanese-ime
 brew cask install atom
 brew cask install google-chrome
 brew cask install slack
-brew cask install pycharm-ce
+# brew cask install pycharm-ce
 # brew cask install dropbox
 brew cask install alfred
 brew cask install libreoffice
@@ -30,4 +30,5 @@ brew cask install skitch
 # brew cask install mactex
 
 brew cask install java
+# brew cask install android-studio
 brew install redpen

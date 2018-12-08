@@ -31,3 +31,5 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 source "$HOME/google-cloud-sdk/path.zsh.inc"
 # The next line enables shell command completion for gcloud.
 source "$HOME/google-cloud-sdk/completion.zsh.inc"
+# Specify Python path for Google Cloud SDK
+export CLOUDSDK_PYTHON=~/.pyenv/versions/2.7.13/bin/python

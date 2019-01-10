@@ -12,6 +12,7 @@ brew install pyenv-virtualenv
 brew install nodebrew
 brew install rbenv
 brew install peco
+# brew install open-mpi
 # brew install mecab
 # brew install mecab-ipadic
 # brew install apache-spark

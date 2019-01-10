@@ -33,3 +33,21 @@ source "$HOME/google-cloud-sdk/path.zsh.inc"
 source "$HOME/google-cloud-sdk/completion.zsh.inc"
 # Specify Python path for Google Cloud SDK
 export CLOUDSDK_PYTHON=~/.pyenv/versions/2.7.13/bin/python
+
+# Setting for peco
+function peco-select-history() {
+ local tac
+ if which tac > /dev/null; then
+     tac="tac"
+ else
+     tac="tail -r"
+ fi
+ BUFFER=$(\history -n 1 | \
+     eval $tac | \
+     awk '!a[$0]++' | \
+     peco --query "$LBUFFER")
+ CURSOR=$#BUFFER
+ zle clear-screen
+}
+zle -N peco-select-history
+bindkey '^r' peco-select-history

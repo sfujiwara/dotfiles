@@ -8,7 +8,6 @@ brew install wget
 brew install git
 brew install zsh
 brew install pyenv
-brew install pyenv-virtualenv
 brew install nodebrew
 brew install rbenv
 brew install peco

@@ -1,4 +1,4 @@
-PROMPT='╭─[%F{green}%n@%m%f]-[%F{cyan}%~%f]-[git:%F{yellow}$(git_prompt_info)%f]
+PROMPT='╭─[%F{green}%n@%m%f]-[%F{cyan}%~%f]
 ╰─➤ %# '
 RPROMPT='%F{yellow}$(git_prompt_info)%f'
 

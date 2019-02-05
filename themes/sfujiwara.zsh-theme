@@ -1,4 +1,4 @@
-PROMPT='╭─[%F{green}%n@%m%f]-[%F{cyan}%~%f]
+PROMPT='╭─[%F{green}%n@%m%f]-[%F{cyan}%~%f]-[%F{magenta}pyenv: $(pyenv_prompt_info)%f]
 ╰─➤ %# '
 RPROMPT='%F{yellow}$(git_prompt_info)%f'
 

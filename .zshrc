@@ -4,8 +4,11 @@ compinit
 # antigen
 source ~/dotfiles/antigen/antigen.zsh
 antigen use oh-my-zsh
+antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle pip
+antigen bundle pyenv
 antigen bundle ~/dotfiles/themes sfujiwara.zsh-theme --no-local-clone
 antigen apply
 
@@ -15,7 +18,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-# export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 # pyenv-virtualenv
 # eval "$(pyenv virtualenv-init -)"
 

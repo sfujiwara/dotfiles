@@ -17,7 +17,8 @@ brew install peco
 # brew install mecab-ipadic
 # brew install apache-spark
 
-brew tap caskroom/cask
+# brew tap caskroom/cask
+brew cask install emacs
 brew cask install skim
 brew cask install iterm2
 brew cask install google-japanese-ime

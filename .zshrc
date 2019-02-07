@@ -12,7 +12,8 @@ antigen bundle pyenv
 antigen bundle ~/dotfiles/themes sfujiwara.zsh-theme --no-local-clone
 antigen apply
 
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+# This setting is no longer needed: https://qiita.com/shibukk/items/d2d3686ac576bcf497b2
+# export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"

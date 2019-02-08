@@ -9,3 +9,5 @@
 	colorMoved = zebra
 [core]
 	editor = emacs
+[pager]
+	branch = cat

@@ -6,3 +6,5 @@
 .emacs.d/.python-environments
 .emacs.d/abbrev_defs
 .emacs.d/ac-comphist.dat
+
+network-security.data

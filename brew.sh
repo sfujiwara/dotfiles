@@ -1,6 +1,7 @@
 #!/bin/bash -eu
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+brew tap caskroom/versions
 
 brew install tree
 brew install curl

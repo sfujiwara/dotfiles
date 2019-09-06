@@ -1,6 +1,10 @@
 #!/bin/bash -eu
 
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+# The line below is already not needed:
+# https://rcmdnk.com/blog/2016/06/28/comptuer-mac-homebrew-brew-file/
+# https://github.com/Homebrew/homebrew-cask/pull/13966
+# export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
 brew tap caskroom/versions
 
 brew install tree
@@ -32,6 +36,10 @@ brew cask install alfred
 brew cask install libreoffice
 brew cask install skitch
 # brew cask install mactex
+
+# For Kubernetes
+# brew cask install virtualbox  # minikube requires virtualbox
+brew cask install minikube 
 
 brew cask install java
 # brew cask install android-studio

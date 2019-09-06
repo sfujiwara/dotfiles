@@ -15,16 +15,11 @@ make install-homebrew
 make install-gcloud-sdk
 make symbolic-link
 make brew-bundle
+make set-default-shell
 ```
 
 ## Ubuntu 16.04
 
 ```sh
 sh setup_ubuntu_16.04.sh
-```
-
-# Change default shell
-
-```sh
-chsh -s /bin/zsh
 ```

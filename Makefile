@@ -8,6 +8,9 @@ symbolic-links:
 install-gcloud-sdk:
 	curl https://sdk.cloud.google.com | bash
 
+.PHONY: set-default-shell
+set-default-shell:
+	chsh -s /bin/zsh
 
 # Commands only for Mac
 

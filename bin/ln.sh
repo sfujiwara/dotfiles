@@ -6,12 +6,12 @@
 # Ask when overwrite existing files or symbolic links.
 # Currently, overwrite them without asking.
 
-ln -nfs ~/dotfiles/.zshrc ~/
+ln -nfs ~/dotfiles/lns/.zshrc ~/
 ln -nfs ~/dotfiles/.emacs.d ~/
-ln -nfs ~/dotfiles/.gitconfig ~/
+ln -nfs ~/dotfiles/lns/.gitconfig ~/
 
 # Karabiner setting for Mac
 if [ `uname` = "Darwin" ]; then
   mkdir -p ~/.config/karabiner
-  ln -nfs ~/dotfiles/.config/karabiner/karabiner.json ~/.config/karabiner/
+  ln -nfs ~/dotfiles/lns/.config/karabiner/karabiner.json ~/.config/karabiner/
 fi

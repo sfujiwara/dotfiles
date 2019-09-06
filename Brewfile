@@ -14,6 +14,7 @@ brew "nodebrew"
 brew "rbenv"
 brew "peco"
 brew "redpen"
+brew "circleci"
 
 cask "alfred"
 cask "atom"

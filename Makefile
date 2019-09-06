@@ -8,9 +8,17 @@ symbolic-links:
 install-gcloud-sdk:
 	curl https://sdk.cloud.google.com | bash
 
+.PHONY: install-python2-for-gcloud
+install-python2-for-gcloud:
+	pyenv install 2.7.9
+
 .PHONY: set-default-shell
 set-default-shell:
 	chsh -s /bin/zsh
+
+.PHONY: ssh-keygen
+ssh-keygen:
+	ssh-keygen -t rsa
 
 # Commands only for Mac
 

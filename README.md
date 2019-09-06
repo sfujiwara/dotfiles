@@ -16,6 +16,7 @@ make install-gcloud-sdk
 make symbolic-link
 make brew-bundle
 make set-default-shell
+make install-python2-for-gcloud
 ```
 
 ## Ubuntu 16.04

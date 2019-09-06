@@ -13,7 +13,7 @@ cd dotfiles
 ### Symbolic Links
 
 ```bash
-make symbolic-link
+make symbolic-links
 ```
 
 ### Homebrew
@@ -23,17 +23,17 @@ make install-homebrew
 make brew-bundle
 ```
 
+### Set Z Shell as Default Shell
+
+```bash
+make use-zsh
+```
+
 ### gcloud SDK
 
 ```bash
 make install-gcloud-sdk
 make install-python2-for-gcloud
-```
-
-### Set Z Shell as Default Shell
-
-```bash
-make use-zsh
 ```
 
 ## Ubuntu

@@ -1,6 +1,7 @@
-# The line below is already not needed:
+# The setting is no longer needed:
 # https://rcmdnk.com/blog/2016/06/28/comptuer-mac-homebrew-brew-file/
 # https://github.com/Homebrew/homebrew-cask/pull/13966
+# https://qiita.com/shibukk/items/d2d3686ac576bcf497b2
 # cask_args appdir: "/Applications"
 
 brew "tree"

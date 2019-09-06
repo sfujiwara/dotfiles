@@ -12,14 +12,10 @@ antigen bundle pyenv
 antigen bundle ~/dotfiles/themes sfujiwara.zsh-theme --no-local-clone
 antigen apply
 
-# This setting is no longer needed: https://qiita.com/shibukk/items/d2d3686ac576bcf497b2
-# export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
-# export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 
 # pipenv
 export PIPENV_VENV_IN_PROJECT=true
@@ -30,6 +26,9 @@ eval "$(rbenv init -)"
 
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+# Polyaxon
+export POLYAXON_NO_OP=true
 
 # The next line updates PATH for the Google Cloud SDK.
 source "$HOME/google-cloud-sdk/path.zsh.inc"
@@ -55,5 +54,3 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
-
-export POLYAXON_NO_OP=true

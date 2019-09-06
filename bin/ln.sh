@@ -10,6 +10,11 @@ ln -nfs ~/dotfiles/lns/.zshrc ~/
 ln -nfs ~/dotfiles/.emacs.d ~/
 ln -nfs ~/dotfiles/lns/.gitconfig ~/
 
+# Settings for VSCode on Mac
+if [ `uname` = "Darwin" ]; then
+  ln -nfs ~/dotfiles/lns/vscode/settings.json ~/Library/Application\ Support/Code/User/
+fi
+
 # Karabiner setting for Mac
 if [ `uname` = "Darwin" ]; then
   mkdir -p ~/.config/karabiner

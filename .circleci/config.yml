@@ -1,27 +1,19 @@
 version: 2
+
 jobs:
 
-  test1:
-    working_directory: ~/dotfiles
-    # docker:
-    #   - image: circleci/python:3.7
-    macos:
-      xcode: "10.0.0"
-    steps:
-      - checkout
-      - run: echo hello
-
-  symbolic_links:
+  test_make_commands:
     working_directory: ~/dotfiles
     docker:
       - image: circleci/python:3.7
     steps:
       - checkout
-      - run: make symbolic-links
+      - run:
+          name: create symbolic links
+          command: make symbolic-links
 
 workflows:
   version: 2
-  build_and_test:
+  tests:
     jobs:
-      - test1
-      - symbolic_links
+      - test_make_commands

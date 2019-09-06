@@ -2,7 +2,7 @@
 
 .PHONY: symbolic-links
 symbolic-links:
-	bash bin/ln.sh
+	./bin/ln.sh
 
 .PHONY: install-gcloud-sdk
 install-gcloud-sdk:
@@ -12,8 +12,8 @@ install-gcloud-sdk:
 install-python2-for-gcloud:
 	pyenv install 2.7.9
 
-.PHONY: set-default-shell
-set-default-shell:
+.PHONY: use-zsh
+use-zsh:
 	chsh -s /bin/zsh
 
 .PHONY: ssh-keygen
@@ -24,12 +24,12 @@ ssh-keygen:
 
 .PHONY: install-homebrew
 install-homebrew:
-	bash bin/install_homebrew.sh
+	./bin/install_homebrew.sh
 
 .PHONY: brew-bundle
 brew-bundle:
 	brew bundle install
 
-.PHONY: all-for-mac
-all-for-mac:
+.PHONY: init-mac
+init-mac:
 	echo to be implemented

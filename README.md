@@ -10,17 +10,39 @@ cd dotfiles
 
 ## Mac
 
+### Symbolic Links
+
+```bash
+make symbolic-link
+```
+
+### Homebrew
+
 ```sh
 make install-homebrew
-make install-gcloud-sdk
-make symbolic-link
 make brew-bundle
-make set-default-shell
+```
+
+### gcloud SDK
+
+```bash
+make install-gcloud-sdk
 make install-python2-for-gcloud
 ```
 
-## Ubuntu 16.04
+### Set Z Shell as Default Shell
 
-```sh
-sh setup_ubuntu_16.04.sh
+```bash
+make use-zsh
 ```
+
+## Ubuntu
+
+### Install Makefile
+
+```bash
+apt update
+apt -y install build-essential
+```
+
+### To Be Written

@@ -1,7 +1,0 @@
-machine:
-  timezone: Asia/Tokyo
-
-test:
-  override:
-    - echo Hello Circle CI
-    - sh setup_ubuntu_16.04.sh

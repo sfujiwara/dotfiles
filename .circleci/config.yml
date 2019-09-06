@@ -15,8 +15,6 @@ jobs:
     working_directory: ~/dotfiles
     docker:
       - image: circleci/python:3.7
-    # macos:
-    #   xcode: "10.0.0"
     steps:
       - checkout
       - run: make symbolic-links
@@ -26,4 +24,4 @@ workflows:
   build_and_test:
     jobs:
       - test1
-      - test2
+      - symbolic_links

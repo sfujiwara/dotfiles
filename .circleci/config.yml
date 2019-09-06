@@ -9,7 +9,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: create symbolic links
+          name: Create symbolic links
           command: make symbolic-links
 
 workflows:

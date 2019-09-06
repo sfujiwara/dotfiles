@@ -14,6 +14,7 @@ cd dotfiles
 make install-homebrew
 make install-gcloud-sdk
 make symbolic-link
+make brew-bundle
 ```
 
 ## Ubuntu 16.04

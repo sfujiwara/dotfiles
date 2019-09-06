@@ -16,5 +16,9 @@ install-homebrew:
 	bash bin/install_homebrew.sh
 
 .PHONY: brew-bundle
-install-homebrew:
-	echo "to be implemented"
+brew-bundle:
+	brew bundle install
+
+.PHONY: all-for-mac
+all-for-mac:
+	echo to be implemented

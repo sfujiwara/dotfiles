@@ -16,6 +16,7 @@ brew "rbenv"
 brew "peco"
 brew "redpen"
 brew "circleci"
+brew "maven"
 
 cask "alfred"
 cask "atom"

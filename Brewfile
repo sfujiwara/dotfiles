@@ -28,7 +28,6 @@ cask "minikube"
 cask "skim"
 cask "skitch"
 cask "visual-studio-code"
-cask "emacs"
 
 # Google Chrome is pre-installed in some environment 
 # cask "google-chrome"
@@ -36,3 +35,4 @@ cask "emacs"
 # cask "virtualbox"
 # cask "java"
 # cask "libreoffice"
+# cask "emacs"

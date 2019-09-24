@@ -20,6 +20,10 @@ brew "circleci"
 brew "gradle"
 brew "maven"
 
+brew "cmake"
+brew "gcc"
+brew "libomp"
+
 cask "alfred"
 cask "atom"
 cask "google-japanese-ime"

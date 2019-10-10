@@ -4,6 +4,7 @@
 # https://qiita.com/shibukk/items/d2d3686ac576bcf497b2
 # cask_args appdir: "/Applications"
 
+brew "awscli"
 brew "tree"
 brew "curl"
 brew "wget"

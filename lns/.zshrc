@@ -28,7 +28,7 @@ eval "$(rbenv init -)"
 eval "$(nodenv init -)"
 
 # nodebrew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+# export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # Polyaxon
 export POLYAXON_NO_OP=true

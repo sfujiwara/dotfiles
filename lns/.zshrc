@@ -24,6 +24,9 @@ export PIPENV_VENV_IN_PROJECT=true
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
 
+# nodenv
+eval "$(nodenv init -)"
+
 # nodebrew
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 

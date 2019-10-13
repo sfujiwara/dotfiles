@@ -24,16 +24,21 @@ export PIPENV_VENV_IN_PROJECT=true
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
 
+# nodenv
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
+
 # nodebrew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
+# export PATH=$HOME/.nodebrew/current/bin:$PATH
 
 # Polyaxon
 export POLYAXON_NO_OP=true
 
 # The next line updates PATH for the Google Cloud SDK.
-source "$HOME/google-cloud-sdk/path.zsh.inc"
+# source "$HOME/google-cloud-sdk/path.zsh.inc"
 # The next line enables shell command completion for gcloud.
-source "$HOME/google-cloud-sdk/completion.zsh.inc"
+source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+# source "$HOME/google-cloud-sdk/completion.zsh.inc"
 # Specify Python path for Google Cloud SDK
 export CLOUDSDK_PYTHON=~/.pyenv/versions/2.7.9/bin/python
 

@@ -1,3 +1,9 @@
 {
   "editor.wordWrap": "on",
+  "[javascript]": {
+        "editor.tabSize": 2
+    },
+  "[review]": {
+    "editor.insertSpaces": false
+  }
 }

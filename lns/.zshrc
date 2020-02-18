@@ -20,6 +20,9 @@ eval "$(pyenv init -)"
 # pipenv
 export PIPENV_VENV_IN_PROJECT=true
 
+# Poetry
+export PATH=$HOME/.poetry/bin:$PATH
+
 # rbenv
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"

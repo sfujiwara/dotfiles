@@ -301,6 +301,27 @@
             }
           }
         }
+      },
+      "protobuf": {
+        "version": "3.11.4",
+        "bottle": {
+          "cellar": ":any",
+          "prefix": "/usr/local",
+          "files": {
+            "catalina": {
+              "url": "https://homebrew.bintray.com/bottles/protobuf-3.11.4.catalina.bottle.tar.gz",
+              "sha256": "b6eca888405b4998b1a5be7c7425d94f9ef2db76fcd9355ac920deaee3e2d15d"
+            },
+            "mojave": {
+              "url": "https://homebrew.bintray.com/bottles/protobuf-3.11.4.mojave.bottle.tar.gz",
+              "sha256": "809461047f541cfc72d836ea7c7af95ad18f0900ea9bd163f478abf53d3fafaf"
+            },
+            "high_sierra": {
+              "url": "https://homebrew.bintray.com/bottles/protobuf-3.11.4.high_sierra.bottle.tar.gz",
+              "sha256": "ae2dd1abf649a9a9c313caa958bd08d175b5a8a88828b44770526e29c83c807e"
+            }
+          }
+        }
       }
     },
     "cask": {
@@ -359,7 +380,7 @@
       "high_sierra": {
         "HOMEBREW_VERSION": "2.2.13-72-g4b00403",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "e9ac6e5968a7bc623655950b23b3a293dee0e2cc",
+        "Homebrew/homebrew-core": "62534166e48af63ab2e8c6fecbb732da045ce66f",
         "CLT": "10.1.0.0.1.1539992718",
         "Xcode": "10.3",
         "macOS": "10.13.6"

@@ -48,6 +48,7 @@ export POLYAXON_NO_OP=true
 
 # The next line updates PATH for the Google Cloud SDK.
 source "$HOME/google-cloud-sdk/path.zsh.inc"
+# The next line enables shell command completion for gcloud.
 source "$HOME/google-cloud-sdk/completion.zsh.inc"
 
 # Specify Python path for Google Cloud SDK

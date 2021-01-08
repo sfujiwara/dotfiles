@@ -52,7 +52,7 @@ source "$HOME/google-cloud-sdk/path.zsh.inc"
 source "$HOME/google-cloud-sdk/completion.zsh.inc"
 
 # Specify Python path for Google Cloud SDK
-export CLOUDSDK_PYTHON=~/.pyenv/versions/2.7.9/bin/python
+export CLOUDSDK_PYTHON=~/.pyenv/versions/3.7.4/bin/python
 
 # Setting for peco
 function peco-select-history() {

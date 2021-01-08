@@ -22,6 +22,7 @@ brew "tfenv"
 brew "circleci"
 brew "gradle"
 brew "maven"
+brew "protobuf"
 
 # brew "cmake"
 # brew "gcc"

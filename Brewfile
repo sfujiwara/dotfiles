@@ -5,6 +5,7 @@
 # cask_args appdir: "/Applications"
 
 brew "awscli"
+brew "direnv"
 brew "tree"
 brew "curl"
 brew "wget"

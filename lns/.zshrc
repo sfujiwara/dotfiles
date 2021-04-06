@@ -15,6 +15,9 @@ antigen apply
 # sbin for Homebrew.
 export PATH=/usr/local/sbin:$PATH
 
+# Rust.
+export PATH=$HOME/.cargo/bin:$PATH
+
 # Path for gettext.
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 

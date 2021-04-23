@@ -6,5 +6,11 @@
   "[review]": {
     "editor.insertSpaces": false
   },
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ]
 }

@@ -40,12 +40,6 @@ eval "$(rbenv init -)"
 export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
 
-# nodebrew
-# export PATH=$HOME/.nodebrew/current/bin:$PATH
-
-# Polyaxon
-export POLYAXON_NO_OP=true
-
 # The next line updates PATH for the Google Cloud SDK.
 source "$HOME/google-cloud-sdk/path.zsh.inc"
 # The next line enables shell command completion for gcloud.
@@ -71,3 +65,6 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
+
+# Rust.
+source ~/.cargo/env

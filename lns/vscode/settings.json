@@ -12,5 +12,6 @@
       "viewType": "jupyter.notebook.ipynb",
       "filenamePattern": "*.ipynb"
     }
-  ]
+  ],
+  "rust-client.rustupPath": "$HOME/.cargo/bin/rustup"
 }

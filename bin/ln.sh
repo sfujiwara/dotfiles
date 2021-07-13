@@ -6,9 +6,9 @@
 # Ask when overwrite existing files or symbolic links.
 # Currently, overwrite them without asking.
 
-ln -nfs ~/dotfiles/lns/.zshrc ~/
+ln -nfs ~/dotfiles/.zshrc ~/
 ln -nfs ~/dotfiles/.emacs.d ~/
-ln -nfs ~/dotfiles/lns/.gitconfig ~/
+ln -nfs ~/dotfiles/.gitconfig ~/
 
 # Settings for VSCode on Mac
 if [ `uname` = "Darwin" ]; then

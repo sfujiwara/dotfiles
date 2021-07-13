@@ -1,7 +1,5 @@
 # dotfiles
 
-[![CircleCI](https://circleci.com/gh/sfujiwara/dotfiles.svg?style=svg)](https://circleci.com/gh/sfujiwara/dotfiles)
-
 ```sh
 cd ~
 git clone --recursive https://github.com/sfujiwara/dotfiles.git
@@ -37,6 +35,10 @@ make install-python2-for-gcloud
 ```
 
 ## Ubuntu
+
+```
+bash -c "$(wget -qO - https://raw.githubusercontent.com/sfujiwara/dotfiles/master/ubuntu.sh)"
+```
 
 ### Install Makefile
 

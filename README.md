@@ -6,7 +6,7 @@
 bash -c "$(wget -qO - https://raw.githubusercontent.com/sfujiwara/dotfiles/master/mac.sh)"
 ```
 
-## Ubuntu
+## Ubuntu 20.04 LTS
 
 ```
 bash -c "$(wget -qO - https://raw.githubusercontent.com/sfujiwara/dotfiles/master/ubuntu.sh)"
@@ -17,12 +17,14 @@ bash -c "$(wget -qO - https://raw.githubusercontent.com/sfujiwara/dotfiles/maste
 #### Download softwares from official website
 
 - Google Chrome
+- Slack
+- Discord
 - Visual Studio Code
 - PyCharm
 
 #### Other configurations
 
-- Replace CapsLock with Ctrl using tweaks
+- Replace CapsLock with Ctrl using Tweaks
 - Add SSH public key to
   - GitHub
   - ABCI / Wisteria

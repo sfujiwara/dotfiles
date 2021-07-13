@@ -26,3 +26,9 @@ fi
 
 # Generate symbolic links.
 ./bin/ln.sh
+
+# Use zsh as default shell.
+chsh -s /bin/zsh
+
+# Generate SSH key.
+ssh-keygen -t rsa

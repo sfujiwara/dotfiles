@@ -15,19 +15,18 @@ antigen apply
 # sbin for Homebrew.
 export PATH=/usr/local/sbin:$PATH
 
-# Rust.
-export PATH=$HOME/.cargo/bin:$PATH
-
 # Path for gettext.
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 
 # pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+if [ -d "$HOME/.pyenv" ]; then
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
+fi
 
 # Alias for Homebrew to solve warnings on Pyenv.
-alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
+# alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
 
 # pipenv
 export PIPENV_VENV_IN_PROJECT=true
@@ -36,38 +35,29 @@ export PIPENV_VENV_IN_PROJECT=true
 export PATH=$HOME/.poetry/bin:$PATH
 
 # rbenv
-export PATH=$HOME/.rbenv/bin:$PATH
-eval "$(rbenv init -)"
+if [ -d "$HOME/.rbenv" ]; then
+  export PATH=$HOME/.rbenv/bin:$PATH
+  eval "$(rbenv init -)"
+fi
 
 # nodenv
-export PATH="$HOME/.nodenv/bin:$PATH"
-eval "$(nodenv init -)"
+if [ -d "$HOME/.nodenv" ]; then
+  export PATH="$HOME/.nodenv/bin:$PATH"
+  eval "$(nodenv init -)"
+fi
 
-# The next line updates PATH for the Google Cloud SDK.
-source "$HOME/google-cloud-sdk/path.zsh.inc"
-# The next line enables shell command completion for gcloud.
-source "$HOME/google-cloud-sdk/completion.zsh.inc"
+if [ -d "$HOME/google-cloud-sdk" ]; then
+  # The next line updates PATH for the Google Cloud SDK.
+  source "$HOME/google-cloud-sdk/path.zsh.inc"
+  # The next line enables shell command completion for gcloud.
+  source "$HOME/google-cloud-sdk/completion.zsh.inc"
+fi
 
 # Specify Python path for Google Cloud SDK
-export CLOUDSDK_PYTHON=~/.pyenv/versions/3.7.4/bin/python
-
-# Setting for peco
-function peco-select-history() {
- local tac
- if which tac > /dev/null; then
-     tac="tac"
- else
-     tac="tail -r"
- fi
- BUFFER=$(\history -n 1 | \
-     eval $tac | \
-     awk '!a[$0]++' | \
-     peco --query "$LBUFFER")
- CURSOR=$#BUFFER
- zle clear-screen
-}
-zle -N peco-select-history
-bindkey '^r' peco-select-history
+# export CLOUDSDK_PYTHON=~/.pyenv/versions/3.7.4/bin/python
 
 # Rust.
-source ~/.cargo/env
+if [ -d "$HOME/.cargo" ]; then
+  export PATH=$HOME/.cargo/bin:$PATH
+  source ~/.cargo/env
+fi

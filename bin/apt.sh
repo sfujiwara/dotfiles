@@ -5,3 +5,5 @@ sudo apt -y install zsh
 sudo apt -y install gnome-tweaks
 sudo apt -y install docker
 sudo apt -y install docker-compose
+sudo apt -y install cowsay
+sudo apt -y install sl

@@ -11,3 +11,5 @@
 	editor = emacs
 [pager]
 	branch = cat
+[init]
+	defaultBranch = main

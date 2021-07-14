@@ -1,0 +1,15 @@
+name: Mac
+
+on: [push]
+
+jobs:
+
+  ubuntu:
+
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Homebrew
+        run: /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

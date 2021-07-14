@@ -5,7 +5,7 @@ git clone --recursive https://github.com/sfujiwara/dotfiles.git $HOME/dotfiles
 cd $HOME/dotfiles
 
 # Install Homebrew.
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Install packages via Homebrew.
 brew bundle install

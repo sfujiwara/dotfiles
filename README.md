@@ -1,4 +1,4 @@
-# dotfiles
+d# dotfiles
 
 [![Ubuntu](https://github.com/sfujiwara/dotfiles/actions/workflows/ubuntu.yaml/badge.svg)](https://github.com/sfujiwara/dotfiles/actions/workflows/ubuntu.yaml)
 [![Mac](https://github.com/sfujiwara/dotfiles/actions/workflows/mac.yaml/badge.svg)](https://github.com/sfujiwara/dotfiles/actions/workflows/mac.yaml)
@@ -20,10 +20,8 @@ bash -c "$(wget -qO - https://raw.githubusercontent.com/sfujiwara/dotfiles/maste
 
 #### Download softwares from official website
 
-- Google Chrome
 - Slack
 - Discord
-- Visual Studio Code
 - PyCharm
 
 #### Other configurations

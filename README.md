@@ -2,13 +2,13 @@
 
 ## Mac
 
-```
+```sh
 bash -c "$(wget -qO - https://raw.githubusercontent.com/sfujiwara/dotfiles/master/mac.sh)"
 ```
 
 ## Ubuntu 20.04 LTS
 
-```
+```sh
 bash -c "$(wget -qO - https://raw.githubusercontent.com/sfujiwara/dotfiles/master/ubuntu.sh)"
 ```
 

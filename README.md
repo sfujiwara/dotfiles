@@ -1,5 +1,8 @@
 # dotfiles
 
+[![Ubuntu](https://github.com/sfujiwara/dotfiles/actions/workflows/ubuntu.yaml/badge.svg)](https://github.com/sfujiwara/dotfiles/actions/workflows/ubuntu.yaml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 ## Mac
 
 ```sh

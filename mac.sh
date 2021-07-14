@@ -10,6 +10,11 @@ cd $HOME/dotfiles
 # Install packages via Homebrew.
 brew bundle install
 
+# Install Google Cloud SDK.
+if [ ! -d "$HOME/google-cloud-sdk" ]; then
+  curl https://sdk.cloud.google.com | bash
+fi
+
 # Generate symbolic links.
 ./bin/ln.sh
 

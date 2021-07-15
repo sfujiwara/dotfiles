@@ -17,3 +17,8 @@ if [ `uname` = "Darwin" ]; then
   # Visual Studio Code.
   ln -nfs ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/
 fi
+
+if [ `uname` = "Linux" ]; then
+  # Visual Studio Code.
+  ln -nfs $HOME/dotfiles/vscode/settings.json $HOME/.config/Code/User/settings.json
+fi

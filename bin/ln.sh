@@ -3,6 +3,9 @@
 # zsh.
 ln -nfs ~/dotfiles/.zshrc ~/
 
+# bash.
+ln -nfs ~/dotfiles/.bashrc $HOME/
+
 # Emacs.
 ln -nfs ~/dotfiles/.emacs.d ~/
 

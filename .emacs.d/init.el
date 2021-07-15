@@ -1,16 +1,15 @@
-(setq inhibit-startup-screen t)
+;; Show current line and column numbers.
+(column-number-mode t)
+(line-number-mode t)
 
-;; Use package.el
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
-(add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
-(package-initialize)
-(unless package-archive-contents (package-refresh-contents))
+;; Show line numbers.
+(global-linum-mode t)
+(setq linum-format "%4d ")
 
-;; Install init-loader
-(unless (package-installed-p 'init-loader)
-  (package-install 'init-loader))
+;; Highlight parentheses.
+(show-paren-mode t)
 
-;; Use init-loader
-(require 'init-loader)
-(init-loader-load "~/.emacs.d/inits")
+;; Use theme.
+(load-theme 'misterioso t)
+;; (load-theme 'tsdh-dark t)
+;; (load-theme 'tango-dark t)

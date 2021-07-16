@@ -13,7 +13,7 @@ antigen bundle ~/dotfiles/themes sfujiwara.zsh-theme --no-local-clone
 antigen apply
 
 # Use English on terminal.
-export LANG=en_US
+export LANG=en_US.UTF-8
 
 # sbin for Homebrew.
 export PATH=/usr/local/sbin:$PATH

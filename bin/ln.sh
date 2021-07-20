@@ -3,6 +3,9 @@
 # zsh.
 ln -nfs ~/dotfiles/.zshrc ~/
 
+# bash.
+ln -nfs ~/dotfiles/.bashrc $HOME/
+
 # Emacs.
 ln -nfs ~/dotfiles/.emacs.d ~/
 
@@ -16,4 +19,9 @@ if [ `uname` = "Darwin" ]; then
   ln -nfs ~/dotfiles/karabiner.json ~/.config/karabiner/
   # Visual Studio Code.
   ln -nfs ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/
+fi
+
+if [ `uname` = "Linux" ]; then
+  # Visual Studio Code.
+  ln -nfs $HOME/dotfiles/vscode/settings.json $HOME/.config/Code/User/settings.json
 fi

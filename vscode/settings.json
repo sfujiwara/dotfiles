@@ -10,8 +10,11 @@
     "editor.insertSpaces": false
   },
   "window.zoomLevel": 1,
+  "window.titleBarStyle": "custom",
+  "window.customMenuBarAltFocus": false,
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
   },
-  "rust-client.rustupPath": "$HOME/.cargo/bin/rustup"
+  "rust-client.rustupPath": "$HOME/.cargo/bin/rustup",
+  "editor.inlineSuggest.enabled": true
 }

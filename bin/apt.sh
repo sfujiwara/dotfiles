@@ -7,6 +7,9 @@ sudo apt -y install zsh
 sudo apt -y install gnome-tweaks
 sudo apt -y install docker
 sudo apt -y install docker-compose
+sudo apt -y install fcitx
+sudo apt -y install fcitx-mozc
+sudo apt -y install build-essential
 sudo apt -y install cowsay
 sudo apt -y install sl
 

@@ -10,6 +10,7 @@ sudo apt -y install docker-compose
 sudo apt -y install fcitx
 sudo apt -y install fcitx-mozc
 sudo apt -y install build-essential
+sudo apt -y install libbz2-dev libdb-dev libreadline-dev libffi-dev libgdbm-dev liblzma-dev libncursesw5-dev libsqlite3-dev libssl-dev zlib1g-dev uuid-dev tk-dev
 sudo apt -y install cowsay
 sudo apt -y install sl
 

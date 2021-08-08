@@ -21,11 +21,18 @@ export PATH=/usr/local/sbin:$PATH
 # Path for gettext.
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 
-# pyenv
+# Setup pyenv.
 if [ -d "$HOME/.pyenv" ]; then
   export PYENV_ROOT="$HOME/.pyenv"
   export PATH="$PYENV_ROOT/bin:$PATH"
   eval "$(pyenv init --path)"
+fi
+
+# Setup nodenv.
+if [ -d "$HOME/.pyenv" ]; then
+  export PATH="$HOME/.nodenv/bin:$PATH"
+  eval "$(nodenv init -)"
+  # $HOME/.nodenv/bin/nodenv init
 fi
 
 # Alias for Homebrew to solve warnings on Pyenv.

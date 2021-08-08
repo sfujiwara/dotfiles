@@ -8,7 +8,9 @@ sudo apt update
 sudo apt install -y git
 
 # Clone dotfiles repository.
-git clone --recursive https://github.com/sfujiwara/dotfiles.git $HOME/dotfiles
+if [ ! -d "$HOME/dotfiles" ]; then
+  git clone --recursive https://github.com/sfujiwara/dotfiles.git $HOME/dotfiles
+fi
 cd $HOME/dotfiles
 
 # Install packages via apt.
@@ -17,6 +19,13 @@ cd $HOME/dotfiles
 # Install pyenv.
 if [ ! -d "$HOME/.pyenv" ]; then
   git clone https://github.com/yyuu/pyenv.git ~/.pyenv
+fi
+
+# Install nodenv.
+if [ ! -d "$HOME/.nodenv" ]; then
+  git clone https://github.com/nodenv/nodenv.git ~/.nodenv
+  mkdir -p "$(~/.nodenv/bin/nodenv root)"/plugins
+  git clone https://github.com/nodenv/node-build.git "$(~/.nodenv/bin/nodenv root)"/plugins/node-build
 fi
 
 # Install Google Cloud SDK.
@@ -31,4 +40,6 @@ fi
 chsh -s /bin/zsh
 
 # Generate SSH key.
-ssh-keygen -t rsa
+if [ ! -d "$HOME/.ssh" ]; then
+  ssh-keygen -t rsa
+fi

@@ -1,4 +1,4 @@
-d# dotfiles
+# dotfiles
 
 [![Ubuntu](https://github.com/sfujiwara/dotfiles/actions/workflows/ubuntu.yaml/badge.svg)](https://github.com/sfujiwara/dotfiles/actions/workflows/ubuntu.yaml)
 [![Mac](https://github.com/sfujiwara/dotfiles/actions/workflows/mac.yaml/badge.svg)](https://github.com/sfujiwara/dotfiles/actions/workflows/mac.yaml)

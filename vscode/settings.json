@@ -1,7 +1,7 @@
 {
   "editor.fontSize": 15,
   "editor.renderWhitespace": "all",
-  "editor.fontFamily": "Menlo, Monaco",
+  "editor.fontFamily": "Menlo, Monaco, Source Code Pro",
   "editor.wordWrap": "on",
   "[javascript]": {
         "editor.tabSize": 2
@@ -16,5 +16,6 @@
     "*.ipynb": "jupyter.notebook.ipynb"
   },
   "rust-client.rustupPath": "$HOME/.cargo/bin/rustup",
-  "editor.inlineSuggest.enabled": true
+  "terminal.integrated.fontFamily": "monospace",
+  "terminal.integrated.fontSize": 14
 }

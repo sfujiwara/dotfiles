@@ -1,7 +1,7 @@
 {
   "editor.fontSize": 15,
   "editor.renderWhitespace": "all",
-  "editor.fontFamily": "Menlo, Monaco, Source Code Pro",
+  "editor.fontFamily": "Menlo, Monaco, Ubuntu mono",
   "editor.wordWrap": "on",
   "[javascript]": {
         "editor.tabSize": 2
@@ -16,6 +16,6 @@
     "*.ipynb": "jupyter.notebook.ipynb"
   },
   "rust-client.rustupPath": "$HOME/.cargo/bin/rustup",
-  "terminal.integrated.fontFamily": "monospace",
+  "terminal.integrated.fontFamily": "Ubuntu mono, PowerlineSymbols, monospace",
   "terminal.integrated.fontSize": 14
 }

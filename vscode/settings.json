@@ -16,6 +16,6 @@
     "*.ipynb": "jupyter.notebook.ipynb"
   },
   "rust-client.rustupPath": "$HOME/.cargo/bin/rustup",
-  "terminal.integrated.fontFamily": "Ubuntu mono, PowerlineSymbols, monospace",
+  "terminal.integrated.fontFamily": "Menlo, Monaco, Ubuntu mono, PowerlineSymbols, monospace",
   "terminal.integrated.fontSize": 14
 }

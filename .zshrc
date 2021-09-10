@@ -56,6 +56,10 @@ if [ -d "$HOME/.nodenv" ]; then
   eval "$(nodenv init -)"
 fi
 
+if [ -d "$HOME/.nodenv" ]; then
+  export PATH="$HOME/.tfenv/bin:$PATH"
+fi
+
 if [ -d "$HOME/google-cloud-sdk" ]; then
   # The next line updates PATH for the Google Cloud SDK.
   source "$HOME/google-cloud-sdk/path.zsh.inc"

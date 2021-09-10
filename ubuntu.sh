@@ -28,6 +28,11 @@ if [ ! -d "$HOME/.nodenv" ]; then
   git clone https://github.com/nodenv/node-build.git "$(~/.nodenv/bin/nodenv root)"/plugins/node-build
 fi
 
+# Install tfenv.
+if [ ! -d "$HOME/.tfenv" ]; then
+  git clone https://github.com/tfutils/tfenv.git ~/.tfenv
+fi
+
 # Install Google Cloud SDK.
 if [ ! -d "$HOME/google-cloud-sdk" ]; then
   curl https://sdk.cloud.google.com | bash

@@ -56,6 +56,8 @@ if [ -d "$HOME/.nodenv" ]; then
   eval "$(nodenv init -)"
 fi
 
+eval "$(direnv hook zsh)"
+
 if [ -d "$HOME/.nodenv" ]; then
   export PATH="$HOME/.tfenv/bin:$PATH"
 fi

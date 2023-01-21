@@ -42,7 +42,8 @@ fi
 export PIPENV_VENV_IN_PROJECT=true
 
 # Poetry
-export PATH=$HOME/.poetry/bin:$PATH
+# export PATH=$HOME/.poetry/bin:$PATH  # For old versions
+export PATH=$HOME/.local/bin:$PATH
 
 # rbenv
 if [ -d "$HOME/.rbenv" ]; then

@@ -12,7 +12,6 @@ brew "wget"
 brew "git"
 brew "zsh"
 brew "pyenv"
-brew "pipenv"
 brew "nodenv"
 brew "rbenv"
 brew "peco"
@@ -37,7 +36,7 @@ cask "skim"
 cask "skitch"
 cask "visual-studio-code"
 
-# Google Chrome is pre-installed in some environment 
+# Google Chrome is pre-installed in some environment
 # cask "google-chrome"
 
 # cask "virtualbox"

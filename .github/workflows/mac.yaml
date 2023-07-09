@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
 
-  ubuntu:
+  mac:
 
     runs-on: macos-latest
 

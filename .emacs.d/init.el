@@ -1,11 +1,9 @@
 ;; Configurations for package.el.
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-
 ;; Resolve the error on ABCI.
 ;; https://emacs.stackexchange.com/questions/61997/how-do-i-fix-incomprehensible-buffer-error-when-running-list-packages
 (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
-
 (package-initialize)
 
 ;; Install use-package automatically.
@@ -18,8 +16,7 @@
 (line-number-mode t)
 
 ;; Show line numbers.
-(global-linum-mode t)
-(setq linum-format "%4d ")
+(global-display-line-numbers-mode t)
 
 ;; Highlight parentheses.
 (show-paren-mode t)
@@ -35,13 +32,37 @@
   :init
   (elpy-enable))
 
+;; git-gutter.el.
+(use-package git-gutter
+    :ensure t
+    :custom
+    (git-gutter:modified-sign "=")
+    (git-gutter:added-sign "+")
+    (git-gutter:deleted-sign "-")
+    :custom-face
+    (git-gutter:modified    ((t (:background "blue"))))
+    (git-gutter:added    ((t (:background "green"))))
+    (git-gutter:deleted  ((t (:background "red"))))
+    :config
+    (global-git-gutter-mode +1))
+
+;; emacs-neotree
+(use-package neotree
+  :ensure t
+  :init
+  (setq-default neo-keymap-style 'concise)
+  :config
+  (setq neo-smart-open t)
+  (setq neo-create-file-auto-open t)
+  (global-set-key [f8] 'neotree-toggle))
+
 ;; Automatically added.
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (elpy use-package))))
+ '(package-selected-packages (quote (neotree elpy use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

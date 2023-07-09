@@ -54,6 +54,7 @@
   :config
   (setq neo-smart-open t)
   (setq neo-create-file-auto-open t)
+  (setq neo-show-hidden-files t)
   (global-set-key [f8] 'neotree-toggle))
 
 ;; Automatically added.

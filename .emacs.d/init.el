@@ -46,7 +46,7 @@
     :config
     (global-git-gutter-mode +1))
 
-;; emacs-neotree
+;; emacs-neotree.
 (use-package neotree
   :ensure t
   :init

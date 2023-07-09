@@ -21,6 +21,8 @@ export PATH=/usr/local/sbin:$PATH
 # Path for gettext.
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # Setup pyenv.
 if [ -d "$HOME/.pyenv" ]; then
   export PYENV_ROOT="$HOME/.pyenv"

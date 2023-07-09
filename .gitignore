@@ -8,5 +8,8 @@
 
 network-security.data
 
+git-completion.bash
+git-prompt.sh
+
 # Emacs
 *~

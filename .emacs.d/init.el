@@ -29,8 +29,15 @@
 ;; Elpy.
 (use-package elpy
   :ensure t
+  :config
+  (setq elpy-rpc-virtualenv-path 'current)
   :init
   (elpy-enable))
+
+
+;; Poetry.el.
+(use-package poetry
+  :ensure t)
 
 ;; git-gutter.el.
 (use-package git-gutter

@@ -9,7 +9,7 @@
 
 network-security.data
 
-git-completion.bash
+git-completion.*
 git-prompt.sh
 
 # Emacs

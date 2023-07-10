@@ -1,15 +1,18 @@
 autoload -U compinit
+autoload -Uz add-zsh-hook
+autoload -Uz vcs_info
+
 compinit
 
 # antigen
 source ~/dotfiles/antigen/antigen.zsh
-antigen use oh-my-zsh
+# antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle pip
-antigen bundle pyenv
-antigen bundle ~/dotfiles/themes sfujiwara.zsh-theme --no-local-clone
+# antigen bundle pyenv
+# antigen bundle ~/dotfiles/themes sfujiwara.zsh-theme --no-local-clone
 antigen apply
 
 # Use English on terminal.
@@ -80,3 +83,22 @@ if [ -d "$HOME/.cargo" ]; then
   export PATH=$HOME/.cargo/bin:$PATH
   source ~/.cargo/env
 fi
+
+source ${HOME}/dotfiles/git-prompt.sh
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWSTASHSTATE=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
+GIT_PS1_SHOWUPSTREAM="auto"
+GIT_PS1_STATESEPARATOR=" "
+GIT_PS1_SHOWCONFLICTSTATE="yes"
+GIT_PS1_COMPRESSSPARSESTATE=true
+GIT_PS1_DESCRIBE_STYLE="branch"
+prompt() {
+  if [ $? -eq 0 ]; then
+      FACE="%F{green}:D%f"
+  else
+    FACE="%F{red}:(%f"
+  fi
+  PROMPT="%F{cyan}%n@%m%f %F{magenta}%~%f%F{yellow}$(__git_ps1)%f"$'\n'"${FACE} "
+}
+add-zsh-hook precmd prompt

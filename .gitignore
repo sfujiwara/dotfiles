@@ -5,6 +5,7 @@
 .emacs.d/elpy
 .emacs.d/eshell
 .emacs.d/snippets
+.emacs.d/transient
 
 network-security.data
 

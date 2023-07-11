@@ -3,10 +3,11 @@ compinit
 
 # antigen
 source ~/dotfiles/antigen/antigen.zsh
+# antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle pip
+# antigen bundle pip
 # antigen bundle pyenv
 antigen apply
 
@@ -94,5 +95,7 @@ precmd() {
     FACE="%F{red}:(%f"
   fi
   vcs_info
-  PROMPT="%F{cyan}%n@%m%f %F{magenta}%~%f %F{yellow}${vcs_info_msg_0_}%f"$'\n'"${FACE} "
 }
+setopt prompt_subst
+export PROMPT='%F{cyan}%n@%m%f %F{magenta}%~%f ${vcs_info_msg_0_}
+${FACE} '

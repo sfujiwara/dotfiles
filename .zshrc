@@ -90,7 +90,7 @@ zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd() {
   if [ $? -eq 0 ]; then
-    FACE="%F{green}:D%f"
+    FACE="%F{green}:)%f"
   else
     FACE="%F{red}:(%f"
   fi

@@ -11,6 +11,8 @@ antigen bundle zsh-users/zsh-autosuggestions
 # antigen bundle pyenv
 antigen apply
 
+zstyle ':completion:*:default' menu select=1
+
 # Use English on terminal.
 export LANG=en_US.UTF-8
 

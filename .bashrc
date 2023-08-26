@@ -1,5 +1,5 @@
 # pyenv
-eval "$(pyenv init -)"
+# eval "$(pyenv init -)"
 
 wget \
   -O ${HOME}/dotfiles/git-prompt.sh \

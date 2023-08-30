@@ -18,7 +18,7 @@ if [ `uname` = "Darwin" ]; then
   mkdir -p ~/.config/karabiner
   ln -nfs ~/dotfiles/karabiner.json ~/.config/karabiner/
   # Visual Studio Code.
-  ln -nfs ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/
+  # ln -nfs ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/
 fi
 
 if [ `uname` = "Linux" ]; then

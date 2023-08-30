@@ -7,10 +7,10 @@
 ## Mac
 
 ```sh
-bash -c "$(wget -qO - https://raw.githubusercontent.com/sfujiwara/dotfiles/master/mac.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/sfujiwara/dotfiles/main/mac.sh)"
 ```
 
-## Ubuntu 20.04 LTS
+## Ubuntu
 
 ```sh
 bash -c "$(wget -qO - https://raw.githubusercontent.com/sfujiwara/dotfiles/master/ubuntu.sh)"
@@ -21,12 +21,4 @@ bash -c "$(wget -qO - https://raw.githubusercontent.com/sfujiwara/dotfiles/maste
 #### Download softwares from official website
 
 - Slack
-- Discord
 - PyCharm
-
-#### Other configurations
-
-- Replace CapsLock with Ctrl using Tweaks
-- Add SSH public key to
-  - GitHub
-  - ABCI / Wisteria

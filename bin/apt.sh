@@ -14,6 +14,8 @@ sudo apt -y install libbz2-dev libdb-dev libreadline-dev libffi-dev libgdbm-dev 
 sudo apt -y install cowsay
 sudo apt -y install sl
 sudo apt -y install golang-go
+sudo apt -y install rustc
+sudo apt -y install libfuse2  # Required to run JetBrains Toolbox.
 
 # Install Google Chrome.
 # curl https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -

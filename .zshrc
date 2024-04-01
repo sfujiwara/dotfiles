@@ -16,8 +16,8 @@ zstyle ':completion:*:default' menu select=1
 # Use English on terminal.
 export LANG=en_US.UTF-8
 
-# sbin for Homebrew.
-export PATH=/usr/local/sbin:$PATH
+# Homebrew.
+eval $(/opt/homebrew/bin/brew shellenv)
 
 # Path for gettext.
 export PATH="/usr/local/opt/gettext/bin:$PATH"

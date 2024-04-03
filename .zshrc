@@ -17,7 +17,9 @@ zstyle ':completion:*:default' menu select=1
 export LANG=en_US.UTF-8
 
 # Homebrew.
-eval $(/opt/homebrew/bin/brew shellenv)
+if [ `uname` = "Darwin" ]; then
+  eval $(/opt/homebrew/bin/brew shellenv)
+fi
 
 # Path for Go tools.
 export PATH=$PATH:$HOME/go/bin
@@ -35,14 +37,10 @@ if [ -d "$HOME/.pyenv" ]; then
 fi
 
 # Setup nodenv.
-if [ -d "$HOME/.pyenv" ]; then
+if [ -d "$HOME/.nodenv" ]; then
   export PATH="$HOME/.nodenv/bin:$PATH"
   eval "$(nodenv init -)"
-  # $HOME/.nodenv/bin/nodenv init
 fi
-
-# Alias for Homebrew to solve warnings on Pyenv.
-# alias brew="env PATH=${PATH//$(pyenv root)\/shims:/} brew"
 
 # pipenv
 export PIPENV_VENV_IN_PROJECT=true
@@ -55,18 +53,6 @@ export PATH=$HOME/.local/bin:$PATH
 if [ -d "$HOME/.rbenv" ]; then
   export PATH=$HOME/.rbenv/bin:$PATH
   eval "$(rbenv init -)"
-fi
-
-# nodenv
-if [ -d "$HOME/.nodenv" ]; then
-  export PATH="$HOME/.nodenv/bin:$PATH"
-  eval "$(nodenv init -)"
-fi
-
-# eval "$(direnv hook zsh)"
-
-if [ -d "$HOME/.nodenv" ]; then
-  export PATH="$HOME/.tfenv/bin:$PATH"
 fi
 
 if [ -d "$HOME/google-cloud-sdk" ]; then

@@ -19,6 +19,9 @@ export LANG=en_US.UTF-8
 # Homebrew.
 eval $(/opt/homebrew/bin/brew shellenv)
 
+# Path for Go tools.
+export PATH=$PATH:$HOME/go/bin
+
 # Path for gettext.
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 

@@ -16,6 +16,7 @@ brew "circleci"
 brew "gradle"
 brew "maven"
 brew "protobuf"
+brew "go"
 
 # brew "cmake"
 # brew "gcc"

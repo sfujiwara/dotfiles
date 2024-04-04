@@ -1,7 +1,7 @@
 # brew "awscli"
 brew "direnv"
 brew "tree"
-brew "curl"
+# brew "curl"
 brew "wget"
 brew "git"
 brew "zsh"

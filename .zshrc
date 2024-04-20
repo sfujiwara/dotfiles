@@ -55,6 +55,10 @@ if [ -d "$HOME/.rbenv" ]; then
   eval "$(rbenv init -)"
 fi
 
+if [ -d "$HOME/.tfenv" ]; then
+  export PATH="$HOME/.tfenv/bin:$PATH"
+fi
+
 if [ -d "$HOME/google-cloud-sdk" ]; then
   # The next line updates PATH for the Google Cloud SDK.
   source "$HOME/google-cloud-sdk/path.zsh.inc"
@@ -70,7 +74,6 @@ if [ -d "$HOME/.cargo" ]; then
   export PATH=$HOME/.cargo/bin:$PATH
   source ~/.cargo/env
 fi
-
 
 # Prompt settings.
 autoload -Uz vcs_info

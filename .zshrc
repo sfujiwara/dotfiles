@@ -16,6 +16,10 @@ export LANG=en_US.UTF-8
 # Homebrew.
 if [ `uname` = "Darwin" ]; then
   eval $(/opt/homebrew/bin/brew shellenv)
+
+  # ASDF.
+  ASDF_SCRIPT="$(brew --prefix asdf)/libexec/asdf.sh"
+  . ${ASDF_SCRIPT}
 fi
 
 # asdf.

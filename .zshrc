@@ -1,14 +1,11 @@
 autoload -U compinit
 compinit
 
-# antigen
+# Antigen.
 source ~/dotfiles/antigen/antigen.zsh
-# antigen use oh-my-zsh
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
-# antigen bundle pip
-# antigen bundle pyenv
 antigen apply
 
 zstyle ':completion:*:default' menu select=1
@@ -21,8 +18,19 @@ if [ `uname` = "Darwin" ]; then
   eval $(/opt/homebrew/bin/brew shellenv)
 fi
 
-# Path for Go tools.
-export PATH=$PATH:$HOME/go/bin
+# asdf.
+if [ -d "$HOME/.asdf" ]; then
+  . "$HOME/.asdf/asdf.sh"
+fi
+
+# Add path to Go installed according to official instructions:
+# https://go.dev/doc/install
+export PATH=$PATH:/usr/local/go/bin
+
+# Path for Go tool binaries installed with `go install` command.
+if type go > /dev/null 2>&1; then
+  export PATH=$PATH:$(go env GOPATH)/bin
+fi
 
 # Path for gettext.
 export PATH="/usr/local/opt/gettext/bin:$PATH"
@@ -36,28 +44,12 @@ if [ -d "$HOME/.pyenv" ]; then
   eval "$(pyenv init -)"
 fi
 
-# Setup nodenv.
-if [ -d "$HOME/.nodenv" ]; then
-  export PATH="$HOME/.nodenv/bin:$PATH"
-  eval "$(nodenv init -)"
-fi
-
 # pipenv
 export PIPENV_VENV_IN_PROJECT=true
 
 # Poetry
 # export PATH=$HOME/.poetry/bin:$PATH  # For old versions
 export PATH=$HOME/.local/bin:$PATH
-
-# rbenv
-if [ -d "$HOME/.rbenv" ]; then
-  export PATH=$HOME/.rbenv/bin:$PATH
-  eval "$(rbenv init -)"
-fi
-
-if [ -d "$HOME/.tfenv" ]; then
-  export PATH="$HOME/.tfenv/bin:$PATH"
-fi
 
 if [ -d "$HOME/google-cloud-sdk" ]; then
   # The next line updates PATH for the Google Cloud SDK.
@@ -70,10 +62,10 @@ fi
 # export CLOUDSDK_PYTHON=~/.pyenv/versions/3.7.4/bin/python
 
 # Rust.
-if [ -d "$HOME/.cargo" ]; then
-  export PATH=$HOME/.cargo/bin:$PATH
-  source ~/.cargo/env
-fi
+# if [ -d "$HOME/.cargo" ]; then
+#   export PATH=$HOME/.cargo/bin:$PATH
+#   source ~/.cargo/env
+# fi
 
 # Prompt settings.
 autoload -Uz vcs_info

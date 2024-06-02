@@ -16,21 +16,21 @@ cd $HOME/dotfiles
 # Install packages via apt.
 ./bin/apt.sh
 
+# Install Go v1.22.3.
+if [ ! -d "/usr/local/go" ]; then
+  curl -OL "https://go.dev/dl/go1.22.3.linux-amd64.tar.gz"
+  sudo tar -C /usr/local -xzf go1.22.3.linux-amd64.tar.gz
+  rm go1.22.3.linux-amd64.tar.gz
+fi
+
 # Install pyenv.
 if [ ! -d "$HOME/.pyenv" ]; then
   git clone https://github.com/yyuu/pyenv.git ~/.pyenv
 fi
 
-# Install nodenv.
-if [ ! -d "$HOME/.nodenv" ]; then
-  git clone https://github.com/nodenv/nodenv.git ~/.nodenv
-  mkdir -p "$(~/.nodenv/bin/nodenv root)"/plugins
-  git clone https://github.com/nodenv/node-build.git "$(~/.nodenv/bin/nodenv root)"/plugins/node-build
-fi
-
-# Install tfenv.
-if [ ! -d "$HOME/.tfenv" ]; then
-  git clone https://github.com/tfutils/tfenv.git ~/.tfenv
+# Install asdf.
+if [ ! -d "$HOME/.asdf" ]; then
+  git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.14.0
 fi
 
 # Install Google Cloud SDK.

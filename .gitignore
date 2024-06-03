@@ -12,5 +12,7 @@ network-security.data
 git-completion.*
 git-prompt.sh
 
+Brewfile.lock.json
+
 # Emacs
 *~

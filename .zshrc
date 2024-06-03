@@ -17,14 +17,16 @@ export LANG=en_US.UTF-8
 if [ `uname` = "Darwin" ]; then
   eval $(/opt/homebrew/bin/brew shellenv)
 
-  # ASDF.
+  # ASDF script for Mac.
   ASDF_SCRIPT="$(brew --prefix asdf)/libexec/asdf.sh"
-  . ${ASDF_SCRIPT}
+else
+  # ASDF script for Ubuntu.
+  ASDF_SCRIPT="$HOME/.asdf/asdf.sh"
 fi
 
-# asdf.
+# Execute ASDF script.
 if [ -d "$HOME/.asdf" ]; then
-  . "$HOME/.asdf/asdf.sh"
+  . ${ASDF_SCRIPT}
 fi
 
 # Add path to Go installed according to official instructions:

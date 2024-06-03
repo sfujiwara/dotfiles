@@ -26,5 +26,8 @@ cask "skim"
 cask "visual-studio-code"
 # cask "minikube"
 
+tap "railwaycat/emacsmacport"
+cask "emacs-mac"
+
 # Google Chrome is pre-installed in some environment.
 # cask "google-chrome"

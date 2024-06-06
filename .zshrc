@@ -13,6 +13,10 @@ zstyle ':completion:*:default' menu select=1
 # Use English on terminal.
 export LANG=en_US.UTF-8
 
+# TSUBAME user name.
+export TSUBAME_USER=ug03757
+alias tsubame="ssh ug03757@login.t4.gsic.titech.ac.jp -YC"
+
 # Homebrew.
 if [ `uname` = "Darwin" ]; then
   eval $(/opt/homebrew/bin/brew shellenv)

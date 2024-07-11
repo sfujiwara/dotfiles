@@ -72,10 +72,9 @@ fi
 # export CLOUDSDK_PYTHON=~/.pyenv/versions/3.7.4/bin/python
 
 # Rust.
-# if [ -d "$HOME/.cargo" ]; then
-#   export PATH=$HOME/.cargo/bin:$PATH
-#   source ~/.cargo/env
-# fi
+if [ -d "$HOME/.cargo" ]; then
+  export PATH=$HOME/.cargo/bin:$PATH
+fi
 
 # Prompt settings.
 autoload -Uz vcs_info

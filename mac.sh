@@ -11,5 +11,8 @@ eval $(/opt/homebrew/bin/brew shellenv)
 # Install packages via Homebrew.
 brew bundle install
 
+# Install Firebase CLI.
+curl -sL https://firebase.tools | bash
+
 # Generate symbolic links.
 ./bin/ln.sh

@@ -38,6 +38,9 @@ if [ ! -d "$HOME/google-cloud-sdk" ]; then
   curl https://sdk.cloud.google.com | bash
 fi
 
+# Install Firebase CLI.
+curl -sL https://firebase.tools | bash
+
 # Generate symbolic links.
 ./bin/ln.sh
 

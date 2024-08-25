@@ -13,9 +13,13 @@ zstyle ':completion:*:default' menu select=1
 # Use English on terminal.
 export LANG=en_US.UTF-8
 
-# TSUBAME user name.
+# TSUBAME.
 export TSUBAME_USER=ug03757
-alias tsubame="ssh ug03757@login.t4.gsic.titech.ac.jp -YC"
+alias tsubame="ssh ${TSUBAME_USER}@login.t4.gsic.titech.ac.jp -YC"
+
+# GENKAI.
+export GENKAI_USER=ku40001280
+alias genkai="ssh ${GENKAI_USER}@genkai.hpc.kyushu-u.ac.jp -YC"
 
 # Homebrew.
 if [ `uname` = "Darwin" ]; then

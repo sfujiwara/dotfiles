@@ -11,6 +11,8 @@ ln -nfs ~/dotfiles/.emacs.d ~/
 
 # Git.
 ln -nfs ~/dotfiles/.gitconfig ~/
+mkdir -p ~/.config/git
+ln -nfs ~/dotfiles/.config/git/ignore ~/.config/git/
 
 # Settings for Mac.
 if [ `uname` = "Darwin" ]; then

@@ -15,6 +15,7 @@ sudo apt -y install fcitx-mozc
 sudo apt -y install build-essential
 sudo apt -y install libbz2-dev libdb-dev libreadline-dev libffi-dev libgdbm-dev liblzma-dev libncursesw5-dev libsqlite3-dev libssl-dev zlib1g-dev uuid-dev tk-dev python3-dev
 sudo apt -y install libfuse2  # Required to run JetBrains Toolbox.
+sudo apt install postgresql postgresql-contrib
 
 # Install Google Chrome.
 # curl https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -

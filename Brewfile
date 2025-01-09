@@ -21,6 +21,7 @@ brew "zsh"
 
 cask "alfred"
 cask "discord"
+cask "docker"
 cask "google-cloud-sdk"
 cask "google-japanese-ime"
 cask "iterm2"

@@ -37,6 +37,10 @@ if [ -d "$HOME/.asdf" ]; then
   . ${ASDF_SCRIPT}
 fi
 
+if type direnv >/dev/null 2>&1; then
+  eval "$(direnv hook zsh)"
+fi
+
 # Add path to Go installed according to official instructions:
 # https://go.dev/doc/install
 export PATH=$PATH:/usr/local/go/bin

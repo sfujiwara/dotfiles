@@ -34,3 +34,4 @@ prompt() {
 }
 
 export PROMPT_COMMAND=prompt
+. "$HOME/.cargo/env"

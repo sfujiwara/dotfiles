@@ -15,10 +15,3 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/sfujiwara/dotfiles/main/
 ```sh
 bash -c "$(wget -qO - https://raw.githubusercontent.com/sfujiwara/dotfiles/master/ubuntu.sh)"
 ```
-
-### Memo
-
-#### Download softwares from official website
-
-- Slack
-- PyCharm

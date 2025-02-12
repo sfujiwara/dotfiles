@@ -19,7 +19,9 @@
   "window.customMenuBarAltFocus": false,
 
   "workbench.editorAssociations": {
-    "*.ipynb": "jupyter.notebook.ipynb"
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.ipynb": "jupyter.notebook.ipynb",
+    "*.pdf": "latex-workshop-pdf-hook"
   },
 
   "workbench.colorTheme": "GitHub Dark Default",

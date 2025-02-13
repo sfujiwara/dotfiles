@@ -23,8 +23,27 @@
     "*.ipynb": "jupyter.notebook.ipynb",
     "*.pdf": "latex-workshop-pdf-hook"
   },
+  "workbench.colorTheme": "Visual Studio Dark",
 
-  "workbench.colorTheme": "GitHub Dark Default",
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.recipes": [
+      {
+          "name": "platex",
+          "tools": ["platex", "dvipdfmx"]
+      }
+  ],
+  "latex-workshop.latex.tools": [
+      {
+          "name": "platex",
+          "command": "platex",
+          "args": ["%DOC%"]
+      },
+      {
+          "name": "dvipdfmx",
+          "command": "dvipdfmx",
+          "args": ["%DOC%"]
+      }
+  ],
 
   "rust-client.rustupPath": "$HOME/.cargo/bin/rustup",
   "terminal.integrated.fontFamily": "Menlo, Monaco, Ubuntu mono, PowerlineSymbols, monospace",

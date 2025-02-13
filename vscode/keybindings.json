@@ -1,0 +1,22 @@
+[
+    {
+        "key": "ctrl+p",
+        "command": "cursorUp"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "cursorDown"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "cursorLeft"
+    },
+    {
+        "key": "ctrl+a",
+        "command": "cursorHome"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "cursorEnd"
+    }
+]

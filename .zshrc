@@ -1,7 +1,7 @@
 autoload -U compinit
 compinit
 
-# Antigen.
+# Antigen
 source ~/dotfiles/antigen/antigen.zsh
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -10,33 +10,28 @@ antigen apply
 
 zstyle ':completion:*:default' menu select=1
 
-# Use English on terminal.
+# Use English on terminal
 export LANG=en_US.UTF-8
 
-# TSUBAME.
+# TSUBAME
 export TSUBAME_USER=ug03757
 alias tsubame="ssh ${TSUBAME_USER}@login.t4.gsic.titech.ac.jp -YC"
 
-# GENKAI.
+# GENKAI
 export GENKAI_USER=ku40001280
 alias genkai="ssh ${GENKAI_USER}@genkai.hpc.kyushu-u.ac.jp -YC"
 
-# Homebrew.
+# ASDF
+# https://asdf-vm.com/guide/upgrading-to-v0-16.html
+export ASDF_DATA_DIR=${HOME}/.asdf
+export PATH=${ASDF_DATA_DIR}/shims:${PATH}
+
+# Install Homebrew (only for Mac)
 if [ `uname` = "Darwin" ]; then
   eval $(/opt/homebrew/bin/brew shellenv)
-
-  # ASDF script for Mac.
-  ASDF_SCRIPT="$(brew --prefix asdf)/libexec/asdf.sh"
-else
-  # ASDF script for Ubuntu.
-  ASDF_SCRIPT="$HOME/.asdf/asdf.sh"
 fi
 
-# Execute ASDF script.
-if [ -d "$HOME/.asdf" ]; then
-  . ${ASDF_SCRIPT}
-fi
-
+# direnv
 if type direnv >/dev/null 2>&1; then
   eval "$(direnv hook zsh)"
 fi

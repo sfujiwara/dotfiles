@@ -1,5 +1,8 @@
 {
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.fontSize": 15,
+  "editor.guides.bracketPairs": true,
   "editor.renderWhitespace": "all",
   "editor.fontFamily": "Menlo, Monaco, Ubuntu mono",
   "editor.wordWrap": "on",

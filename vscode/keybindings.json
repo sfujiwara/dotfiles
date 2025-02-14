@@ -8,6 +8,10 @@
         "command": "cursorDown"
     },
     {
+        "key": "ctrl+f",
+        "command": "cursorRight"
+    },
+    {
         "key": "ctrl+b",
         "command": "cursorLeft"
     },

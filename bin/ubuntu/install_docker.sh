@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # https://docs.docker.com/engine/install/ubuntu/
 
 sudo install -m 0755 -d /etc/apt/keyrings

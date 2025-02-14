@@ -21,6 +21,10 @@
 ;; Highlight parentheses.
 (show-paren-mode t)
 
+;; Not to create backup.
+(setq make-backup-files nil)
+(setq auto-save-default nil)
+
 ;; Use theme.
 (load-theme 'misterioso t)
 ;; (load-theme 'tsdh-dark t)

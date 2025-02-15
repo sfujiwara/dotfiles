@@ -17,10 +17,4 @@ jobs:
           sudo apt install -y git
 
       - name: Install packages via apt
-        run: ./bin/apt.sh
-
-      - name: Install pyenv
-        run: |
-          if [ ! -d "$HOME/.pyenv" ]; then
-            git clone https://github.com/yyuu/pyenv.git ~/.pyenv
-          fi
+        run: ./bin/ubuntu/apt.sh

@@ -1,36 +1,37 @@
-;; Configurations for package.el.
+;; Configurations for package.el
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-;; Resolve the error on ABCI.
+
+;; Resolve the error on ABCI
 ;; https://emacs.stackexchange.com/questions/61997/how-do-i-fix-incomprehensible-buffer-error-when-running-list-packages
 (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 (package-initialize)
 
-;; Install use-package automatically.
+;; Install use-package automatically
 (unless package-archive-contents (package-refresh-contents))
 (unless (package-installed-p 'use-package) (package-install 'use-package))
 (require 'use-package)
 
-;; Show column and line number in mode line.
+;; Show column and line number in mode line
 (column-number-mode t)
 (line-number-mode t)
 
-;; Show line numbers.
+;; Show line numbers
 (global-display-line-numbers-mode t)
 
-;; Highlight parentheses.
+;; Highlight parentheses
 (show-paren-mode t)
 
-;; Not to create backup.
+;; Not to create backup
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 
-;; Use theme.
+;; Use theme
 (load-theme 'misterioso t)
 ;; (load-theme 'tsdh-dark t)
 ;; (load-theme 'tango-dark t)
 
-;; Elpy.
+;; Elpy
 (use-package elpy
   :ensure t
   :config
@@ -38,11 +39,11 @@
   :init
   (elpy-enable))
 
-;; Poetry.el.
+;; Poetry.el
 (use-package poetry
   :ensure t)
 
-;; git-gutter.el.
+;; git-gutter.el
 (use-package git-gutter
     :ensure t
     :custom
@@ -56,7 +57,10 @@
     :config
     (global-git-gutter-mode +1))
 
-;; emacs-neotree.
+;; all-the-icons
+(use-package all-the-icons :ensure t)
+
+;; emacs-neotree
 (use-package neotree
   :ensure t
   :init
@@ -65,9 +69,10 @@
   (setq neo-smart-open t)
   (setq neo-create-file-auto-open t)
   (setq neo-show-hidden-files t)
+  (setq neo-theme (if (display-graphic-p) 'icons 'ascii))
   (global-set-key [f8] 'neotree-toggle))
 
-;; Automatically added.
+;; Automatically added
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

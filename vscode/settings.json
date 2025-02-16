@@ -1,15 +1,21 @@
 {
   // VSCode Editor
+  "editor.bracketPairColorization.enabled": true,
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorStyle": "block",
-  "editor.fontSize": 15,
-  "editor.guides.bracketPairs": true,
-  "editor.renderWhitespace": "all",
   "editor.fontFamily": "Menlo, Monaco, Ubuntu mono",
-  "editor.wordWrap": "on",
+  "editor.fontSize": 15,
+  "editor.guides.bracketPairs": false,
+  "editor.guides.indentation": false,
+  "editor.inlayHints.enabled": "off",
+  "editor.renderLineHighlight": "all",
+  "editor.renderWhitespace": "all",
   "editor.suggestSelection": "first",
-  "editor.bracketPairColorization.enabled": true,
+  "editor.wordWrap": "off",
+
+  // VSCode Diff Editor
+  "diffEditor.wordWrap": "off",
 
   // VSCode Terminal
   "terminal.integrated.fontFamily": "Menlo, Monaco, Ubuntu mono, PowerlineSymbols, monospace",
@@ -35,8 +41,10 @@
   "workbench.colorTheme": "Visual Studio Dark",
   "workbench.iconTheme": "vs-seti",
   "workbench.colorCustomizations": {
-    "scrollbarSlider.background": "#88888888",
-    "scrollbarSlider.hoverBackground": "#aaaaaaaa"
+    "scrollbarSlider.background": "#555555",
+    "scrollbarSlider.hoverBackground": "#888888",
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f"
   },
   "workbench.editor.tabSizing": "shrink",
 
@@ -46,6 +54,21 @@
   "python.interpreter.infoVisibility": "onPythonRelated",
   "python.terminal.activateEnvironment": true,
   "python.terminal.activateEnvInCurrentTerminal": false,
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": false
+  },
+
+  // Python (Pylance)
+  "python.analysis.typeCheckingMode": "off",  // "off" or "basic" or "strict"
+
+  // Python (Ruff)
+  "ruff.lint.enable": true,
+  "ruff.importStrategy": "fromEnvironment",
+  "ruff.configuration": "${workspaceFolder}/pyproject.toml",
+  "ruff.format.preview": true,
+  "ruff.lint.select": ["ALL"],
+  "ruff.lint.extendSelect": ["ALL"],
 
   // Terraform
   "terraform.codelens.referenceCount": true,
@@ -93,5 +116,4 @@
   },
 
   "rust-client.rustupPath": "$HOME/.cargo/bin/rustup"
-  // EOF
 }

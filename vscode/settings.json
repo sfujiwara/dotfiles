@@ -1,33 +1,67 @@
 {
+  // VSCode Editor
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "block",
   "editor.fontSize": 15,
   "editor.guides.bracketPairs": true,
   "editor.renderWhitespace": "all",
   "editor.fontFamily": "Menlo, Monaco, Ubuntu mono",
   "editor.wordWrap": "on",
-  "[javascript]": {
-        "editor.tabSize": 2
-    },
-  "[review]": {
-    "editor.insertSpaces": false
-  },
+  "editor.suggestSelection": "first",
+  "editor.bracketPairColorization.enabled": true,
 
+  // VSCode Terminal
+  "terminal.integrated.fontFamily": "Menlo, Monaco, Ubuntu mono, PowerlineSymbols, monospace",
+  "terminal.integrated.fontSize": 15,
+
+  // VSCode Files
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "files.autoSave": "onFocusChange",
 
+  // VSCode Window
   "window.zoomLevel": 1,
   "window.titleBarStyle": "custom",
   "window.customMenuBarAltFocus": false,
 
+  // VSCode Workbench
   "workbench.editorAssociations": {
     "*.copilotmd": "vscode.markdown.preview.editor",
     "*.ipynb": "jupyter.notebook.ipynb",
     "*.pdf": "latex-workshop-pdf-hook"
   },
   "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.iconTheme": "vs-seti",
+  "workbench.colorCustomizations": {
+    "scrollbarSlider.background": "#88888888",
+    "scrollbarSlider.hoverBackground": "#aaaaaaaa"
+  },
+  "workbench.editor.tabSizing": "shrink",
 
+  // Python
+  "python.defaultInterpreterPath": "python",
+  "python.venvFolders": [],
+  "python.interpreter.infoVisibility": "onPythonRelated",
+  "python.terminal.activateEnvironment": true,
+  "python.terminal.activateEnvInCurrentTerminal": false,
+
+  // Terraform
+  "terraform.codelens.referenceCount": true,
+  "terraform.validation.enableEnhancedValidation": true,
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
+  },
+  "[terraform-vars]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
+  },
+
+  // LaTeX
   "latex-workshop.latex.autoBuild.run": "onSave",
   "latex-workshop.latex.recipes": [
       {
@@ -48,10 +82,16 @@
       }
   ],
 
-  "rust-client.rustupPath": "$HOME/.cargo/bin/rustup",
-  "terminal.integrated.fontFamily": "Menlo, Monaco, Ubuntu mono, PowerlineSymbols, monospace",
-  "terminal.integrated.fontSize": 14,
-  "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "redhat.telemetry.enabled": true
+  // JavaScript
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+
+  // Re:VIEW
+  "[review]": {
+  "editor.insertSpaces": false
+  },
+
+  "rust-client.rustupPath": "$HOME/.cargo/bin/rustup"
+  // EOF
 }

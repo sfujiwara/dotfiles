@@ -38,7 +38,7 @@
     "*.ipynb": "jupyter.notebook.ipynb",
     "*.pdf": "latex-workshop-pdf-hook"
   },
-  "workbench.colorTheme": "Visual Studio Dark",
+  "workbench.colorTheme": "Cobalt2",
   "workbench.iconTheme": "vs-seti",
   "workbench.colorCustomizations": {
     "scrollbarSlider.background": "#555555",

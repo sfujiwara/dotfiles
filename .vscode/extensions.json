@@ -7,6 +7,10 @@
     "ms-python.mypy-type-checker",
     "charliermarsh.ruff",
 
+    // Git
+    "mhutchie.git-graph",
+    "eamodio.gitlens",
+
     // Others
     "usernamehw.errorlens",
     "leodevbro.blockman"

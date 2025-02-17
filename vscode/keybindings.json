@@ -1,13 +1,5 @@
 [
     {
-        "key": "ctrl+p",
-        "command": "cursorUp"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "cursorDown"
-    },
-    {
         "key": "ctrl+f",
         "command": "cursorRight"
     },
@@ -16,11 +8,31 @@
         "command": "cursorLeft"
     },
     {
+        "key": "ctrl+p",
+        "command": "cursorUp"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "cursorDown"
+    },
+    {
         "key": "ctrl+a",
         "command": "cursorHome"
     },
     {
         "key": "ctrl+e",
         "command": "cursorEnd"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "deleteRight"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "deleteAllRight"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "editor.actions.findWithArgs"
     }
 ]

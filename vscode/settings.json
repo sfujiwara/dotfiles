@@ -6,7 +6,7 @@
   "editor.cursorStyle": "block",
   "editor.fontFamily": "Menlo, Monaco, Ubuntu mono",
   "editor.fontSize": 15,
-  "editor.guides.bracketPairs": false,
+  "editor.guides.bracketPairs": true,
   "editor.guides.indentation": false,
   "editor.inlayHints.enabled": "off",
   "editor.renderLineHighlight": "all",

@@ -7,12 +7,14 @@
     "ms-python.mypy-type-checker",
     "charliermarsh.ruff",
 
+    // Terraform
+    "hashicorp.terraform",
+
     // Git
     "mhutchie.git-graph",
     "eamodio.gitlens",
 
     // Others
-    "usernamehw.errorlens",
-    "leodevbro.blockman"
+    "usernamehw.errorlens"
   ]
 }

@@ -84,10 +84,6 @@
       {
           "name": "build",
           "tools": ["platex", "pbibtex", "platex", "platex", "dvipdfmx"]
-          // "tools": [
-          //   "pbibtex",
-          //   // "pbibtex"
-          // ]
       }
   ],
   "latex-workshop.latex.tools": [
@@ -107,6 +103,11 @@
         "args": ["%DOCFILE%"]
       }
   ],
+  "latex-workshop.formatting.latex": "latexindent",
+  "[latex]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
 
   // JavaScript
   "[javascript]": {

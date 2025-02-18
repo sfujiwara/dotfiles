@@ -82,20 +82,29 @@
   "latex-workshop.latex.autoBuild.run": "onSave",
   "latex-workshop.latex.recipes": [
       {
-          "name": "platex",
-          "tools": ["platex", "dvipdfmx"]
+          "name": "build",
+          "tools": ["platex", "pbibtex", "platex", "platex", "dvipdfmx"]
+          // "tools": [
+          //   "pbibtex",
+          //   // "pbibtex"
+          // ]
       }
   ],
   "latex-workshop.latex.tools": [
       {
-          "name": "platex",
-          "command": "platex",
-          "args": ["%DOC%"]
+        "name": "platex",
+        "command": "platex",
+        "args": ["%DOC%"]
       },
       {
-          "name": "dvipdfmx",
-          "command": "dvipdfmx",
-          "args": ["%DOC%"]
+        "name": "dvipdfmx",
+        "command": "dvipdfmx",
+        "args": ["%DOC%"]
+      },
+      {
+        "name": "pbibtex",
+        "command": "pbibtex",
+        "args": ["%DOCFILE%"]
       }
   ],
 

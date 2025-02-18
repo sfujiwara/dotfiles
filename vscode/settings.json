@@ -40,12 +40,6 @@
   },
   "workbench.colorTheme": "Cobalt2",
   "workbench.iconTheme": "vs-seti",
-  "workbench.colorCustomizations": {
-    "scrollbarSlider.background": "#555555",
-    "scrollbarSlider.hoverBackground": "#888888",
-    "editor.lineHighlightBackground": "#1073cf2d",
-    "editor.lineHighlightBorder": "#9fced11f"
-  },
   "workbench.editor.tabSizing": "shrink",
 
   // Python

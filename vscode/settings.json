@@ -12,7 +12,7 @@
   "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "all",
   "editor.suggestSelection": "first",
-  "editor.wordWrap": "off",
+  "editor.wordWrap": "on",
 
   // VSCode Diff Editor
   "diffEditor.wordWrap": "off",

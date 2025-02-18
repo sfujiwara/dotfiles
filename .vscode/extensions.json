@@ -1,8 +1,8 @@
 {
   "recommendations": [
     // Themes
-  "wesbos.theme-cobalt2",
-  "github.github-vscode-theme",
+    "wesbos.theme-cobalt2",
+    "github.github-vscode-theme",
 
     // Python
     "ms-python.python",
@@ -17,6 +17,13 @@
     // Git
     "mhutchie.git-graph",
     "eamodio.gitlens",
+
+    // Markdown
+    "bierner.markdown-mermaid",
+
+    // CSV
+    "mechatroner.rainbow-csv",
+    "janisdd.vscode-edit-csv",
 
     // Others
     "naumovs.color-highlight",

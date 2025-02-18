@@ -27,6 +27,8 @@
 
     // Others
     "naumovs.color-highlight",
+    "gruntfuggly.todo-tree",
+    "alefragnani.bookmarks",
     "usernamehw.errorlens"
   ]
 }

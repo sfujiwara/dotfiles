@@ -109,6 +109,9 @@
     "editor.defaultFormatter": "James-Yu.latex-workshop"
   },
 
+  // textlint
+  "textlint.languages": ["plaintext", "markdown", "latex"],
+
   // JavaScript
   "[javascript]": {
     "editor.tabSize": 2

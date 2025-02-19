@@ -11,6 +11,9 @@
     "ms-python.mypy-type-checker",
     "charliermarsh.ruff",
 
+    // Go
+    "golang.go",
+
     // Terraform
     "hashicorp.terraform",
 
@@ -28,7 +31,9 @@
     // Others
     "naumovs.color-highlight",
     "gruntfuggly.todo-tree",
+    "mechatroner.rainbow-csv",
     "alefragnani.bookmarks",
+    "taichi.vscode-textlint",
     "usernamehw.errorlens"
   ]
 }

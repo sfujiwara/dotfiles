@@ -51,13 +51,6 @@ export PATH="/usr/local/opt/gettext/bin:$PATH"
 
 export PATH="$HOME/.cargo/bin:$PATH"
 
-# Setup pyenv.
-if [ -d "$HOME/.pyenv" ]; then
-  export PYENV_ROOT="$HOME/.pyenv"
-  export PATH="$PYENV_ROOT/bin:$PATH"
-  eval "$(pyenv init -)"
-fi
-
 # Poetry
 export PATH=$HOME/.local/bin:$PATH
 

@@ -3,6 +3,8 @@
     // Themes
     "wesbos.theme-cobalt2",
     "github.github-vscode-theme",
+    "cocopon.iceberg-theme",
+    "ryanolsonx.solarized",
 
     // Python
     "ms-python.python",

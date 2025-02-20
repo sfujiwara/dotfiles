@@ -28,8 +28,6 @@
 
 ;; Use theme
 (load-theme 'misterioso t)
-;; (load-theme 'tsdh-dark t)
-;; (load-theme 'tango-dark t)
 
 ;; Elpy
 (use-package elpy

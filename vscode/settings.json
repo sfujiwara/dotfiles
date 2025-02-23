@@ -4,7 +4,7 @@
   "editor.cursorBlinking": "expand",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorStyle": "block",
-  "editor.fontFamily": "Menlo, Monaco, Ubuntu mono",
+  "editor.fontFamily": "HackGen, Ubuntu mono, Monaco, monospace",
   "editor.fontSize": 15,
   "editor.guides.bracketPairs": true,
   "editor.guides.indentation": false,
@@ -18,7 +18,7 @@
   "diffEditor.wordWrap": "off",
 
   // VSCode Terminal
-  "terminal.integrated.fontFamily": "Menlo, Monaco, Ubuntu mono, PowerlineSymbols, monospace",
+  "terminal.integrated.fontFamily": "HackGen Console NF, Ubuntu mono, monospace",
   "terminal.integrated.fontSize": 15,
 
   // VSCode Files

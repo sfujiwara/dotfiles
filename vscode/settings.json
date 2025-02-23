@@ -122,27 +122,5 @@
   "editor.insertSpaces": false
   },
 
-  "rust-client.rustupPath": "$HOME/.cargo/bin/rustup",
-  "cSpell.userWords": [
-    "ARTIS",
-    "charliermarsh",
-    "copilotmd",
-    "dearu",
-    "desumasu",
-    "DOCFILE",
-    "dvipdfmx",
-    "ipynb",
-    "latexindent",
-    "Menlo",
-    "neotree",
-    "pbibtex",
-    "platex",
-    "Powerline",
-    "Pylance",
-    "pyproject",
-    "rustup",
-    "softmax",
-    "textlint",
-    "venv"
-  ]
+  "rust-client.rustupPath": "$HOME/.cargo/bin/rustup"
 }

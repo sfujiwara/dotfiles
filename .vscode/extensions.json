@@ -30,7 +30,14 @@
     "mechatroner.rainbow-csv",
     "janisdd.vscode-edit-csv",
 
+    // TOML
+    "tamasfe.even-better-toml",
+
+    // GitHub
+    "github.copilot",
+
     // Others
+    "christian-kohler.path-intellisense",
     "naumovs.color-highlight",
     "gruntfuggly.todo-tree",
     "mechatroner.rainbow-csv",

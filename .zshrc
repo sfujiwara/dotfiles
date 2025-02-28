@@ -13,6 +13,9 @@ zstyle ':completion:*:default' menu select=1
 # Use English on terminal
 export LANG=en_US.UTF-8
 
+# Alias
+alias ls="ls --color=auto"
+
 # TSUBAME
 export TSUBAME_USER=ug03757
 alias tsubame="ssh ${TSUBAME_USER}@login.t4.gsic.titech.ac.jp -YC"

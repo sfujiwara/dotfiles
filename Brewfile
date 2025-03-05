@@ -12,6 +12,7 @@ brew "rust"
 brew "sl"
 brew "sqlc"
 brew "tree"
+brew "tmux"
 brew "wget"
 brew "zsh"
 

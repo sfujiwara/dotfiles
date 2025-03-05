@@ -33,6 +33,7 @@ export PATH=${ASDF_DATA_DIR}/shims:${PATH}
 # Homebrew (only for Mac)
 if [ `uname` = "Darwin" ]; then
   eval $(/opt/homebrew/bin/brew shellenv)
+  export HOMEBREW_AUTO_UPDATE_SECS=60
 fi
 
 # direnv

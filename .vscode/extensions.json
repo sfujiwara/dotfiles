@@ -6,6 +6,10 @@
     "cocopon.iceberg-theme",
     "ryanolsonx.solarized",
 
+    // Bash
+    "mads-hartmann.bash-ide-vscode",
+    "rogalmic.bash-debug",
+
     // Python
     "ms-python.python",
     "ms-python.debugpy",

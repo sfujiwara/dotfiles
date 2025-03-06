@@ -7,7 +7,7 @@
   "editor.fontFamily": "HackGen, Ubuntu mono, Monaco, monospace",
   "editor.fontSize": 15,
   "editor.guides.bracketPairs": true,
-  "editor.guides.indentation": false,
+  "editor.guides.indentation": true,
   "editor.inlayHints.enabled": "off",
   "editor.renderLineHighlight": "all",
   "editor.renderWhitespace": "all",
@@ -62,6 +62,9 @@
   "ruff.format.preview": true,
   // "ruff.lint.select": ["ALL"],
   // "ruff.lint.extendSelect": ["ALL"],
+
+  // Go
+  "go.toolsManagement.autoUpdate": true,
 
   // Terraform
   "terraform.codelens.referenceCount": true,

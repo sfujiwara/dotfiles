@@ -124,5 +124,9 @@
   "editor.insertSpaces": false
   },
 
+  // Coding AI
+  "geminicodeassist.inlineSuggestions.enableAuto": false,
+  "github.copilot.editor.enableAutoCompletions": true,
+
   "rust-client.rustupPath": "$HOME/.cargo/bin/rustup"
 }

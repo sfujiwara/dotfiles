@@ -69,7 +69,7 @@
   (setq neo-smart-open t)
   (setq neo-create-file-auto-open t)
   (setq neo-show-hidden-files t)
-  (setq neo-theme (if (display-graphic-p) 'icons 'ascii))
+  (setq neo-theme (if (display-graphic-p) 'icons 'nerd-icons))
   (global-set-key [f8] 'neotree-toggle))
 
 ;; Automatically added

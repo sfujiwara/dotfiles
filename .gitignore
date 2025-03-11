@@ -6,6 +6,7 @@
 .emacs.d/eshell
 .emacs.d/snippets
 .emacs.d/transient
+.emacs.d/eln-cache
 
 network-security.data
 

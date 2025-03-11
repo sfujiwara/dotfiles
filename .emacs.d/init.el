@@ -27,7 +27,9 @@
 (setq auto-save-default nil)
 
 ;; Use theme
-(load-theme 'misterioso t)
+;; (load-theme 'misterioso t)
+(use-package solarized-theme :ensure t)
+(load-theme 'solarized-dark t)
 
 ;; Elpy
 (use-package elpy
@@ -42,6 +44,9 @@
 
 ;; Terraform
 (use-package terraform-mode :ensure t)
+
+;; Markdown
+(use-package markdown-mode :ensure t)
 
 ;; git-gutter.el
 (use-package git-gutter
@@ -59,6 +64,9 @@
 
 ;; all-the-icons
 (use-package all-the-icons :ensure t)
+
+;; nerd-icons
+(use-package nerd-icons :ensure t)
 
 ;; emacs-neotree
 (use-package neotree
@@ -78,7 +86,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(neotree elpy use-package)))
+ '(package-selected-packages nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

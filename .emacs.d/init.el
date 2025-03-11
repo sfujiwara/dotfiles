@@ -38,8 +38,10 @@
   (elpy-enable))
 
 ;; Poetry.el
-(use-package poetry
-  :ensure t)
+(use-package poetry :ensure t)
+
+;; Terraform
+(use-package terraform-mode :ensure t)
 
 ;; git-gutter.el
 (use-package git-gutter

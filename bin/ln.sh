@@ -14,6 +14,9 @@ ln -nfs ~/dotfiles/.gitconfig ~/
 mkdir -p ~/.config/git
 ln -nfs ~/dotfiles/.config/git/ignore ~/.config/git/
 
+# tmux
+ln -nfs ~/dotfiles/.tmux.conf ~/
+
 # Settings for Mac.
 if [ `uname` = "Darwin" ]; then
   # Karabiner.

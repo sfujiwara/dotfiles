@@ -12,19 +12,19 @@
 (unless (package-installed-p 'use-package) (package-install 'use-package))
 (require 'use-package)
 
-;; Show column and line number in mode line
-(column-number-mode t)
-(line-number-mode t)
-
-;; Show line numbers
-(global-display-line-numbers-mode t)
-
-;; Highlight parentheses
-(show-paren-mode t)
-
-;; Not to create backup
-(setq make-backup-files nil)
-(setq auto-save-default nil)
+;; General settings
+(global-display-line-numbers-mode t)  ;; Show line numbers
+(global-whitespace-mode 1)            ;; Show whitespace
+(menu-bar-mode 0)                     ;; Not to show menu bar
+(setq ring-bell-function 'ignore)     ;; Not to ring bell
+(show-paren-mode t)                   ;; Highlight parentheses
+(column-number-mode t)                ;; Show column number in mode line
+(line-number-mode t)                  ;; Show line number in mode line
+(setq make-backup-files nil)          ;; Not to create backup
+(setq auto-save-default nil)          ;; Not to create backup
+(global-hl-line-mode t)               ;; Highlight current line
+(setq mac-option-modifier 'meta)      ;; Use Mac option key as meta key
+(setq scroll-conservatively 1)        ;; Scroll
 
 ;; Use theme
 ;; (load-theme 'misterioso t)
@@ -48,19 +48,18 @@
 ;; Markdown
 (use-package markdown-mode :ensure t)
 
-;; git-gutter.el
-(use-package git-gutter
-    :ensure t
-    :custom
-    (git-gutter:modified-sign "=")
-    (git-gutter:added-sign "+")
-    (git-gutter:deleted-sign "-")
-    :custom-face
-    (git-gutter:modified    ((t (:background "blue"))))
-    (git-gutter:added    ((t (:background "green"))))
-    (git-gutter:deleted  ((t (:background "red"))))
-    :config
-    (global-git-gutter-mode +1))
+;; diff-hl
+(use-package diff-hl
+  :ensure t
+  :init
+  (global-diff-hl-mode)
+  (add-hook 'dired-mode-hook 'diff-hl-dired-mode)
+  (unless (window-system) (diff-hl-margin-mode))
+  (diff-hl-flydiff-mode +1)
+  :custom-face
+  (diff-hl-insert ((t (:background "#00695F"))))
+  (diff-hl-delete ((t (:background "#AB003C"))))
+  (diff-hl-change ((t (:background "#FFC600")))))  ;; Yellow used in Cobalt2
 
 ;; all-the-icons
 (use-package all-the-icons :ensure t)
@@ -82,7 +81,9 @@
   (setq neo-smart-open t)
   (setq neo-create-file-auto-open t)
   (setq neo-show-hidden-files t)
+  (setq neo-window-width 25)
   (setq neo-theme (if (display-graphic-p) 'icons 'nerd-icons))
+  (add-hook 'neotree-mode-hook '(lambda () (display-line-numbers-mode -1)))
   (global-set-key [f8] 'neotree-toggle))
 
 ;; Automatically added

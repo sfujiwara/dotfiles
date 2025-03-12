@@ -73,12 +73,18 @@ if [ -d "$HOME/.cargo" ]; then
   export PATH=$HOME/.cargo/bin:$PATH
 fi
 
-# Prompt settings.
+# Nerd icons
+MACHINE_ICON=$'\uf108'
+BRANCH_ICON=$'\ue725'
+FOLDER_ICON=$'\uea83'
+EDIT_ICON=$'\uf044'
+
+# Prompt settings
 autoload -Uz vcs_info
 zstyle ':vcs_info:git:*' check-for-changes true
-zstyle ':vcs_info:git:*' stagedstr "%F{yellow}!"
-zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
-zstyle ':vcs_info:*' formats "%F{green}%c%u[%b]%f"
+zstyle ':vcs_info:git:*' stagedstr "%F{yellow}"
+zstyle ':vcs_info:git:*' unstagedstr "%F{red}"
+zstyle ':vcs_info:*' formats "%F{green}%c%u${BRANCH_ICON}[%b]%f"
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
 precmd() {
   if [ $? -eq 0 ]; then
@@ -89,5 +95,5 @@ precmd() {
   vcs_info
 }
 setopt prompt_subst
-export PROMPT='%F{cyan}%n@%m%f %F{magenta}%~%f ${vcs_info_msg_0_}
+export PROMPT='%F{cyan}%n@%m%f %F{magenta}${FOLDER_ICON} %~%f ${vcs_info_msg_0_}
 ${FACE} '

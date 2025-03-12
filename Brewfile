@@ -1,8 +1,11 @@
 # brew "awscli"
 brew "asdf"
+brew "autoconf"    # Required to build emacs
 brew "direnv"
 brew "git"
 brew "golang"
+brew "gnutls"      # Required to build emacs
+brew "libgccjit"   # Required to build emacs
 brew "peco"
 brew "poetry"
 brew "protobuf"
@@ -11,6 +14,7 @@ brew "redpen"
 brew "rust"
 brew "sl"
 brew "sqlc"
+brew "texinfo"     # Required to build emacs
 brew "tree"
 brew "tmux"
 brew "wget"
@@ -23,7 +27,7 @@ brew "zsh"
 cask "alfred"
 cask "discord"
 cask "docker"
-cask "emacs"
+# cask "emacs"
 cask "google-cloud-sdk"
 cask "google-japanese-ime"
 cask "font-hackgen"

@@ -68,6 +68,11 @@
 ;; nerd-icons
 (use-package nerd-icons :ensure t)
 
+;; nerd-icons-dired-mode
+(use-package nerd-icons-dired
+  :ensure t
+  :hook (dired-mode . nerd-icons-dired-mode))
+
 ;; emacs-neotree
 (use-package neotree
   :ensure t
@@ -77,7 +82,7 @@
   (setq neo-smart-open t)
   (setq neo-create-file-auto-open t)
   (setq neo-show-hidden-files t)
-  (setq neo-theme (if (display-graphic-p) 'nerd-icons 'nerd-icons))
+  (setq neo-theme (if (display-graphic-p) 'icons 'nerd-icons))
   (global-set-key [f8] 'neotree-toggle))
 
 ;; Automatically added

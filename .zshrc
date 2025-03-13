@@ -85,6 +85,11 @@ NEWFILE_ICON=$'\uea7f'
 # Prompt settings
 # ===============
 source ~/dotfiles/git-prompt.sh
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWUNTRACKEDFILES=1
+GIT_PS1_SHOWSTASHSTATE=1
+GIT_PS1_SHOWUPSTREAM=auto
+
 setopt prompt_subst
 
 NAME="%F{cyan}%n@%m%f"
@@ -100,16 +105,14 @@ face() {
 
 git_info() {
   local g="$(__git_ps1 "%s")"
-  if [[ $g == *"%"* ]] || [[ $g == *"*"* ]]; then
+  if [[ $g == *"*"* ]]; then
     echo "%F{red}${BRANCH_ICON}$(__git_ps1 "[%s]")%f"
-  elif [[ $git_info == *"+"* ]]; then
+  elif [[ $g == *"+"* ]]; then
     echo "%F{yellow}${BRANCH_ICON}$(__git_ps1 "[%s]")%f"
   else
     echo "%F{green}${BRANCH_ICON}$(__git_ps1 "[%s]")%f"
   fi
 }
 
-export GIT_PS1_SHOWDIRTYSTATE=1
-export GIT_INFO=$(__git_ps1 "[%s]")
 export PROMPT='${NAME} ${CURRENT_DIR} $(git_info)
 $(face) '

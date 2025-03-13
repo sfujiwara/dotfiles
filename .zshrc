@@ -106,11 +106,11 @@ face() {
 git_info() {
   local g="$(__git_ps1 "%s")"
   if [[ $g == *"*"* ]]; then
-    echo "%F{red}${BRANCH_ICON}$(__git_ps1 "[%s]")%f"
+    echo "%F{yellow}${BRANCH_ICON}$(__git_ps1 "[%s]")%f"
   elif [[ $g == *"+"* ]]; then
     echo "%F{yellow}${BRANCH_ICON}$(__git_ps1 "[%s]")%f"
   else
-    echo "%F{green}${BRANCH_ICON}$(__git_ps1 "[%s]")%f"
+    echo "%F{green}${BRANCH_ICON}[$(__git_ps1 "%s")]%f"
   fi
 }
 

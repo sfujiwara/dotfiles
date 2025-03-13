@@ -84,7 +84,7 @@ NEWFILE_ICON=$'\uea7f'
 
 # Prompt settings
 # ===============
-source ~/dotfiles/git-prompt.sh
+source ~/dotfiles/git/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
 GIT_PS1_SHOWSTASHSTATE=1

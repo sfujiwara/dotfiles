@@ -78,27 +78,38 @@ fi
 MACHINE_ICON=$'\uf108'
 BRANCH_ICON=$'\ue0a0'
 # BRANCH_ICON=$'\ue725'
-FOLDER_ICON=$'\uea83'
+FOLDER_ICON=$'\uea83 '
 EDIT_ICON=$'\uf044'
 NEWFILE_ICON=$'\uea7f'
 
-source ~/dotfiles/git-prompt.sh
-
 # Prompt settings
-autoload -Uz vcs_info
-zstyle ':vcs_info:git:*' check-for-changes true
-zstyle ':vcs_info:git:*' stagedstr "%F{yellow}${EDIT_ICON} "
-zstyle ':vcs_info:git:*' unstagedstr "%F{yellow}${NEWFILE_ICON} "
-zstyle ':vcs_info:*' formats "%F{green}%c%u${BRANCH_ICON}[%b]%f"
-zstyle ':vcs_info:*' actionformats '[%b|%a]'
-precmd() {
-  if [ $? -eq 0 ]; then
-    FACE="%F{green}:D%f"
-  else
-    FACE="%F{red}:(%f"
-  fi
-  vcs_info
-}
+# ===============
+source ~/dotfiles/git-prompt.sh
 setopt prompt_subst
-export PROMPT='%F{cyan}%n@%m%f %F{magenta}${FOLDER_ICON} [%~]%f ${vcs_info_msg_0_}
-${FACE} '
+
+NAME="%F{cyan}%n@%m%f"
+CURRENT_DIR="%F{magenta}${FOLDER_ICON}[%~]%f"
+
+face() {
+  if [ $? -eq 0 ]; then
+    echo "%F{green}:D%f"
+  else
+    echo "%F{red}:(%f"
+  fi
+}
+
+git_info() {
+  local g="$(__git_ps1 "%s")"
+  if [[ $g == *"%"* ]] || [[ $g == *"*"* ]]; then
+    echo "%F{red}${BRANCH_ICON}$(__git_ps1 "[%s]")%f"
+  elif [[ $git_info == *"+"* ]]; then
+    echo "%F{yellow}${BRANCH_ICON}$(__git_ps1 "[%s]")%f"
+  else
+    echo "%F{green}${BRANCH_ICON}$(__git_ps1 "[%s]")%f"
+  fi
+}
+
+export GIT_PS1_SHOWDIRTYSTATE=1
+export GIT_INFO=$(__git_ps1 "[%s]")
+export PROMPT='${NAME} ${CURRENT_DIR} $(git_info)
+$(face) '

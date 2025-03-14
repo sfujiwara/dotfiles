@@ -71,6 +71,7 @@
   "terraform.validation.enableEnhancedValidation": true,
   "[terraform]": {
     "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.indentationSize": 2,
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "file"
   },

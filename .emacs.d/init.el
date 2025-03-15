@@ -42,6 +42,10 @@
 ;; Poetry.el
 (use-package poetry :ensure t)
 
+(use-package flymake-ruff
+  :ensure t
+  :hook (python-mode . flymake-ruff-load))
+
 ;; Terraform
 (use-package terraform-mode :ensure t)
 
@@ -49,6 +53,12 @@
 (use-package markdown-mode :ensure t)
 
 ;; diff-hl
+;; #b58900: Solarized yellow
+;; #d33682: Solarized magenta
+;; #dc322f: Solarized magenta
+;; #cb4b16: Solarized orange
+;; #2aa198: Solarized cyan
+;; #859900: Solarized green
 (use-package diff-hl
   :ensure t
   :init
@@ -57,9 +67,9 @@
   (unless (window-system) (diff-hl-margin-mode))
   (diff-hl-flydiff-mode +1)
   :custom-face
-  (diff-hl-insert ((t (:background "#00695F"))))
-  (diff-hl-delete ((t (:background "#AB003C"))))
-  (diff-hl-change ((t (:background "#FFC600")))))  ;; Yellow used in Cobalt2
+  (diff-hl-insert ((t (:background "#2aa198"))))
+  (diff-hl-delete ((t (:background "#dc322f"))))
+  (diff-hl-change ((t (:background "#b58900")))))
 
 ;; all-the-icons
 (use-package all-the-icons :ensure t)

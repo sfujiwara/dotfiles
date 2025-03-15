@@ -31,20 +31,23 @@
 (use-package solarized-theme :ensure t)
 (load-theme 'solarized-dark t)
 
+;; Company
+(use-package company
+  :ensure t
+  :init
+  (global-company-mode)
+  :config
+  (setq company-minimum-prefix-length 1))
+
 ;; Elpy
 (use-package elpy
   :ensure t
   :config
   (setq elpy-rpc-virtualenv-path 'current)
+  (setq elpy-rpc-backend "jedi")
+  (setq python-shell-interpreter "ipython" python-shell-interpreter-args "-i --simple-prompt")
   :init
   (elpy-enable))
-
-;; Poetry.el
-(use-package poetry :ensure t)
-
-(use-package flymake-ruff
-  :ensure t
-  :hook (python-mode . flymake-ruff-load))
 
 ;; Terraform
 (use-package terraform-mode :ensure t)

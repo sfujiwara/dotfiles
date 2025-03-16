@@ -81,6 +81,7 @@ BRANCH_ICON=$'\ue0a0'
 FOLDER_ICON=$'\uea83 '
 EDIT_ICON=$'\uf044'
 NEWFILE_ICON=$'\uea7f'
+TERMINAL_ICON=$'\uf489 '
 
 # Prompt settings
 # ===============
@@ -94,6 +95,7 @@ setopt prompt_subst
 
 NAME="%F{cyan}%n@%m%f"
 CURRENT_DIR="%F{magenta}${FOLDER_ICON}[%~]%f"
+SHELL_INFO="%F{green}${TERMINAL_ICON}[$(basename ${SHELL})]%f"
 
 face() {
   if [ $? -eq 0 ]; then

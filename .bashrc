@@ -1,19 +1,16 @@
-# pyenv
-# eval "$(pyenv init -)"
+# wget \
+#   -O ${HOME}/dotfiles/git-prompt.sh \
+#   -nc \
+#   -q \
+#   https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
+# wget \
+#   -O ${HOME}/dotfiles/git-completion.bash \
+#   -nc \
+#   -q \
+#   https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 
-wget \
-  -O ${HOME}/dotfiles/git-prompt.sh \
-  -nc \
-  -q \
-  https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh
-wget \
-  -O ${HOME}/dotfiles/git-completion.bash \
-  -nc \
-  -q \
-  https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
-
-source ${HOME}/dotfiles/git-completion.bash
-source ${HOME}/dotfiles/git-prompt.sh
+# source ${HOME}/dotfiles/git-completion.bash
+# source ${HOME}/dotfiles/git-prompt.sh
 
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWSTASHSTATE=true
@@ -30,7 +27,7 @@ prompt() {
     else
         FACE="\[\e[31m\]:(\[\e[m\]"
     fi
-    PS1="\[\e[34m\]\u@\h\[\e[m\] \[\e[35m\]\w\[\e[m\]\[\e[33m\]$(__git_ps1)\[\e[m\]\n${FACE} "
+    PS1="\[\e[34m\]\u@\h\[\e[m\] \[\e[35m\]\w\[\e[m\]\[\e[33m\]\n${FACE} "
 }
 
 export PROMPT_COMMAND=prompt

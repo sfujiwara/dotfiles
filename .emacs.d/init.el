@@ -51,13 +51,15 @@
   :config
   (setq company-minimum-prefix-length 1))
 
-;; Python (Eglot + Ruff)
+;; Language Server Protocol with Eglot
 (use-package eglot
   :ensure t
   :config
   (add-to-list 'eglot-server-programs '(python-mode . ("ruff" "server")))
   (add-to-list 'eglot-server-programs '(python-mode . ("pylsp")))
 )
+
+;; Python
 (use-package python-mode
   :ensure nil
   :hook

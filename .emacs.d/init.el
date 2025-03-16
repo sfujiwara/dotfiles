@@ -14,7 +14,7 @@
 
 ;; General settings
 (global-display-line-numbers-mode t)  ;; Show line numbers
-(global-whitespace-mode 1)            ;; Show whitespace
+(global-hl-line-mode t)               ;; Highlight current line
 (menu-bar-mode 0)                     ;; Not to show menu bar
 (setq ring-bell-function 'ignore)     ;; Not to ring bell
 (show-paren-mode t)                   ;; Highlight parentheses
@@ -22,14 +22,26 @@
 (line-number-mode t)                  ;; Show line number in mode line
 (setq make-backup-files nil)          ;; Not to create backup
 (setq auto-save-default nil)          ;; Not to create backup
-(global-hl-line-mode t)               ;; Highlight current line
 (setq mac-option-modifier 'meta)      ;; Use Mac option key as meta key
 (setq scroll-conservatively 1)        ;; Scroll
 
-;; Use theme
+;; Whitespaces
+(global-whitespace-mode 1)
+(setq whitespace-style '(face
+                         trailing
+                         tabs
+                         spaces
+                         empty
+                         space-mark
+                         tab-mark))
+(setq whitespace-action '(auto-cleanup))
+
+;; Theme
 ;; (load-theme 'misterioso t)
-(use-package solarized-theme :ensure t)
-(load-theme 'solarized-dark t)
+(use-package solarized-theme
+  :ensure t
+  :config
+  (load-theme 'solarized-dark t))
 
 ;; Company
 (use-package company
@@ -39,21 +51,26 @@
   :config
   (setq company-minimum-prefix-length 1))
 
-;; Elpy
-(use-package elpy
+;; Python (Eglot + Ruff)
+(use-package eglot
   :ensure t
   :config
-  (setq elpy-rpc-virtualenv-path 'current)
-  (setq elpy-rpc-backend "jedi")
-  (setq python-shell-interpreter "ipython" python-shell-interpreter-args "-i --simple-prompt")
-  :init
-  (elpy-enable))
+  (add-to-list 'eglot-server-programs '(python-mode . ("ruff" "server")))
+  (add-to-list 'eglot-server-programs '(python-mode . ("pylsp")))
+)
+(use-package python-mode
+  :ensure nil
+  :hook
+  (python-mode . eglot-ensure))
 
 ;; Terraform
 (use-package terraform-mode :ensure t)
 
 ;; Markdown
 (use-package markdown-mode :ensure t)
+
+;; YAML
+(use-package yaml-mode :ensure t)
 
 ;; diff-hl
 ;; #b58900: Solarized yellow

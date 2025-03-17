@@ -43,6 +43,13 @@
   :config
   (load-theme 'solarized-dark t))
 
+(use-package beacon
+  :ensure t
+  :custom
+  (beacon-color "yellow")
+  :config
+  (beacon-mode t))
+
 ;; Company
 (use-package company
   :ensure t

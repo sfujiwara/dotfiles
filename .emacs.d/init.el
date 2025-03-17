@@ -16,10 +16,10 @@
 (global-display-line-numbers-mode t)  ;; Show line numbers
 (global-hl-line-mode t)               ;; Highlight current line
 (menu-bar-mode 0)                     ;; Not to show menu bar
-(setq ring-bell-function 'ignore)     ;; Not to ring bell
 (show-paren-mode t)                   ;; Highlight parentheses
 (column-number-mode t)                ;; Show column number in mode line
 (line-number-mode t)                  ;; Show line number in mode line
+(setq ring-bell-function 'ignore)     ;; Not to ring bell
 (setq make-backup-files nil)          ;; Not to create backup
 (setq auto-save-default nil)          ;; Not to create backup
 (setq mac-option-modifier 'meta)      ;; Use Mac option key as meta key
@@ -37,7 +37,6 @@
 (setq whitespace-action '(auto-cleanup))
 
 ;; Theme
-;; (load-theme 'misterioso t)
 (use-package solarized-theme
   :ensure t
   :config
@@ -48,7 +47,9 @@
   :custom
   (beacon-color "yellow")
   :config
-  (beacon-mode t))
+  (beacon-mode t)
+  (setq beacon-blink-when-focused t)
+  (setq beacon-blink-when-window-scrolls nil))
 
 ;; Company
 (use-package company

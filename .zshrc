@@ -10,7 +10,7 @@ antigen apply
 
 zstyle ':completion:*:default' menu select=1
 
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#586e75,underline"
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#586e75"
 
 # Use English on terminal
 export LANG=en_US.UTF-8

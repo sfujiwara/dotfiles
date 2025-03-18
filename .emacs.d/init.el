@@ -27,14 +27,15 @@
 
 ;; Whitespaces
 (global-whitespace-mode 1)
-(setq whitespace-style '(face
-                         trailing
-                         tabs
-                         spaces
-                         empty
-                         space-mark
-                         tab-mark))
-(setq whitespace-action '(auto-cleanup))
+(setq whitespace-style '(
+  face
+  trailing
+  tabs
+  spaces
+  empty
+  space-mark
+  ;; tab-mark  ;; It should be off for nerd-icons-dired-mode
+))
 
 ;; Theme
 (use-package solarized-theme

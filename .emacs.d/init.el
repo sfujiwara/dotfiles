@@ -43,6 +43,7 @@
   :config
   (load-theme 'solarized-dark t))
 
+;; Beacon
 (use-package beacon
   :ensure t
   :custom
@@ -59,6 +60,13 @@
   (global-company-mode)
   :config
   (setq company-minimum-prefix-length 1))
+
+(use-package magit
+  :ensure t
+  :bind ("C-x g" . magit-status)
+  :config
+  (setq magit-refs-show-commit-count 'all)
+  (setq magit-log-buffer-file-locked t))
 
 ;; Language Server Protocol with Eglot
 (use-package eglot

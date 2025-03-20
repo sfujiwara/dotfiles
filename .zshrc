@@ -17,7 +17,7 @@ export LANG=en_US.UTF-8
 
 # Alias
 alias ls="ls --color=auto"
-alias nesterov="tmux splitw -v && emacs -nw ."
+alias nesterov="tmux splitw -v -l 16 && emacs -nw ."
 
 # TSUBAME
 export TSUBAME_USER=ug03757

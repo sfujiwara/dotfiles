@@ -17,6 +17,7 @@
 (global-hl-line-mode t)               ;; Highlight current line
 (menu-bar-mode 0)                     ;; Not to show menu bar
 (show-paren-mode t)                   ;; Highlight parentheses
+(electric-pair-mode t)                ;; Insert closing bracket
 (column-number-mode t)                ;; Show column number in mode line
 (line-number-mode t)                  ;; Show line number in mode line
 (setq ring-bell-function 'ignore)     ;; Not to ring bell

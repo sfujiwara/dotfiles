@@ -1,5 +1,5 @@
-autoload -U compinit
-compinit
+autoload -U compinit && compinit
+autoload -Uz colors && colors
 
 # Antigen
 source ~/dotfiles/antigen/antigen.zsh
@@ -16,7 +16,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#586e75"
 export LANG=en_US.UTF-8
 
 # Alias
-alias ls="ls --color=auto"
+alias ls='ls -F --color=auto'
 alias nesterov="tmux splitw -v -l 16 && emacs -nw ."
 
 # TSUBAME

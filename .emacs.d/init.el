@@ -26,6 +26,9 @@
 (setq mac-option-modifier 'meta)      ;; Use Mac option key as meta key
 (setq scroll-conservatively 1)        ;; Scroll
 
+;; windmove
+(windmove-default-keybindings)
+
 ;; Keybinds
 (global-set-key (kbd "C-c <left>") 'windmove-left)
 (global-set-key (kbd "C-c <right>") 'windmove-right)

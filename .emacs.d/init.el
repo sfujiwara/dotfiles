@@ -15,6 +15,7 @@
 ;; General settings
 (global-display-line-numbers-mode t)  ;; Show line numbers
 (global-hl-line-mode t)               ;; Highlight current line
+(global-auto-revert-mode t)           ;; Update files automatically
 (menu-bar-mode 0)                     ;; Not to show menu bar
 (show-paren-mode t)                   ;; Highlight parentheses
 (electric-pair-mode t)                ;; Insert closing bracket

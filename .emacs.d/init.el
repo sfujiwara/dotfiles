@@ -106,12 +106,6 @@
 (use-package yaml-mode :ensure t)
 
 ;; diff-hl
-;; #b58900: Solarized yellow
-;; #d33682: Solarized magenta
-;; #dc322f: Solarized magenta
-;; #cb4b16: Solarized orange
-;; #2aa198: Solarized cyan
-;; #859900: Solarized green
 (use-package diff-hl
   :ensure t
   :init

@@ -20,6 +20,8 @@ brew "tmux"
 brew "wget"
 brew "zsh"
 
+brew "hashicorp/tap/terraform-ls"
+
 # brew "cmake"
 # brew "gcc"
 # brew "libomp"

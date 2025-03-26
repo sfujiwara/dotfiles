@@ -74,7 +74,14 @@
   (company-idle-delay 0)
   (company-auto-expand t)
   (completion-ignore-case t)
+  (lsp-completion-provider :capf)
   (company-minimum-prefix-length 1))
+
+;; yasnippet is required for LSP completion
+(use-package yasnippet
+  :ensure t
+  :init
+  (yas-global-mode))
 
 (use-package magit
   :ensure t
@@ -117,7 +124,7 @@
   (lsp-modeline-diagnostics-enable t)     ;; 11
   (lsp-signature-auto-activate t)         ;; 12
   (lsp-signature-render-documentation t)  ;; 13
-  (lsp-completion-provider :company)      ;; 14
+  ;; (lsp-completion-provider :company)      ;; 14
   (lsp-completion-show-detail t)          ;; 15
   (lsp-completion-show-kind t)            ;; 16
   (lsp-disabled-clients '(tfls))

@@ -38,15 +38,16 @@
 
 ;; Whitespaces
 (global-whitespace-mode 1)
+(setq-default whitespace-global-modes '(not shell-mode dired-mode))
 (setq whitespace-style '(
-  face
+  ;; face
   trailing
-  tabs
-  spaces
-  empty
   space-mark
-  ;; tab-mark  ;; It should be off for nerd-icons-dired-mode
+  tab-mark
+  missing-newline-at-eof
+  empty
 ))
+(setq whitespace-action '(auto-cleanup))
 
 ;; Theme
 (use-package solarized-theme

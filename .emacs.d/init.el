@@ -84,22 +84,22 @@
 (use-package eglot
   :ensure t
   :config
-  ;; (add-to-list 'eglot-server-programs '(python-mode . ("ruff" "server")))
   (add-to-list 'eglot-server-programs '(python-mode . ("pylsp")))
   (add-to-list 'eglot-server-programs '(terraform-mode . ("terraform-ls" "serve")))
-)
-
-;; Python
-(use-package python-mode
-  :ensure nil
   :hook
+  ;; (terraform-mode . eglot-ensure)
   (python-mode . eglot-ensure))
 
+;; Python
+(use-package python-mode :ensure t)
+
 ;; Terraform
+(use-package terraform-mode :ensure t)
+
 (use-package terraform-mode
   :ensure t
-  :hook
-  (terraform-mode . eglot-ensure))
+  :config
+  (company-terraform-init))
 
 ;; Markdown
 (use-package markdown-mode :ensure t)

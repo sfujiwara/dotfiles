@@ -102,7 +102,11 @@
 (use-package terraform-mode :ensure t)
 
 ;; Go
-(use-package go-mode :ensure t)
+(use-package go-mode
+  :ensure t
+  :config
+  ;; (setq gofmt-command "goimports")
+  (add-hook 'before-save-hook 'gofmt-before-save))
 
 ;; Markdown
 (use-package markdown-mode :ensure t)

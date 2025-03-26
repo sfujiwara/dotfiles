@@ -71,6 +71,10 @@
   :init
   (global-company-mode)
   :config
+  ;; (setq company-idle-delay 0)
+  ;; (setq company-auto-expand t)
+  ;; (setq company-selection-wrap-around t)
+  ;; (setq completion-ignore-case t)
   (setq company-minimum-prefix-length 1))
 
 (use-package magit
@@ -87,7 +91,8 @@
   (add-to-list 'eglot-server-programs '(python-mode . ("pylsp")))
   (add-to-list 'eglot-server-programs '(terraform-mode . ("terraform-ls" "serve")))
   :hook
-  ;; (terraform-mode . eglot-ensure)
+  (terraform-mode . eglot-ensure)
+  (go-mode . eglot-ensure)
   (python-mode . eglot-ensure))
 
 ;; Python
@@ -96,10 +101,8 @@
 ;; Terraform
 (use-package terraform-mode :ensure t)
 
-(use-package terraform-mode
-  :ensure t
-  :config
-  (company-terraform-init))
+;; Go
+(use-package go-mode :ensure t)
 
 ;; Markdown
 (use-package markdown-mode :ensure t)

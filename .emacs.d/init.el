@@ -29,8 +29,6 @@
 
 ;; windmove
 (windmove-default-keybindings)
-
-;; Keybinds
 (global-set-key (kbd "C-c <left>") 'windmove-left)
 (global-set-key (kbd "C-c <right>") 'windmove-right)
 (global-set-key (kbd "C-c <up>") 'windmove-up)
@@ -70,12 +68,11 @@
   :ensure t
   :init
   (global-company-mode)
-  :config
-  ;; (setq company-idle-delay 0)
-  ;; (setq company-auto-expand t)
-  ;; (setq company-selection-wrap-around t)
-  ;; (setq completion-ignore-case t)
-  (setq company-minimum-prefix-length 1))
+  :custom
+  (company-selection-wrap-around t)
+  (company-show-numbers t)
+  (company-idle-delay 0)
+  (company-minimum-prefix-length 1))
 
 (use-package magit
   :ensure t
@@ -91,9 +88,27 @@
   (add-to-list 'eglot-server-programs '(python-mode . ("pylsp")))
   (add-to-list 'eglot-server-programs '(terraform-mode . ("terraform-ls" "serve")))
   :hook
-  (terraform-mode . eglot-ensure)
-  (go-mode . eglot-ensure)
+  ;; (terraform-mode . eglot-ensure)
+  ;; (go-mode . eglot-ensure)
   (python-mode . eglot-ensure))
+
+;; Language Server Protocol with lsp-mode
+(use-package lsp-mode
+  :ensure t
+  :init
+  (setq lsp-keymap-prefix "C-c l")
+  :custom
+  ;; https://emacs-lsp.github.io/lsp-mode/tutorials/how-to-turn-off/
+  (lsp-diagnostics-provider :flymake)
+  (lsp-enable-symbol-highlighting nil)
+  (lsp-ui-doc-enable t)
+  (lsp-ui-doc-show-with-cursor t)
+  (lsp-ui-doc-show-with-mouse t)
+  (setq lsp-ui-sideline-enable t)
+  :hook
+  (terraform-mode . lsp-deferred)
+  (go-mode . lsp-deferred)
+)
 
 ;; Python
 (use-package python-mode :ensure t)
@@ -105,7 +120,6 @@
 (use-package go-mode
   :ensure t
   :config
-  ;; (setq gofmt-command "goimports")
   (add-hook 'before-save-hook 'gofmt-before-save))
 
 ;; Markdown
@@ -151,17 +165,3 @@
   (setq neo-theme (if (display-graphic-p) 'icons 'nerd-icons))
   (add-hook 'neotree-mode-hook '(lambda () (display-line-numbers-mode -1)))
   (global-set-key [f8] 'neotree-toggle))
-
-;; Automatically added
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages nil))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )

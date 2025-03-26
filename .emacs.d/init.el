@@ -70,8 +70,10 @@
   (global-company-mode)
   :custom
   (company-selection-wrap-around t)
-  (company-show-numbers t)
+  (company-show-numbers nil)
   (company-idle-delay 0)
+  (company-auto-expand t)
+  (completion-ignore-case t)
   (company-minimum-prefix-length 1))
 
 (use-package magit
@@ -89,7 +91,7 @@
   (add-to-list 'eglot-server-programs '(terraform-mode . ("terraform-ls" "serve")))
   :hook
   ;; (terraform-mode . eglot-ensure)
-  ;; (go-mode . eglot-ensure)
+  (go-mode . eglot-ensure)
   (python-mode . eglot-ensure))
 
 ;; Language Server Protocol with lsp-mode
@@ -99,15 +101,33 @@
   (setq lsp-keymap-prefix "C-c l")
   :custom
   ;; https://emacs-lsp.github.io/lsp-mode/tutorials/how-to-turn-off/
-  (lsp-diagnostics-provider :flymake)
-  (lsp-enable-symbol-highlighting nil)
-  (lsp-ui-doc-enable t)
-  (lsp-ui-doc-show-with-cursor t)
-  (lsp-ui-doc-show-with-mouse t)
-  (setq lsp-ui-sideline-enable t)
+  (lsp-enable-symbol-highlighting t)      ;; 1
+  (lsp-ui-doc-enable nil)                 ;; 2-1
+  (lsp-ui-doc-show-with-cursor t)         ;; 2-2
+  (lsp-ui-doc-show-with-mouse t)          ;; 2-3
+  (lsp-lens-enable t)                     ;; 3
+  (lsp-headerline-breadcrumb-enable t)    ;; 4
+  (lsp-ui-sideline-enable t)              ;; 5-1
+  (lsp-ui-sideline-show-code-actions t)   ;; 5-2
+  (lsp-modeline-code-actions-enable t)    ;; 7
+  (lsp-diagnostics-provider :flycheck)    ;; 8
+  (lsp-ui-sideline-enable t)              ;; 9-1
+  (lsp-ui-sideline-show-diagnostics t)    ;; 9-2
+  (lsp-eldoc-enable-hover t)              ;; 10
+  (lsp-modeline-diagnostics-enable t)     ;; 11
+  (lsp-signature-auto-activate t)         ;; 12
+  (lsp-signature-render-documentation t)  ;; 13
+  (lsp-completion-provider :company)      ;; 14
+  (lsp-completion-show-detail t)          ;; 15
+  (lsp-completion-show-kind t)            ;; 16
+  (lsp-disabled-clients '(tfls))
+  (lsp-semantic-tokens-enable t)
+  (lsp-semantic-tokens-honor-refresh-requests t)
+  (lsp-terraform-ls-providers-position-params t)
+  (lsp-terraform-ls-prefill-required-fields t)
   :hook
   (terraform-mode . lsp-deferred)
-  (go-mode . lsp-deferred)
+  ;; (go-mode . lsp-deferred)
 )
 
 ;; Python
@@ -115,6 +135,12 @@
 
 ;; Terraform
 (use-package terraform-mode :ensure t)
+
+;; company-terraform
+;; (use-package company-terraform
+;;   :ensure t
+;;   :config
+;;   (company-terraform-init))
 
 ;; Go
 (use-package go-mode

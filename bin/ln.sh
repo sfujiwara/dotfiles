@@ -20,8 +20,8 @@ ln -nfs ~/dotfiles/.tmux.conf ~/
 # Settings for Mac.
 if [ `uname` = "Darwin" ]; then
   # Karabiner.
-  mkdir -p ~/.config/karabiner
-  ln -nfs ~/dotfiles/karabiner.json ~/.config/karabiner/
+  mkdir -p ~/.config
+  ln -nfs ~/dotfiles/.config/karabiner ~/.config/
   # Visual Studio Code.
   ln -nfs ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
   ln -nfs ~/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json

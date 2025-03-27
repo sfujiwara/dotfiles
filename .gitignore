@@ -17,3 +17,6 @@ Brewfile.lock.json
 *NeoTree*
 *.lsp-*
 .cache
+
+# Karabiner
+.config/karabiner/automatic_backups

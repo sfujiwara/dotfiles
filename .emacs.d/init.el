@@ -127,7 +127,7 @@
   (lsp-modeline-diagnostics-enable t)     ;; 11
   (lsp-signature-auto-activate t)         ;; 12
   (lsp-signature-render-documentation t)  ;; 13
-  ;; (lsp-completion-provider :company)      ;; 14
+  ;; (lsp-completion-provider :company)   ;; 14
   (lsp-completion-show-detail t)          ;; 15
   (lsp-completion-show-kind t)            ;; 16
   (lsp-disabled-clients '(tfls))
@@ -157,6 +157,9 @@
   :ensure t
   :config
   (add-hook 'before-save-hook 'gofmt-before-save))
+
+;; Docker
+(use-package dockerfile-mode :ensure t)
 
 ;; Markdown
 (use-package markdown-mode :ensure t)

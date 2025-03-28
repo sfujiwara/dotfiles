@@ -146,12 +146,6 @@
 ;; Terraform
 (use-package terraform-mode :ensure t)
 
-;; company-terraform
-;; (use-package company-terraform
-;;   :ensure t
-;;   :config
-;;   (company-terraform-init))
-
 ;; Go
 (use-package go-mode
   :ensure t
@@ -196,14 +190,29 @@
   :ensure t
   :init
   (setq-default neo-keymap-style 'concise)
+  :custom
+  (neo-smart-open t)
+  (neo-show-hidden-files t)
+  (neo-autorefresh t)
+  (neo-theme (if (display-graphic-p) 'icons 'nerd-icons))
+  (neo-window-width 30)
   :config
-  (setq neo-smart-open t)
-  (setq neo-create-file-auto-open t)
-  (setq neo-show-hidden-files t)
-  (setq neo-window-width 25)
-  (setq neo-theme (if (display-graphic-p) 'icons 'nerd-icons))
   (add-hook 'neotree-mode-hook '(lambda () (display-line-numbers-mode -1)))
   (global-set-key [f8] 'neotree-toggle))
+
+;; Treemacs
+(use-package treemacs
+  :ensure t
+  :custom
+  (treemacs-project-follow-cleanup t)
+  (treemacs-width 30))
+
+;; Use nerd icons for treemacs
+(use-package treemacs-nerd-icons
+  :ensure t
+  :config
+  (treemacs-load-theme "nerd-icons"))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

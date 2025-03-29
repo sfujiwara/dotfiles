@@ -205,7 +205,10 @@
   :ensure t
   :custom
   (treemacs-project-follow-cleanup t)
-  (treemacs-width 30))
+  (treemacs-width 30)
+  :bind
+  (:map global-map
+    ("C-x t t" . treemacs)))
 
 ;; Use nerd icons for treemacs
 (use-package treemacs-nerd-icons

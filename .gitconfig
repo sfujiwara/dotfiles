@@ -1,0 +1,17 @@
+[user]
+	email = shuhei.fujiwara@gmail.com
+	name = sfujiwara
+[color]
+	ui = auto
+[help]
+	autocorrect = 1
+[diff]
+	colorMoved = zebra
+[core]
+	editor = emacs
+[pager]
+	branch = cat
+[init]
+	defaultBranch = main
+[url "git@github.com:"]
+    insteadOf = https://github.com/

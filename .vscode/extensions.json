@@ -1,0 +1,52 @@
+{
+  "recommendations": [
+    // Themes
+    "wesbos.theme-cobalt2",
+    "github.github-vscode-theme",
+    "cocopon.iceberg-theme",
+    "ryanolsonx.solarized",
+
+    // Bash
+    "mads-hartmann.bash-ide-vscode",
+    "rogalmic.bash-debug",
+
+    // Python
+    "ms-python.python",
+    "ms-python.debugpy",
+    "ms-python.vscode-pylance",
+    "ms-python.mypy-type-checker",
+    "charliermarsh.ruff",
+
+    // Go
+    "golang.go",
+
+    // Terraform
+    "hashicorp.terraform",
+
+    // Git
+    "mhutchie.git-graph",
+    "eamodio.gitlens",
+
+    // Markdown
+    "bierner.markdown-mermaid",
+
+    // CSV
+    "mechatroner.rainbow-csv",
+    "janisdd.vscode-edit-csv",
+
+    // TOML
+    "tamasfe.even-better-toml",
+
+    // GitHub
+    "github.copilot",
+
+    // Others
+    "christian-kohler.path-intellisense",
+    "naumovs.color-highlight",
+    "gruntfuggly.todo-tree",
+    "mechatroner.rainbow-csv",
+    "alefragnani.bookmarks",
+    "taichi.vscode-textlint",
+    "usernamehw.errorlens"
+  ]
+}

@@ -1,0 +1,13 @@
+_build
+build
+tmp
+temp
+
+# direnv
+.envrc
+
+# JetBrains
+.idea
+
+# Emacs
+.#*

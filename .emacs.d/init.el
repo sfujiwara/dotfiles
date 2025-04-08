@@ -212,13 +212,25 @@
   :config
   (treemacs-load-theme "nerd-icons"))
 
+;; GitHub Copilot
+(use-package copilot
+  :vc (:url "https://github.com/copilot-emacs/copilot.el" :rev :newest :branch "main")
+  :config
+  (define-key copilot-completion-map (kbd "<tab>") 'copilot-accept-completion)
+  (define-key copilot-completion-map (kbd "TAB") 'copilot-accept-completion)
+  (define-key copilot-completion-map (kbd "M-f") 'copilot-accept-completion-by-word)
+  (define-key copilot-completion-map (kbd "M-n") 'copilot-next-completion)
+  (define-key copilot-completion-map (kbd "M-p") 'copilot-previous-completion)
+  (setopt copilot-max-char-warning-disable t)
+  (setopt copilot-indent-offset-warning-disable t)
+  (add-hook 'prog-mode-hook 'copilot-mode))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(company-show-quick-access nil nil nil "Customized with use-package company")
- '(package-selected-packages nil))
+ )
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -48,5 +48,9 @@
     {
         "key": "ctrl+shift+a",
         "command": "editor.action.selectAll"
+    },
+    {
+        "key": "ctrl+0",
+        "command": "workbench.action.terminal.focus"
     }
 ]

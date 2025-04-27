@@ -20,6 +20,9 @@
     // Go
     "golang.go",
 
+    // JavaScript
+    "dbaeumer.vscode-eslint",
+
     // Terraform
     "hashicorp.terraform",
 

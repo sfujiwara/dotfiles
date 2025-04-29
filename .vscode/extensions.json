@@ -26,6 +26,9 @@
     // Terraform
     "hashicorp.terraform",
 
+    // LaTeX
+    "james-yu.latex-workshop",
+
     // Git
     "mhutchie.git-graph",
     "eamodio.gitlens",

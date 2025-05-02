@@ -7,7 +7,6 @@ brew "golang"
 brew "gnutls"      # Required to build emacs
 brew "libgccjit"   # Required to build emacs
 brew "peco"
-brew "poetry"
 brew "protobuf"
 brew "postgresql"
 brew "redpen"
@@ -21,6 +20,11 @@ brew "wget"
 brew "zsh"
 
 brew "hashicorp/tap/terraform-ls"
+
+# Poetry installed via Homebrew fails to add plugins.
+# https://zenn.dev/jin1125/articles/6e0130c68f3e0f
+# https://github.com/Homebrew/homebrew-core/issues/171042
+# brew "poetry"
 
 # brew "cmake"
 # brew "gcc"

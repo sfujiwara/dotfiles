@@ -136,9 +136,6 @@
   ;; (go-mode . lsp-deferred)
 )
 
-;; Python
-(use-package python-mode :ensure t)
-
 ;; Terraform
 (use-package terraform-mode :ensure t)
 

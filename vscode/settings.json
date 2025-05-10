@@ -5,7 +5,7 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorStyle": "block",
   "editor.fontFamily": "HackGen, Ubuntu mono, Monaco, monospace",
-  "editor.fontSize": 15,
+  "editor.fontSize": 16,
   "editor.guides.bracketPairs": true,
   "editor.guides.indentation": true,
   "editor.inlayHints.enabled": "off",
@@ -13,25 +13,20 @@
   "editor.renderWhitespace": "all",
   "editor.suggestSelection": "first",
   "editor.wordWrap": "on",
-
   // VSCode Diff Editor
   "diffEditor.wordWrap": "off",
-
   // VSCode Terminal
   "terminal.integrated.fontFamily": "HackGen Console NF, Ubuntu mono, monospace",
-  "terminal.integrated.fontSize": 15,
-
+  "terminal.integrated.fontSize": 16,
   // VSCode Files
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "files.autoSave": "onFocusChange",
-
   // VSCode Window
   "window.zoomLevel": 1,
   "window.titleBarStyle": "custom",
   "window.customMenuBarAltFocus": false,
-
   // VSCode Workbench
   "workbench.editorAssociations": {
     "*.copilotmd": "vscode.markdown.preview.editor",
@@ -40,7 +35,6 @@
   },
   "workbench.colorTheme": "Cobalt2",
   "workbench.editor.tabSizing": "shrink",
-
   // Python
   "python.defaultInterpreterPath": "python",
   "python.venvFolders": [],
@@ -51,10 +45,8 @@
     "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSave": false
   },
-
   // Python (Pylance)
-  "python.analysis.typeCheckingMode": "off",  // "off" or "basic" or "strict"
-
+  "python.analysis.typeCheckingMode": "off", // "off" or "basic" or "strict"
   // Python (Ruff)
   "ruff.lint.enable": true,
   "ruff.importStrategy": "fromEnvironment",
@@ -62,10 +54,8 @@
   "ruff.format.preview": true,
   // "ruff.lint.select": ["ALL"],
   // "ruff.lint.extendSelect": ["ALL"],
-
   // Go
   "go.toolsManagement.autoUpdate": true,
-
   // Terraform
   "terraform.codelens.referenceCount": true,
   "terraform.validation.enableEnhancedValidation": true,
@@ -80,55 +70,47 @@
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "file"
   },
-
   // LaTeX
   "latex-workshop.latex.autoBuild.run": "onSave",
   "latex-workshop.latex.recipes": [
-      {
-          "name": "build",
-          "tools": ["platex", "pbibtex", "platex", "platex", "dvipdfmx"]
-      }
+    {
+      "name": "latexmk",
+      "tools": [
+        "latexmk"
+      ]
+    }
   ],
   "latex-workshop.latex.tools": [
-      {
-        "name": "platex",
-        "command": "platex",
-        "args": ["%DOC%"]
-      },
-      {
-        "name": "dvipdfmx",
-        "command": "dvipdfmx",
-        "args": ["%DOC%"]
-      },
-      {
-        "name": "pbibtex",
-        "command": "pbibtex",
-        "args": ["%DOCFILE%"]
-      }
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "%DOC%"
+      ]
+    }
   ],
   "latex-workshop.formatting.latex": "latexindent",
   "[latex]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "James-Yu.latex-workshop"
   },
-
   // textlint
-  "textlint.languages": ["plaintext", "markdown", "latex"],
-
+  "textlint.languages": [
+    "plaintext",
+    "markdown",
+    "latex"
+  ],
   // JavaScript
   "[javascript]": {
     "editor.tabSize": 2
   },
-
   // Re:VIEW
   "[review]": {
-  "editor.insertSpaces": false
+    "editor.insertSpaces": false
   },
-
   // Coding AI
   "geminicodeassist.inlineSuggestions.enableAuto": false,
   "github.copilot.editor.enableAutoCompletions": true,
-
   "rust-client.rustupPath": "$HOME/.cargo/bin/rustup",
   "makefile.configureOnOpen": false
 }

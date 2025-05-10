@@ -6,7 +6,6 @@ sudo apt -y upgrade
 sudo apt -y install tree
 sudo apt -y install curl
 sudo apt -y install direnv
-sudo apt -y install emacs
 sudo apt -y install fcitx5-mozc
 sudo apt -y install zsh
 sudo apt -y install gnome-tweaks

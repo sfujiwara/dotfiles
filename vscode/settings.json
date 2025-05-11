@@ -108,9 +108,10 @@
   "[review]": {
     "editor.insertSpaces": false
   },
+  // Rust
+  "rust-client.rustupPath": "$HOME/.cargo/bin/rustup",
   // Coding AI
   "geminicodeassist.inlineSuggestions.enableAuto": false,
-  "github.copilot.editor.enableAutoCompletions": true,
-  "rust-client.rustupPath": "$HOME/.cargo/bin/rustup",
+  "github.copilot.enable": true,
   "makefile.configureOnOpen": false
 }

@@ -210,17 +210,17 @@
   (treemacs-load-theme "nerd-icons"))
 
 ;; GitHub Copilot
-(use-package copilot
-  :vc (:url "https://github.com/copilot-emacs/copilot.el" :rev :newest :branch "main")
-  :config
-  (define-key copilot-completion-map (kbd "<tab>") 'copilot-accept-completion)
-  (define-key copilot-completion-map (kbd "TAB") 'copilot-accept-completion)
-  (define-key copilot-completion-map (kbd "M-f") 'copilot-accept-completion-by-word)
-  (define-key copilot-completion-map (kbd "M-n") 'copilot-next-completion)
-  (define-key copilot-completion-map (kbd "M-p") 'copilot-previous-completion)
-  (setopt copilot-max-char-warning-disable t)
-  (setopt copilot-indent-offset-warning-disable t)
-  (add-hook 'prog-mode-hook 'copilot-mode))
+;; (use-package copilot
+;;   :vc (:url "https://github.com/copilot-emacs/copilot.el" :rev :newest :branch "main")
+;;   :config
+;;   (define-key copilot-completion-map (kbd "<tab>") 'copilot-accept-completion)
+;;   (define-key copilot-completion-map (kbd "TAB") 'copilot-accept-completion)
+;;   (define-key copilot-completion-map (kbd "M-f") 'copilot-accept-completion-by-word)
+;;   (define-key copilot-completion-map (kbd "M-n") 'copilot-next-completion)
+;;   (define-key copilot-completion-map (kbd "M-p") 'copilot-previous-completion)
+;;   (setopt copilot-max-char-warning-disable t)
+;;   (setopt copilot-indent-offset-warning-disable t)
+;;   (add-hook 'prog-mode-hook 'copilot-mode))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

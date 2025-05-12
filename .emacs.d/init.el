@@ -112,7 +112,7 @@
   (lsp-ui-doc-show-with-cursor t)         ;; 2-2
   (lsp-ui-doc-show-with-mouse t)          ;; 2-3
   (lsp-lens-enable t)                     ;; 3
-  (lsp-headerline-breadcrumb-enable t)    ;; 4
+  (lsp-headerline-breadcrumb-enable nil)  ;; 4
   (lsp-ui-sideline-enable t)              ;; 5-1
   (lsp-ui-sideline-show-code-actions t)   ;; 5-2
   (lsp-modeline-code-actions-enable t)    ;; 7

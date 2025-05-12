@@ -137,7 +137,10 @@
 )
 
 ;; Terraform
-(use-package terraform-mode :ensure t)
+(use-package terraform-mode
+  :ensure t
+  :hook
+  ('terraform-mode-hook . 'terraform-format-on-save-mode))
 
 ;; Go
 (use-package go-mode

@@ -32,8 +32,6 @@ brew "hashicorp/tap/terraform-ls"
 
 cask "alfred"
 cask "discord"
-cask "docker"
-# cask "emacs"
 cask "google-cloud-sdk"
 cask "google-japanese-ime"
 cask "font-hackgen"

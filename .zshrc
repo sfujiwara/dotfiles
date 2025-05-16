@@ -121,3 +121,8 @@ git_info() {
 
 export PROMPT='${NAME} ${CURRENT_DIR} $(git_info)
 $(face) '
+
+# Load secrets file if exists.
+if [ -e ${HOME}/dotfiles/secrets.sh ]; then
+  source ${HOME}/dotfiles/secrets.sh
+fi

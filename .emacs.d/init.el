@@ -43,6 +43,12 @@
 ))
 (setq whitespace-action '(auto-cleanup))
 
+;; breadcrumb-mode
+(use-package breadcrumb
+  :ensure t
+  :config
+  (breadcrumb-mode 1))
+
 ;; Theme
 (use-package solarized-theme
   :ensure t
@@ -82,6 +88,7 @@
   :init
   (yas-global-mode))
 
+
 (use-package magit
   :ensure t
   :bind ("C-x g" . magit-status)
@@ -98,7 +105,8 @@
   :hook
   ;; (terraform-mode . eglot-ensure)
   (go-mode . eglot-ensure)
-  (python-mode . eglot-ensure))
+  (python-mode . eglot-ensure)
+)
 
 ;; Language Server Protocol with lsp-mode
 (use-package lsp-mode
@@ -145,8 +153,8 @@
 ;; Go
 (use-package go-mode
   :ensure t
-  :config
-  (add-hook 'before-save-hook 'gofmt-before-save))
+  :hook
+  ('before-save-hook . 'gofmt-before-save))
 
 ;; Docker
 (use-package dockerfile-mode :ensure t)
@@ -230,7 +238,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(company-show-quick-access nil nil nil "Customized with use-package company")
+ '(package-selected-packages nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

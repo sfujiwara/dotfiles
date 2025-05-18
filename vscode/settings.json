@@ -112,6 +112,12 @@
   "rust-client.rustupPath": "$HOME/.cargo/bin/rustup",
   // Coding AI
   "geminicodeassist.inlineSuggestions.enableAuto": false,
-  "github.copilot.enable": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "go": false
+  },
   "makefile.configureOnOpen": false
 }

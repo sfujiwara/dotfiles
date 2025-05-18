@@ -99,14 +99,7 @@ setopt prompt_subst
 NAME="%F{cyan}%n@%m%f"
 CURRENT_DIR="%F{magenta}${FOLDER_ICON}[%~]%f"
 SHELL_INFO="%F{green}${TERMINAL_ICON}[$(basename ${SHELL})]%f"
-
-face() {
-  if [ $? -eq 0 ]; then
-    echo "%F{green}:D%f"
-  else
-    echo "%F{red}:(%f"
-  fi
-}
+FACE="%F{green}:D%f"
 
 git_info() {
   local g="$(__git_ps1 "%s")"
@@ -119,8 +112,16 @@ git_info() {
   fi
 }
 
+precmd() {
+  if [ $? -eq 0 ]; then
+    FACE="%F{green}:D%f"
+  else
+    FACE="%F{red}:(%f"
+  fi
+}
+
 export PROMPT='${NAME} ${CURRENT_DIR} $(git_info)
-$(face) '
+${FACE} '
 
 # Load secrets file if exists.
 if [ -e ${HOME}/dotfiles/secrets.sh ]; then

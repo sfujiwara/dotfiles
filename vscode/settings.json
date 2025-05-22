@@ -113,11 +113,12 @@
   // Coding AI
   "geminicodeassist.inlineSuggestions.enableAuto": false,
   "github.copilot.enable": {
-    "*": false,
+    "*": true,
     "plaintext": false,
     "markdown": false,
     "scminput": false,
-    "go": false
+    "go": true
   },
-  "makefile.configureOnOpen": false
+  "makefile.configureOnOpen": false,
+  "github.copilot.nextEditSuggestions.enabled": true
 }

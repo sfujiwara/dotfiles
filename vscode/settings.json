@@ -102,7 +102,12 @@
   ],
   // JavaScript
   "[javascript]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
   },
   // Re:VIEW
   "[review]": {

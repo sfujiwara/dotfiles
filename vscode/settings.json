@@ -33,7 +33,7 @@
     "*.ipynb": "jupyter.notebook.ipynb",
     "*.pdf": "latex-workshop-pdf-hook"
   },
-  "workbench.colorTheme": "Cobalt2",
+  "workbench.colorTheme": "Solarized Dark+ (High Contrast)",
   "workbench.editor.tabSizing": "shrink",
   // Python
   "python.defaultInterpreterPath": "python",
@@ -103,7 +103,7 @@
   // JavaScript
   "[javascript]": {
     "editor.tabSize": 2,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": false
   },
   "[typescript]": {
     "editor.tabSize": 2,

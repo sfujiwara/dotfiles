@@ -96,8 +96,8 @@ GIT_PS1_SHOWUPSTREAM=auto
 
 setopt prompt_subst
 
-CURRENT_DIR="%F{cyan}${FOLDER_ICON}[%~]%f"
-SHELL_INFO="%F{green}${TERMINAL_ICON}[$(basename ${SHELL})]%f"
+CURRENT_DIR="%F{magenta}${FOLDER_ICON}[%~]%f"
+SHELL_INFO="%F{cyan}${TERMINAL_ICON}[$(basename ${SHELL})]%f"
 FACE="%F{green}:D%f"
 
 git_info() {
@@ -105,7 +105,7 @@ git_info() {
   if [[ $g == *"*"* ]]; then
     echo "%F{yellow}${BRANCH_ICON}$(__git_ps1 "[%s]")%f"
   elif [[ $g == *"+"* ]]; then
-    echo "%F{magenta}${BRANCH_ICON}$(__git_ps1 "[%s]")%f"
+    echo "%F{yellow}${BRANCH_ICON}$(__git_ps1 "[%s]")%f"
   else
     echo "%F{green}${BRANCH_ICON}[$(__git_ps1 "%s")]%f"
   fi
@@ -119,7 +119,7 @@ precmd() {
   fi
 }
 
-export PROMPT='${CURRENT_DIR} $(git_info)
+export PROMPT='${SHELL_INFO} ${CURRENT_DIR} $(git_info)
 ${FACE} '
 
 # Load secrets file if exists.

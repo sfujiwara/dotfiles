@@ -39,7 +39,7 @@
   "workbench.colorCustomizations": {
     "sideBar.border": "#555555",
     "editorGroup.border": "#555555",
-    "panel.border": "#555555",
+    "panel.border": "#555555"
   }
   // Python
   "python.defaultInterpreterPath": "python",

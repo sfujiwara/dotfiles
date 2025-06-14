@@ -52,5 +52,10 @@
     {
         "key": "ctrl+0",
         "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "actions.find",
+        "when": "editorFocus || editorIsOpen"
     }
 ]

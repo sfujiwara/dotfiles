@@ -112,11 +112,18 @@
     "editor.tabSize": 2,
     "editor.formatOnSave": false
   },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[typescript]": {
     "editor.tabSize": 2,
     "editor.formatOnSave": true
   },
-  // Re:VIEW
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+  }
+    // Re:VIEW
   "[review]": {
     "editor.insertSpaces": false
   },

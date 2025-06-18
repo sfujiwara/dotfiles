@@ -30,7 +30,6 @@
   // VSCode Workbench
   "workbench.editorAssociations": {
     "*.copilotmd": "vscode.markdown.preview.editor",
-    "*.ipynb": "jupyter.notebook.ipynb",
     "*.pdf": "latex-workshop-pdf-hook"
   },
   "workbench.editor.tabSizing": "shrink",
@@ -114,7 +113,6 @@
   },
   "[javascriptreact]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
     "editor.tabSize": 2,
@@ -122,7 +120,7 @@
   },
   "[typescriptreact]": {
     "editor.formatOnSave": true,
-  }
+  },
     // Re:VIEW
   "[review]": {
     "editor.insertSpaces": false

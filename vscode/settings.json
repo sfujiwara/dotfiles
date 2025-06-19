@@ -33,7 +33,7 @@
     "*.pdf": "latex-workshop-pdf-hook"
   },
   "workbench.editor.tabSizing": "shrink",
-  "workbench.colorTheme": "Solarized Dark+",
+  "workbench.colorTheme": "Solarized Dark+ (Original)",
   // Customize color theme
   "workbench.colorCustomizations": {
     "sideBar.border": "#555555",

@@ -162,6 +162,12 @@
 ;; Markdown
 (use-package markdown-mode :ensure t)
 
+;; JSON
+(use-package json-mode
+  :ensure t
+  :custom
+  (js-indent-level 2))
+
 ;; YAML
 (use-package yaml-mode :ensure t)
 

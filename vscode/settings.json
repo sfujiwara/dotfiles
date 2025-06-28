@@ -2,7 +2,7 @@
   // VSCode Editor
   "editor.bracketPairColorization.enabled": true,
   "editor.cursorBlinking": "expand",
-  "editor.cursorSmoothCaretAnimation": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorStyle": "block",
   "editor.fontFamily": "HackGen, Ubuntu mono, Monaco, monospace",
   "editor.fontSize": 16,
@@ -139,5 +139,6 @@
     "go": true
   },
   "makefile.configureOnOpen": false,
-  "github.copilot.nextEditSuggestions.enabled": true
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "workbench.startupEditor": false
 }

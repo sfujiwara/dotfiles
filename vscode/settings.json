@@ -15,20 +15,25 @@
   "editor.renderWhitespace": "all",
   "editor.suggestSelection": "first",
   "editor.wordWrap": "on",
+
   // VSCode Diff Editor
   "diffEditor.wordWrap": "off",
+
   // VSCode Terminal
   "terminal.integrated.fontFamily": "HackGen Console NF, Ubuntu mono, monospace",
   "terminal.integrated.fontSize": 16,
+
   // VSCode Files
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "files.autoSave": "onFocusChange",
+
   // VSCode Window
   "window.zoomLevel": 1,
   "window.titleBarStyle": "custom",
   "window.customMenuBarAltFocus": false,
+
   // VSCode Workbench
   "workbench.editorAssociations": {
     "*.copilotmd": "vscode.markdown.preview.editor",
@@ -36,6 +41,7 @@
   },
   "workbench.editor.tabSizing": "shrink",
   "workbench.colorTheme": "Solarized Dark+ (Original)",
+
   // Customize color theme
   "workbench.colorCustomizations": {
     "sideBar.border": "#555555",
@@ -43,6 +49,7 @@
     "panel.border": "#555555",
     "editor.selectionBackground": "#555555"
   },
+
   // Python
   "python.defaultInterpreterPath": "python",
   "python.venvFolders": [],
@@ -62,8 +69,10 @@
   "ruff.format.preview": true,
   // "ruff.lint.select": ["ALL"],
   // "ruff.lint.extendSelect": ["ALL"],
+
   // Go
   "go.toolsManagement.autoUpdate": true,
+
   // Terraform
   "terraform.codelens.referenceCount": true,
   "terraform.validation.enableEnhancedValidation": true,
@@ -78,23 +87,20 @@
     "editor.formatOnSave": true,
     "editor.formatOnSaveMode": "file"
   },
+
   // LaTeX
   "latex-workshop.latex.autoBuild.run": "onSave",
   "latex-workshop.latex.recipes": [
     {
       "name": "latexmk",
-      "tools": [
-        "latexmk"
-      ]
+      "tools": ["latexmk"]
     }
   ],
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk",
       "command": "latexmk",
-      "args": [
-        "%DOC%"
-      ]
+      "args": ["%DOC%"]
     }
   ],
   "latex-workshop.formatting.latex": "latexindent",
@@ -102,33 +108,40 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "James-Yu.latex-workshop"
   },
+
+  // JSON
+  "[json][jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
   // textlint
-  "textlint.languages": [
-    "plaintext",
-    "markdown",
-    "latex"
-  ],
+  "textlint.languages": ["plaintext", "markdown", "latex"],
+
   // JavaScript
   "[javascript]": {
     "editor.tabSize": 2,
     "editor.formatOnSave": false
   },
   "[javascriptreact]": {
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": true
   },
   "[typescript]": {
     "editor.tabSize": 2,
     "editor.formatOnSave": true
   },
   "[typescriptreact]": {
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": true
   },
-    // Re:VIEW
+
+  // Re:VIEW
   "[review]": {
     "editor.insertSpaces": false
   },
+
   // Rust
   "rust-client.rustupPath": "$HOME/.cargo/bin/rustup",
+
   // Coding AI
   "geminicodeassist.inlineSuggestions.enableAuto": false,
   "github.copilot.enable": {

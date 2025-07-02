@@ -49,6 +49,9 @@
     // GitHub
     "github.copilot",
 
+    // JavaScript
+    "esbenp.prettier-vscode",
+
     // Others
     "christian-kohler.path-intellisense",
     "naumovs.color-highlight",

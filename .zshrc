@@ -13,7 +13,8 @@ zstyle ':completion:*:default' menu select=1
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#586e75"
 
 # Use English on terminal
-export LANG=en_US.UTF-8
+# export LANG=en_US.UTF-8
+export LC_ALL="en_US.UTF-8"
 
 # Alias
 alias ls='ls -F --color=auto'
@@ -76,6 +77,8 @@ fi
 if [ -d "$HOME/.cargo" ]; then
   export PATH=$HOME/.cargo/bin:$PATH
 fi
+
+#  [zsh]  [~] []
 
 # Nerd icons
 MACHINE_ICON=$'\uf108'

@@ -1,11 +1,11 @@
-#!/bin/bash
+#!/bin/bash -e
 
 # Change default directory names from JP to EN.
 env LANGUAGE=C LC_MESSAGES=C xdg-user-dirs-gtk-update
 
 # Install git.
-# sudo apt update
-# sudo apt install -y git
+sudo apt update
+sudo apt install -y git
 
 # Clone dotfiles repository.
 if [ ! -d "$HOME/dotfiles" ]; then

@@ -29,6 +29,3 @@ prompt() {
     fi
     PS1="\[\e[34m\]\u@\h\[\e[m\] \[\e[35m\]\w\[\e[m\]\[\e[33m\]\n${FACE} "
 }
-
-export PROMPT_COMMAND=prompt
-. "$HOME/.cargo/env"

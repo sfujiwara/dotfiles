@@ -1,9 +1,11 @@
 #!/bin/bash
 
-# Install Go v1.22.3.
+GO_VERSION=1.24.4
+
+sudo rm -rf /usr/local/go
 
 if [ ! -d "/usr/local/go" ]; then
-    curl -OL "https://go.dev/dl/go1.22.3.linux-amd64.tar.gz"
-    sudo tar -C /usr/local -xzf go1.22.3.linux-amd64.tar.gz
-    rm go1.22.3.linux-amd64.tar.gz
+    curl -OL "https://go.dev/dl/go${GO_VERSION}.linux-amd64.tar.gz"
+    sudo tar -C /usr/local -xzf go${GO_VERSION}.linux-amd64.tar.gz
+    rm go${GO_VERSION}.linux-amd64.tar.gz
 fi

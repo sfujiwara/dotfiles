@@ -32,6 +32,7 @@ fi
 
 if [ `uname` = "Linux" ]; then
   # Visual Studio Code
+  # TODO(sfujiwara): Create directory if not exists.
   ln -nfs $HOME/dotfiles/vscode/settings.json $HOME/.config/Code/User/settings.json
   ln -nfs $HOME/dotfiles/vscode/keybindings.json $HOME/.config/Code/User/keybindings.json
 fi

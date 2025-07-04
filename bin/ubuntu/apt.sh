@@ -13,6 +13,12 @@ sudo apt -y install build-essential
 sudo apt -y install libbz2-dev libdb-dev libreadline-dev libffi-dev libgdbm-dev liblzma-dev libncursesw5-dev libsqlite3-dev libssl-dev zlib1g-dev uuid-dev tk-dev python3-dev
 sudo apt -y install libfuse2  # Required to run JetBrains Toolbox.
 
+# Required to build Emacs
+sudo apt -y install autoconf
+sudo apt -y install texinfo
+sudo apt -y install libgccjit-13-dev
+sudo apt -y install libgnutls28-dev
+
 # https://gist.github.com/jadia/1f4c2190730ef646d41823b6a6c30926
 sudo apt install -y language-pack-en
 

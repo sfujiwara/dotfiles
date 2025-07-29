@@ -103,7 +103,7 @@
   (add-to-list 'eglot-server-programs '(python-mode . ("pylsp")))
   (add-to-list 'eglot-server-programs '(terraform-mode . ("terraform-ls" "serve")))
   :hook
-  ;; (terraform-mode . eglot-ensure)
+  (terraform-mode . eglot-ensure)
   (go-mode . eglot-ensure)
   (python-mode . eglot-ensure)
 )
@@ -139,8 +139,8 @@
   (lsp-semantic-tokens-honor-refresh-requests t)
   (lsp-terraform-ls-providers-position-params t)
   (lsp-terraform-ls-prefill-required-fields t)
-  :hook
-  (terraform-mode . lsp-deferred)
+  ;; :hook
+  ;; (terraform-mode . lsp-deferred)
   ;; (go-mode . lsp-deferred)
 )
 

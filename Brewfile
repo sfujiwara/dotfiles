@@ -1,5 +1,6 @@
 # brew "awscli"
 brew "asdf"
+brew "cloud-sql-proxy"
 brew "direnv"
 brew "git"
 brew "golang"

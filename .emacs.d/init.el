@@ -22,13 +22,7 @@
 (setq auto-save-default nil)          ;; Not to create backup
 (setq mac-option-modifier 'meta)      ;; Use Mac option key as meta key
 (setq scroll-conservatively 1)        ;; Scroll
-
-;; windmove
-(windmove-default-keybindings)
-(global-set-key (kbd "C-c <left>") 'windmove-left)
-(global-set-key (kbd "C-c <right>") 'windmove-right)
-(global-set-key (kbd "C-c <up>") 'windmove-up)
-(global-set-key (kbd "C-c <down>") 'windmove-down)
+(windmove-default-keybindings)        ;; Windmove
 
 ;; Whitespaces
 (global-whitespace-mode 1)
@@ -54,6 +48,24 @@
   :ensure t
   :config
   (load-theme 'solarized-dark t))
+
+;; centaur-tabs
+(use-package centaur-tabs
+  :ensure t
+  :demand
+  :config
+  (centaur-tabs-mode t)
+  :custom
+  (centaur-tabs-set-icons t)
+  (centaur-tabs-icon-type 'nerd-icons)
+  (centaur-tabs-set-bar 'under)
+  (centaur-tabs-cycle-scope 'tabs)
+  (centaur-tabs-set-modified-marker t)
+  (centaur-tabs-modified-marker "*")
+  (centaur-tabs-enable-key-bindings t)
+  :bind
+  ("C-<right>" . centaur-tabs-forward)
+  ("C-<left>" . centaur-tabs-backward))
 
 ;; Beacon
 (use-package beacon

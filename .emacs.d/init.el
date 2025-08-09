@@ -24,6 +24,11 @@
 (setq scroll-conservatively 1)        ;; Scroll
 (windmove-default-keybindings)        ;; Windmove
 
+;; tab-line-mode
+(global-tab-line-mode 1)
+(global-set-key (kbd "C-<right>") 'tab-line-switch-to-next-tab)
+(global-set-key (kbd "C-<left>") 'tab-line-switch-to-prev-tab)
+
 ;; Whitespaces
 (global-whitespace-mode 1)
 (setq-default whitespace-global-modes '(not shell-mode dired-mode))
@@ -50,22 +55,27 @@
   (load-theme 'solarized-dark t))
 
 ;; centaur-tabs
-(use-package centaur-tabs
-  :ensure t
-  :demand
-  :config
-  (centaur-tabs-mode t)
-  :custom
-  (centaur-tabs-set-icons t)
-  (centaur-tabs-icon-type 'nerd-icons)
-  (centaur-tabs-set-bar 'under)
-  (centaur-tabs-cycle-scope 'tabs)
-  (centaur-tabs-set-modified-marker t)
-  (centaur-tabs-modified-marker "*")
-  (centaur-tabs-enable-key-bindings t)
-  :bind
-  ("C-<right>" . centaur-tabs-forward)
-  ("C-<left>" . centaur-tabs-backward))
+;; 何かチラつきが発生するのでお蔵入り
+;; (use-package centaur-tabs
+;;   :ensure t
+;;   :demand
+;;   :config
+;;   (centaur-tabs-mode t)
+;;   :custom
+;;   (centaur-tabs-set-icons t)
+;;   (centaur-tabs-icon-type 'nerd-icons)
+;;   (centaur-tabs-set-bar 'under)
+;;   (centaur-tabs-cycle-scope 'tabs)
+;;   (centaur-tabs-set-modified-marker t)
+;;   (centaur-tabs-modified-marker "*")
+;;   (centaur-tabs-enable-key-bindings t)
+;;   (centaur-tabs-show-count nil)
+;;   (centaur-tabs-label-fixed-length 8)
+;;   :bind
+;;   ("C-<right>" . centaur-tabs-forward)
+;;   ("C-<left>" . centaur-tabs-backward)
+;;   :hook
+;;   (dired-mode . centaur-tabs-local-mode))
 
 ;; Beacon
 (use-package beacon

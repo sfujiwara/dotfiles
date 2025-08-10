@@ -22,6 +22,7 @@
 (setq auto-save-default nil)          ;; Not to create backup
 (setq mac-option-modifier 'meta)      ;; Use Mac option key as meta key
 (setq scroll-conservatively 1)        ;; Scroll
+(setq use-short-answers t)            ;; yes-or-no --> y-or-n
 (windmove-default-keybindings)        ;; Windmove
 
 ;; tab-line-mode
@@ -127,8 +128,14 @@
   :hook
   (terraform-mode . eglot-ensure)
   (go-mode . eglot-ensure)
-  (python-mode . eglot-ensure)
-)
+  (python-mode . eglot-ensure))
+
+;; jsonrpc
+(use-package jsonrpc
+  :config
+  (setq jsonrpc-default-request-timeout 3000)
+  (fset #'jsonrpc--log-event #'ignore))
+
 
 ;; Language Server Protocol with lsp-mode
 (use-package lsp-mode

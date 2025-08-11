@@ -41,7 +41,6 @@
   },
   "workbench.editor.tabSizing": "shrink",
   "workbench.colorTheme": "Solarized Dark+ (Original)",
-  "workbench.iconTheme": "material-icon-theme",
 
   // Customize color theme
   "workbench.colorCustomizations": {

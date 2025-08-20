@@ -13,5 +13,5 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/sfujiwara/dotfiles/main/
 ## Ubuntu
 
 ```sh
-bash -c "$(wget -qO - https://raw.githubusercontent.com/sfujiwara/dotfiles/master/ubuntu.sh)"
+bash -c "$(wget -qO - https://raw.githubusercontent.com/sfujiwara/dotfiles/main/ubuntu.sh)"
 ```

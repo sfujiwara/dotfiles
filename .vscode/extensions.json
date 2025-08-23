@@ -6,10 +6,6 @@
     "cocopon.iceberg-theme",
     "ryanolsonx.solarized",
 
-    // Bash
-    "mads-hartmann.bash-ide-vscode",
-    "rogalmic.bash-debug",
-
     // Python
     "ms-python.python",
     "ms-python.debugpy",
@@ -38,7 +34,6 @@
 
     // CSV
     "mechatroner.rainbow-csv",
-    "janisdd.vscode-edit-csv",
 
     // TOML
     "tamasfe.even-better-toml",
@@ -53,7 +48,7 @@
     "esbenp.prettier-vscode",
 
     // Others
-    "christian-kohler.path-intellisense",
+    "ms-vscode-remote.remote-containers",
     "naumovs.color-highlight",
     "gruntfuggly.todo-tree",
     "alefragnani.bookmarks",

@@ -12,10 +12,12 @@ echo \
     sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt update
 
-sudo apt install docker-ce
-sudo apt install docker-ce-cli
-sudo apt install containerd.io
-sudo apt install docker-buildx-plugin
-sudo apt install docker-compose-plugin
+sudo apt install -y docker-ce
+sudo apt install -y docker-ce-cli
+sudo apt install -y containerd.io
+sudo apt install -y docker-buildx-plugin
+sudo apt install -y docker-compose-plugin
 
-# sudo service docker start
+# Create docker group
+sudo groupadd docker
+sudo usermod -aG docker $USER

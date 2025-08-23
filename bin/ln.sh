@@ -1,38 +1,38 @@
 #!/bin/bash
 
 # zsh
-ln -nfs ~/dotfiles/.zshrc ~/
+ln -nfs $HOME/dotfiles/.zshrc $HOME/
 
 # bash
-ln -nfs ~/dotfiles/.bashrc $HOME/
+ln -nfs $HOME/dotfiles/.bashrc $HOME/
 
 # Emacs
-ln -nfs ~/dotfiles/.emacs.d ~/
+ln -nfs $HOME/dotfiles/.emacs.d $HOME/
 
 # Git
-ln -nfs ~/dotfiles/.gitconfig ~/
-mkdir -p ~/.config/git
-ln -nfs ~/dotfiles/.config/git/ignore ~/.config/git/
+ln -nfs $HOME/dotfiles/.gitconfig $HOME/
+mkdir -p $HOME/.config/git
+ln -nfs $HOME/dotfiles/.config/git/ignore $HOME/.config/git/
 
 # LaTeX
-ln -nfs ${HOME}/dotfiles/.latexmkrc ${HOME}/.latexmkrc
+ln -nfs $HOME/dotfiles/.latexmkrc $HOME/.latexmkrc
 
 # tmux
-ln -nfs ~/dotfiles/.tmux.conf ~/
+ln -nfs $HOME/dotfiles/.tmux.conf $HOME/
 
 # Settings for Mac
 if [ `uname` = "Darwin" ]; then
   # Karabiner
-  mkdir -p ~/.config
-  ln -nfs ~/dotfiles/.config/karabiner ~/.config/
+  mkdir -p $HOME/.config
+  ln -nfs $HOME/dotfiles/.config/karabiner $HOME/.config/
   # Visual Studio Code
-  ln -nfs ~/dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-  ln -nfs ~/dotfiles/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+  ln -nfs $HOME/dotfiles/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
+  ln -nfs $HOME/dotfiles/vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
 fi
 
 if [ `uname` = "Linux" ]; then
   # Visual Studio Code
-  # TODO(sfujiwara): Create directory if not exists.
+  mkdir -p $HOME/.config/Code/User
   ln -nfs $HOME/dotfiles/vscode/settings.json $HOME/.config/Code/User/settings.json
   ln -nfs $HOME/dotfiles/vscode/keybindings.json $HOME/.config/Code/User/keybindings.json
 fi

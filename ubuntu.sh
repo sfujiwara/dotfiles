@@ -18,7 +18,6 @@ cd $HOME/dotfiles
 
 # Install others.
 ./bin/ubuntu/install_go.sh
-./bin/ubuntu/install_gcloud.sh
 ./bin/ubuntu/install_asdf.sh
 ./bin/ubuntu/install_docker.sh
 
@@ -27,8 +26,3 @@ cd $HOME/dotfiles
 
 # Use zsh as default shell.
 chsh -s /bin/zsh
-
-# Generate SSH key.
-if [ ! -d "$HOME/.ssh" ]; then
-  ssh-keygen -t ed25519
-fi

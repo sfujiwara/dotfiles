@@ -3,8 +3,12 @@ cursor-style = "block"
 font-size = 24
 font-family = "HackGen Console NF"
 keybind = f11=toggle_fullscreen
+keybind = "global:cmd+shift+t=toggle_quick_terminal"
+macos-titlebar-proxy-icon = "hidden"
+quick-terminal-position = "top"
+quick-terminal-screen = "main"
+quick-terminal-animation-duration = 0.2
 shell-integration-features = no-cursor
-
 theme = "Solarized Dark - Patched"
 # theme = "Solarized Darcula"
 # theme = "solarized-osaka-night"

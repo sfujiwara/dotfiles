@@ -3,7 +3,7 @@ cursor-style = "block"
 font-size = 24
 font-family = "HackGen Console NF"
 keybind = f11=toggle_fullscreen
-keybind = "global:cmd+shift+t=toggle_quick_terminal"
+keybind = "global:ctrl+shift+t=toggle_quick_terminal"
 macos-titlebar-proxy-icon = "hidden"
 quick-terminal-position = "top"
 quick-terminal-screen = "main"

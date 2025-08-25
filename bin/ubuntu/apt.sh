@@ -22,6 +22,13 @@ sudo apt -y install texinfo
 sudo apt -y install libgccjit-13-dev
 sudo apt -y install libgnutls28-dev
 
+# Required to build Ghostty
+sudo apt -y install libgtk-4-dev
+sudo apt -y install libadwaita-1-dev
+sudo apt -y install blueprint-compiler
+sudo apt -y install gettext
+sudo apt -y install libxml2-utils
+
 # https://gist.github.com/jadia/1f4c2190730ef646d41823b6a6c30926
 sudo apt install -y language-pack-en
 

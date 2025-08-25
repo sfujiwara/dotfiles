@@ -1,0 +1,11 @@
+background-opacity = 0.8
+cursor-style = "block"
+font-size = 24
+font-family = "HackGen Console NF"
+keybind = f11=toggle_fullscreen
+shell-integration-features = no-cursor
+
+theme = "Solarized Dark - Patched"
+# theme = "Solarized Darcula"
+# theme = "solarized-osaka-night"
+# theme = "Solarized Dark Higher Contrast"

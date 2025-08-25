@@ -36,3 +36,12 @@ if [ `uname` = "Linux" ]; then
   ln -nfs $HOME/dotfiles/vscode/settings.json $HOME/.config/Code/User/settings.json
   ln -nfs $HOME/dotfiles/vscode/keybindings.json $HOME/.config/Code/User/keybindings.json
 fi
+
+# Alacritty
+mkdir -p $HOME/.config/alacritty/themes
+ln -nfs $HOME/dotfiles/.config/alacritty/alacritty.toml $HOME/.config/alacritty/alacritty.toml
+ln -nfs $HOME/dotfiles/.config/alacritty/themes/solarized_dark.toml $HOME/.config/alacritty/themes/solarized_dark.toml
+
+# Ghostty
+mkdir -p $HOME/.config/ghostty
+ln -nfs $HOME/dotfiles/.config/ghostty/config $HOME/.config/ghostty/config

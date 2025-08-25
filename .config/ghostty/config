@@ -1,4 +1,4 @@
-background-opacity = 0.8
+background-opacity = 0.85
 cursor-style = "block"
 font-size = 24
 font-family = "HackGen Console NF"
@@ -10,6 +10,3 @@ quick-terminal-screen = "main"
 quick-terminal-animation-duration = 0.2
 shell-integration-features = no-cursor
 theme = "Solarized Dark - Patched"
-# theme = "Solarized Darcula"
-# theme = "solarized-osaka-night"
-# theme = "Solarized Dark Higher Contrast"

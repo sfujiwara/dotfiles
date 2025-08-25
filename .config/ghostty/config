@@ -1,6 +1,6 @@
 background-opacity = 0.85
 cursor-style = "block"
-font-size = 24
+font-size = 18
 font-family = "HackGen Console NF"
 keybind = f11=toggle_fullscreen
 keybind = super+w=unbind

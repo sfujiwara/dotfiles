@@ -31,7 +31,6 @@ alias genkai="ssh ${GENKAI_USER}@genkai.hpc.kyushu-u.ac.jp -YC"
 
 # ASDF
 # https://asdf-vm.com/guide/upgrading-to-v0-16.html
-export PATH=${HOME}/.asdf/bin:${PATH}
 export ASDF_DATA_DIR=${HOME}/.asdf
 export PATH=${ASDF_DATA_DIR}/shims:${PATH}
 

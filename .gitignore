@@ -9,6 +9,8 @@
 .emacs.d/eln-cache
 emacs
 
+ghostty
+
 network-security.data
 
 Brewfile.lock.json

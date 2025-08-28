@@ -77,8 +77,6 @@ if [ -d "$HOME/.cargo" ]; then
   export PATH=$HOME/.cargo/bin:$PATH
 fi
 
-#  [zsh]  [~] []
-
 # Nerd icons
 MACHINE_ICON=$'\uf108'
 BRANCH_ICON=$'\ue0a0'

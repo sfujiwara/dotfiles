@@ -22,10 +22,6 @@ brew "autoconf"
 
 brew "hashicorp/tap/terraform-ls"
 
-# brew "cmake"
-# brew "gcc"
-# brew "libomp"
-
 cask "alfred"
 cask "discord"
 cask "ghostty"
@@ -33,6 +29,5 @@ cask "google-cloud-sdk"
 cask "google-japanese-ime"
 cask "font-hackgen"
 cask "font-hackgen-nerd"
-cask "iterm2"
 cask "karabiner-elements"
 cask "visual-studio-code"

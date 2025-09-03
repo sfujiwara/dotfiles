@@ -24,6 +24,7 @@
 (setq scroll-conservatively 1)        ;; Scroll
 (setq use-short-answers t)            ;; yes-or-no --> y-or-n
 (windmove-default-keybindings)        ;; Windmove
+(setq-default indent-tabs-mode nil)
 
 ;; tab-line-mode
 (global-tab-line-mode 1)

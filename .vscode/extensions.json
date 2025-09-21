@@ -38,9 +38,6 @@
     // TOML
     "tamasfe.even-better-toml",
 
-    // Firebase
-    "toba.vsfire",
-
     // GitHub
     "github.copilot",
 

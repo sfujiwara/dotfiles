@@ -143,8 +143,11 @@
   // Rust
   "rust-client.rustupPath": "$HOME/.cargo/bin/rustup",
 
-  // Coding AI
+  // Gemini
   "geminicodeassist.inlineSuggestions.enableAuto": false,
+  "geminicodeassist.project": "sfujiwara",
+
+  // GitHub Copilot
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
@@ -152,7 +155,8 @@
     "scminput": false,
     "go": true
   },
-  "makefile.configureOnOpen": false,
   "github.copilot.nextEditSuggestions.enabled": true,
+
+  "makefile.configureOnOpen": false,
   "workbench.startupEditor": false
 }

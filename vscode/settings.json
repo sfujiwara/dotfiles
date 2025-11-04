@@ -116,6 +116,12 @@
     "editor.formatOnSave": true
   },
 
+  // TOML
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml",
+    "editor.formatOnSave": true
+  },
+
   // textlint
   "textlint.languages": ["plaintext", "markdown", "latex"],
 

@@ -26,7 +26,7 @@ export TSUBAME_USER=ug03757
 alias tsubame="ssh ${TSUBAME_USER}@login.t4.gsic.titech.ac.jp -YC"
 
 # GENKAI
-export GENKAI_USER=ku40001280
+export GENKAI_USER=ku50002110
 alias genkai="ssh ${GENKAI_USER}@genkai.hpc.kyushu-u.ac.jp -YC"
 
 # ASDF

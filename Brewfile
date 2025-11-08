@@ -14,6 +14,11 @@ brew "tmux"
 brew "wget"
 brew "zsh"
 
+# Docker
+brew "colima"
+brew "lima-additional-guestagents"
+brew "qemu"
+
 # Required to build emacs
 brew "libgccjit"
 brew "texinfo"

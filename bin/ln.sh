@@ -35,6 +35,11 @@ if [ `uname` = "Linux" ]; then
   mkdir -p $HOME/.config/Code/User
   ln -nfs $HOME/dotfiles/vscode/settings.json $HOME/.config/Code/User/settings.json
   ln -nfs $HOME/dotfiles/vscode/keybindings.json $HOME/.config/Code/User/keybindings.json
+
+  # Antigravity
+  mkdir -p $HOME/.config/Antigravity/User
+  ln -nfs $HOME/dotfiles/antigravity/settings.json $HOME/.config/Antigravity/User/settings.json
+  ln -nfs $HOME/dotfiles/antigravity/keybindings.json $HOME/.config/Antigravity/User/keybindings.json
 fi
 
 # Alacritty

@@ -1,0 +1,168 @@
+{
+  // VSCode Editor
+  "editor.bracketPairColorization.enabled": true,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "block",
+  "editor.fontFamily": "HackGen, Ubuntu mono, Monaco, monospace",
+  "editor.fontSize": 17,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.indentation": true,
+  "editor.inlayHints.enabled": "off",
+  "editor.minimap.enabled": false,
+  "editor.renderControlCharacters": true,
+  "editor.renderLineHighlight": "all",
+  "editor.renderWhitespace": "all",
+  "editor.suggestSelection": "first",
+  "editor.wordWrap": "on",
+
+  // VSCode Diff Editor
+  "diffEditor.wordWrap": "off",
+
+  // VSCode Terminal
+  "terminal.integrated.fontFamily": "HackGen Console NF, Ubuntu mono, monospace",
+  "terminal.integrated.fontSize": 17,
+  "terminal.integrated.stickyScroll.enabled": false,
+
+  // VSCode Files
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "onFocusChange",
+
+  // VSCode Window
+  "window.zoomLevel": 1,
+  "window.titleBarStyle": "custom",
+  "window.customMenuBarAltFocus": false,
+
+  // VSCode Workbench
+  "workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.pdf": "latex-workshop-pdf-hook"
+  },
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.colorTheme": "Iceberg",
+
+  // Customize color theme
+  "workbench.colorCustomizations": {
+    "sideBar.border": "#555555",
+    "editorGroup.border": "#555555",
+    "panel.border": "#555555",
+    "editor.selectionBackground": "#555555"
+  },
+
+  // Python
+  "python.defaultInterpreterPath": "python",
+  "python.venvFolders": [],
+  "python.interpreter.infoVisibility": "onPythonRelated",
+  "python.terminal.activateEnvironment": true,
+  "python.terminal.activateEnvInCurrentTerminal": false,
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnSave": false
+  },
+  // Python (Pylance)
+  "python.analysis.typeCheckingMode": "off", // "off" or "basic" or "strict"
+  // Python (Ruff)
+  "ruff.lint.enable": true,
+  "ruff.importStrategy": "fromEnvironment",
+  "ruff.configuration": "${workspaceFolder}/pyproject.toml",
+  "ruff.format.preview": true,
+  // "ruff.lint.select": ["ALL"],
+  // "ruff.lint.extendSelect": ["ALL"],
+
+  // Go
+  "go.toolsManagement.autoUpdate": true,
+
+  // Terraform
+  "terraform.codelens.referenceCount": true,
+  "terraform.validation.enableEnhancedValidation": true,
+  "[terraform]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.indentationSize": 2,
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
+  },
+  "[terraform-vars]": {
+    "editor.defaultFormatter": "hashicorp.terraform",
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file"
+  },
+
+  // LaTeX
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk",
+      "tools": ["latexmk"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": ["%DOC%"]
+    }
+  ],
+  "latex-workshop.formatting.latex": "latexindent",
+  "[latex]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
+
+  // JSON
+  "[json][jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+
+  // TOML
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml",
+    "editor.formatOnSave": true
+  },
+
+  // textlint
+  "textlint.languages": ["plaintext", "markdown", "latex"],
+
+  // JavaScript
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "[typescript]": {
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true
+  },
+
+  // Re:VIEW
+  "[review]": {
+    "editor.insertSpaces": false
+  },
+
+  // Rust
+  "rust-client.rustupPath": "$HOME/.cargo/bin/rustup",
+
+  // Gemini
+  "geminicodeassist.inlineSuggestions.enableAuto": false,
+  "geminicodeassist.project": "sfujiwara",
+
+  // GitHub Copilot
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "go": true
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
+
+  "makefile.configureOnOpen": false,
+  "workbench.startupEditor": false
+}

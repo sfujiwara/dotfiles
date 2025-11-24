@@ -1,61 +1,52 @@
 [
-    {
-        "key": "ctrl+f",
-        "command": "cursorRight"
-    },
-    {
-        "key": "ctrl+b",
-        "command": "cursorLeft"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "cursorUp"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "cursorDown"
-    },
-    {
-        "key": "ctrl+a",
-        "command": "cursorHome"
-    },
-    {
-        "key": "ctrl+e",
-        "command": "cursorEnd"
-    },
-    {
-        "key": "ctrl+d",
-        "command": "deleteRight"
-    },
-    {
-        "key": "ctrl+k",
-        "command": "deleteAllRight"
-    },
-    // {
-    //     "key": "ctrl+s",
-    //     "command": "editor.actions.findWithArgs"
-    // },
-    {
-        "key": "ctrl+n",
-        "command": "selectNextSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "selectPrevSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
-    },
-    {
-        "key": "ctrl+shift+a",
-        "command": "editor.action.selectAll"
-    },
-    {
-        "key": "ctrl+0",
-        "command": "workbench.action.terminal.focus"
-    },
-    {
-        "key": "ctrl+shift+s",
-        "command": "actions.find",
-        "when": "editorFocus || editorIsOpen"
-    }
+  {
+    "key": "ctrl+f",
+    "command": "cursorRight"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "cursorLeft"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "cursorUp"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "cursorDown"
+  },
+  {
+    "key": "ctrl+a",
+    "command": "cursorHome"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "cursorEnd"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "deleteRight"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "deleteAllRight"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+  },
+  {
+    "key": "ctrl+shift+a",
+    "command": "editor.action.selectAll"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "workbench.action.terminal.focus"
+  }
 ]

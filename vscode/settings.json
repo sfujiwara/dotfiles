@@ -23,6 +23,7 @@
   "terminal.integrated.fontFamily": "HackGen Console NF, Ubuntu mono, monospace",
   "terminal.integrated.fontSize": 17,
   "terminal.integrated.stickyScroll.enabled": false,
+  "terminal.integrated.suggest.enabled": false,
 
   // VSCode Files
   "files.insertFinalNewline": true,

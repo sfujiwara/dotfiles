@@ -74,6 +74,9 @@
 
   // Go
   "go.toolsManagement.autoUpdate": true,
+  "[go]": {
+    "editor.formatOnSave": true,
+  }
 
   // Terraform
   "terraform.codelens.referenceCount": true,
@@ -165,5 +168,6 @@
   "github.copilot.nextEditSuggestions.enabled": true,
 
   "makefile.configureOnOpen": false,
-  "workbench.startupEditor": false
+  "workbench.startupEditor": false,
+  "docker.extension.enableComposeLanguageServer": false
 }

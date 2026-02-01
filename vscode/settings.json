@@ -64,19 +64,18 @@
   },
   // Python (Pylance)
   "python.analysis.typeCheckingMode": "off", // "off" or "basic" or "strict"
-  // Python (Ruff)
   "ruff.lint.enable": true,
   "ruff.importStrategy": "fromEnvironment",
   "ruff.configuration": "${workspaceFolder}/pyproject.toml",
   "ruff.format.preview": true,
-  // "ruff.lint.select": ["ALL"],
-  // "ruff.lint.extendSelect": ["ALL"],
+  "notebook.lineNumbers": "on",
+  "notebook.markup.fontSize": 16,
 
   // Go
   "go.toolsManagement.autoUpdate": true,
   "[go]": {
-    "editor.formatOnSave": true,
-  }
+    "editor.formatOnSave": true
+  },
 
   // Terraform
   "terraform.codelens.referenceCount": true,

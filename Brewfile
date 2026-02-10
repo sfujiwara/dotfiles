@@ -2,6 +2,8 @@
 brew "asdf"
 brew "cloud-sql-proxy"
 brew "direnv"
+brew "docker"
+brew "docker-buildx"
 brew "git"
 brew "golang"
 brew "peco"

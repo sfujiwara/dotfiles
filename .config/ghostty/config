@@ -13,4 +13,4 @@ quick-terminal-position = "bottom"
 quick-terminal-screen = "main"
 quick-terminal-animation-duration = 0.2
 shell-integration-features = no-cursor
-theme = "Solarized Dark - Patched"
+theme = "Solarized Dark Patched"

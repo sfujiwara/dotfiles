@@ -53,7 +53,6 @@
   },
 
   // Python
-  "python.defaultInterpreterPath": "python",
   "python.venvFolders": [],
   "python.interpreter.infoVisibility": "onPythonRelated",
   "python.terminal.activateEnvironment": true,
@@ -172,5 +171,6 @@
 
   "makefile.configureOnOpen": false,
   "workbench.startupEditor": false,
-  "docker.extension.enableComposeLanguageServer": false
+  "docker.extension.enableComposeLanguageServer": false,
+  "chat.viewSessions.orientation": "stacked"
 }

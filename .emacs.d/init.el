@@ -56,6 +56,18 @@
   :config
   (load-theme 'solarized-dark t))
 
+(use-package helm
+  :ensure t
+  :config
+  (setq helm-split-window-inside-p t)
+  (setq helm-use-frame-when-more-than-two-windows nil)
+  (helm-autoresize-mode 1))
+
+(use-package vertico
+  :ensure t
+  :init
+  (vertico-mode 1))
+
 ;; centaur-tabs
 ;; 何かチラつきが発生するのでお蔵入り
 ;; (use-package centaur-tabs

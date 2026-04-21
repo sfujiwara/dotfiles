@@ -124,7 +124,6 @@
   :init
   (yas-global-mode))
 
-
 (use-package magit
   :ensure t
   :bind ("C-x g" . magit-status)
@@ -267,6 +266,14 @@
   :ensure t
   :config
   (treemacs-load-theme "nerd-icons"))
+
+(use-package consult
+  :ensure t)
+
+(use-package marginalia
+  :ensure t
+  :init
+  (marginalia-mode))
 
 ;; GitHub Copilot
 ;; (use-package copilot

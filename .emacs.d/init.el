@@ -70,6 +70,13 @@
   :init
   (vertico-mode 1))
 
+(use-package orderless
+  :ensure t
+  :custom
+  (completion-styles '(orderless basic))
+  (completion-category-overrides '((file (styles partial-completion))))
+  (completion-pcm-leading-wildcard t))
+
 ;; centaur-tabs
 ;; 何かチラつきが発生するのでお蔵入り
 ;; (use-package centaur-tabs

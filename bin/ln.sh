@@ -14,6 +14,10 @@ ln -nfs $HOME/dotfiles/.gitconfig $HOME/
 mkdir -p $HOME/.config/git
 ln -nfs $HOME/dotfiles/.config/git/ignore $HOME/.config/git/
 
+# peco
+mkdir -p $HOME/.config/peco
+ln -nfs $HOME/dotfiles/.config/peco/config.json $HOME/.config/peco/config.json
+
 # LaTeX
 ln -nfs $HOME/dotfiles/.latexmkrc $HOME/.latexmkrc
 

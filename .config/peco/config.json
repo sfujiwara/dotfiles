@@ -1,0 +1,6 @@
+{
+  "Style": {
+    "Selected": ["underline", "black", "on_white"],
+    "Matched": ["yellow", "bold"]
+  }
+}

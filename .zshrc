@@ -20,6 +20,7 @@ alias ls='ls -F --color=auto'
 alias nesterov="tmux splitw -v -l 16 && emacs -nw ."
 alias jeffdean="tmux splitw -v -l 16 && tmux splitw -h -l 100 -t 0 && emacs -nw ."
 alias ghcd='cd "$(ghq list --full-path | peco)"'
+alias ghcode='code "$(ghq list --full-path | peco)"'
 
 # TSUBAME
 export TSUBAME_USER=ug03757

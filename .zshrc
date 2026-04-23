@@ -13,14 +13,13 @@ zstyle ':completion:*:default' menu select=1
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#586e75"
 
 # Use English on terminal
-# export LANG=en_US.UTF-8
 export LC_ALL="en_US.UTF-8"
 
 # Alias
 alias ls='ls -F --color=auto'
 alias nesterov="tmux splitw -v -l 16 && emacs -nw ."
 alias jeffdean="tmux splitw -v -l 16 && tmux splitw -h -l 100 -t 0 && emacs -nw ."
-alias rockafellar='cd "$(ghq list --full-path | peco)"'
+alias ghcd='cd "$(ghq list --full-path | peco)"'
 
 # TSUBAME
 export TSUBAME_USER=ug03757

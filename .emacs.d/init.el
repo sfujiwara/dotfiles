@@ -100,6 +100,8 @@
 ;;   :hook
 ;;   (dired-mode . centaur-tabs-local-mode))
 
+(use-package vterm :ensure t)
+
 ;; Beacon
 (use-package beacon
   :ensure t

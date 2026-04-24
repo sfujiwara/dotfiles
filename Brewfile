@@ -32,6 +32,7 @@ brew "autoconf"
 brew "hashicorp/tap/terraform-ls"
 
 cask "alfred"
+cask "copilot-cli"
 cask "discord"
 cask "ghostty"
 cask "gcloud-cli"

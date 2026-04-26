@@ -44,10 +44,13 @@
     // JavaScript
     "esbenp.prettier-vscode",
 
+    // LLM
+    "anthropic.claude-code",
+    "google.geminicodeassist",
+
     // Others
     "ms-vscode-remote.remote-containers",
     "naumovs.color-highlight",
-    "alefragnani.bookmarks",
     "usernamehw.errorlens"
   ]
 }

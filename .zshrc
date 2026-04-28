@@ -17,8 +17,8 @@ export LC_ALL="en_US.UTF-8"
 
 # Alias
 alias ls='ls -F --color=auto'
-alias nesterov="tmux splitw -v -l 16 && emacs -nw ."
-alias rockafellar="tmux splitw -h -l 64 && tmux select-pane -t 0 && tmux splitw -v -l 16 && emacs -nw ."
+alias nesterov="tmux splitw -v -l 16 && tmux select-pane -t 0"
+alias rockafellar="tmux splitw -h -l 64 && tmux select-pane -t 0 && tmux splitw -v -l 16 && tmux select-pane -t 0"
 alias ghcd='cd "$(ghq list --full-path | peco)"'
 alias ghcode='code "$(ghq list --full-path | peco)"'
 

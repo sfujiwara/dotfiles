@@ -37,7 +37,7 @@
 (setq whitespace-style '(
   ;; face
   trailing
-  space-mark
+  ;; space-mark
   tab-mark
   missing-newline-at-eof
   empty

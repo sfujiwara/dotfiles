@@ -157,7 +157,7 @@
 
   // Gemini
   "geminicodeassist.inlineSuggestions.enableAuto": false,
-  "geminicodeassist.project": "sfujiwara",
+  "geminicodeassist.project": "wide-pad-gw11z",
 
   // GitHub Copilot
   "github.copilot.enable": {

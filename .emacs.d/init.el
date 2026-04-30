@@ -100,8 +100,6 @@
 ;;   :hook
 ;;   (dired-mode . centaur-tabs-local-mode))
 
-(use-package vterm :ensure t)
-
 ;; Beacon
 (use-package beacon
   :ensure t
@@ -170,6 +168,15 @@
   :ensure t
   :hook
   ('before-save-hook . 'gofmt-before-save))
+
+(use-package web-mode
+  :ensure t
+  :init
+  (add-to-list 'auto-mode-alist '("\\.ts\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))
+  :config
+  (setq indent-tabs-mode nil)
+  (setq tab-width 2))
 
 ;; Docker
 (use-package dockerfile-mode :ensure t)

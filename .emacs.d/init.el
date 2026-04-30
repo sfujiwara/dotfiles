@@ -159,43 +159,6 @@
   (setq jsonrpc-default-request-timeout 3000)
   (fset #'jsonrpc--log-event #'ignore))
 
-
-;; Language Server Protocol with lsp-mode
-(use-package lsp-mode
-  :ensure t
-  :init
-  (setq lsp-keymap-prefix "C-c l")
-  :custom
-  ;; https://emacs-lsp.github.io/lsp-mode/tutorials/how-to-turn-off/
-  (lsp-enable-symbol-highlighting t)      ;; 1
-  (lsp-ui-doc-enable nil)                 ;; 2-1
-  (lsp-ui-doc-show-with-cursor t)         ;; 2-2
-  (lsp-ui-doc-show-with-mouse t)          ;; 2-3
-  (lsp-lens-enable t)                     ;; 3
-  (lsp-headerline-breadcrumb-enable nil)  ;; 4
-  (lsp-ui-sideline-enable t)              ;; 5-1
-  (lsp-ui-sideline-show-code-actions t)   ;; 5-2
-  (lsp-modeline-code-actions-enable t)    ;; 7
-  (lsp-diagnostics-provider :flycheck)    ;; 8
-  (lsp-ui-sideline-enable t)              ;; 9-1
-  (lsp-ui-sideline-show-diagnostics t)    ;; 9-2
-  (lsp-eldoc-enable-hover t)              ;; 10
-  (lsp-modeline-diagnostics-enable t)     ;; 11
-  (lsp-signature-auto-activate t)         ;; 12
-  (lsp-signature-render-documentation t)  ;; 13
-  ;; (lsp-completion-provider :company)   ;; 14
-  (lsp-completion-show-detail t)          ;; 15
-  (lsp-completion-show-kind t)            ;; 16
-  (lsp-disabled-clients '(tfls))
-  (lsp-semantic-tokens-enable t)
-  (lsp-semantic-tokens-honor-refresh-requests t)
-  (lsp-terraform-ls-providers-position-params t)
-  (lsp-terraform-ls-prefill-required-fields t)
-  ;; :hook
-  ;; (terraform-mode . lsp-deferred)
-  ;; (go-mode . lsp-deferred)
-)
-
 ;; Terraform
 (use-package terraform-mode
   :ensure t

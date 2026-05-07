@@ -13,7 +13,6 @@
 (global-hl-line-mode t)               ;; Highlight current line
 (global-auto-revert-mode t)           ;; Update files automatically
 (menu-bar-mode 0)                     ;; Not to show menu bar
-(show-paren-mode t)                   ;; Highlight parentheses
 (electric-pair-mode t)                ;; Insert closing bracket
 (column-number-mode t)                ;; Show column number in mode line
 (line-number-mode t)                  ;; Show line number in mode line
@@ -25,6 +24,10 @@
 (setq use-short-answers t)            ;; yes-or-no --> y-or-n
 (windmove-default-keybindings)        ;; Windmove
 (setq-default indent-tabs-mode nil)
+
+;; show-paren-mode
+(show-paren-mode t)
+(setq show-paren-style 'mixed)
 
 ;; tab-line-mode
 (global-tab-line-mode 1)
@@ -238,9 +241,10 @@
   :custom
   ;; (treemacs-project-follow-cleanup t)
   (treemacs-width 30)
+  :hook
+  (treemacs-mode . (lambda () (display-line-numbers-mode -1)))
   :bind
-  (:map global-map
-    ("C-x t t" . treemacs)))
+  (:map global-map ("C-x t t" . treemacs)))
 
 ;; Use nerd icons for treemacs
 (use-package treemacs-nerd-icons

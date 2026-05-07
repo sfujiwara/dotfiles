@@ -15,7 +15,6 @@
 (menu-bar-mode 0)                     ;; Not to show menu bar
 (electric-pair-mode t)                ;; Insert closing bracket
 (column-number-mode t)                ;; Show column number in mode line
-(line-number-mode t)                  ;; Show line number in mode line
 (setq ring-bell-function 'ignore)     ;; Not to ring bell
 (setq make-backup-files nil)          ;; Not to create backup
 (setq auto-save-default nil)          ;; Not to create backup

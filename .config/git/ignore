@@ -4,6 +4,8 @@ tmp
 temp
 tmp.*
 temp.*
+stdout.txt
+stderr.txt
 
 # direnv
 .envrc

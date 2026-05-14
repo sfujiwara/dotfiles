@@ -33,6 +33,8 @@
 (global-tab-line-mode 1)
 (global-set-key (kbd "C-<right>") 'tab-line-switch-to-next-tab)
 (global-set-key (kbd "C-<left>") 'tab-line-switch-to-prev-tab)
+(setq tab-line-new-button-show nil)
+(setq tab-line-close-button-show nil)
 
 ;; Whitespaces
 (global-whitespace-mode 1)

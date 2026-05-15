@@ -35,6 +35,15 @@
 (global-set-key (kbd "C-<left>") 'tab-line-switch-to-prev-tab)
 (setq tab-line-new-button-show nil)
 (setq tab-line-close-button-show nil)
+(set-face-attribute 'tab-line-tab-current nil
+  :foreground "#fdf6e3"
+  :background "#cb4b16")
+(set-face-attribute 'tab-line-tab-modified nil
+  :foreground "#fdf6e3"
+  :background "#6c71c4")
+(set-face-attribute 'tab-line-tab-inactive nil
+  :foreground "#93a1a1"
+  :background "#002b36")
 
 ;; Whitespaces
 (global-whitespace-mode 1)

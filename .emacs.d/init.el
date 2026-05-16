@@ -77,6 +77,14 @@
   (setq helm-use-frame-when-more-than-two-windows nil)
   (helm-autoresize-mode 1))
 
+(use-package which-key
+  :ensure t
+  :custom
+  (which-key-idle-delay 0)
+  (which-key-idle-secondary-delay 0)
+  :config
+  (which-key-mode))
+
 (use-package vertico
   :ensure t
   :custom
@@ -90,29 +98,6 @@
   (completion-styles '(orderless basic))
   (completion-category-overrides '((file (styles partial-completion))))
   (completion-pcm-leading-wildcard t))
-
-;; centaur-tabs
-;; 何かチラつきが発生するのでお蔵入り
-;; (use-package centaur-tabs
-;;   :ensure t
-;;   :demand
-;;   :config
-;;   (centaur-tabs-mode t)
-;;   :custom
-;;   (centaur-tabs-set-icons t)
-;;   (centaur-tabs-icon-type 'nerd-icons)
-;;   (centaur-tabs-set-bar 'under)
-;;   (centaur-tabs-cycle-scope 'tabs)
-;;   (centaur-tabs-set-modified-marker t)
-;;   (centaur-tabs-modified-marker "*")
-;;   (centaur-tabs-enable-key-bindings t)
-;;   (centaur-tabs-show-count nil)
-;;   (centaur-tabs-label-fixed-length 8)
-;;   :bind
-;;   ("C-<right>" . centaur-tabs-forward)
-;;   ("C-<left>" . centaur-tabs-backward)
-;;   :hook
-;;   (dired-mode . centaur-tabs-local-mode))
 
 ;; Beacon
 (use-package beacon

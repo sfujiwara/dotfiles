@@ -80,8 +80,8 @@
 (use-package which-key
   :ensure t
   :custom
-  (which-key-idle-delay 0)
-  (which-key-idle-secondary-delay 0)
+  (which-key-idle-delay 0.1)
+  (which-key-idle-secondary-delay 0.1)
   :config
   (which-key-mode))
 

@@ -1,69 +1,79 @@
 [
-    {
-        "key": "ctrl+f",
-        "command": "cursorRight",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+b",
-        "command": "cursorLeft",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "cursorUp",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+n",
-        "command": "cursorDown",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+a",
-        "command": "cursorHome",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+e",
-        "command": "cursorEnd",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+d",
-      "command": "deleteRight",
-        "when": "editorTextFocus"
-    },
-    {
-        "key": "ctrl+k",
-        "command": "deleteAllRight",
-        "when": "editorTextFocus"
-    },
-    // {
-    //     "key": "ctrl+s",
-    //     "command": "editor.actions.findWithArgs"
-    // },
-    {
-        "key": "ctrl+n",
-        "command": "selectNextSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
-    },
-    {
-        "key": "ctrl+p",
-        "command": "selectPrevSuggestion",
-        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
-    },
-    {
-        "key": "ctrl+shift+a",
-        "command": "editor.action.selectAll"
-    },
-    {
-        "key": "ctrl+0",
-        "command": "workbench.action.terminal.focus"
-    },
-    {
-        "key": "ctrl+shift+s",
-        "command": "actions.find",
-        "when": "editorFocus || editorIsOpen"
-    }
+  {
+    "key": "ctrl+f",
+    "command": "cursorRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "cursorLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "cursorUp",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "cursorDown",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+a",
+    "command": "cursorHome",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "cursorEnd",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "deleteRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "deleteAllRight",
+    "when": "editorTextFocus"
+  },
+  // {
+  //     "key": "ctrl+s",
+  //     "command": "editor.actions.findWithArgs"
+  // },
+  {
+    "key": "ctrl+n",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.quickOpenSelectNext",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "selectPrevSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpenSelectPrevious",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+shift+a",
+    "command": "editor.action.selectAll"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "actions.find",
+    "when": "editorFocus || editorIsOpen"
+  }
 ]

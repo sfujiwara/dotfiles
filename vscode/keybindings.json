@@ -1,35 +1,43 @@
 [
     {
         "key": "ctrl+f",
-        "command": "cursorRight"
+        "command": "cursorRight",
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+b",
-        "command": "cursorLeft"
+        "command": "cursorLeft",
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+p",
-        "command": "cursorUp"
+        "command": "cursorUp",
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+n",
-        "command": "cursorDown"
+        "command": "cursorDown",
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+a",
-        "command": "cursorHome"
+        "command": "cursorHome",
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+e",
-        "command": "cursorEnd"
+        "command": "cursorEnd",
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+d",
-        "command": "deleteRight"
+      "command": "deleteRight",
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+k",
-        "command": "deleteAllRight"
+        "command": "deleteAllRight",
+        "when": "editorTextFocus"
     },
     // {
     //     "key": "ctrl+s",

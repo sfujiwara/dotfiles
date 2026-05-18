@@ -39,7 +39,7 @@
   // VSCode Workbench
   "workbench.editorAssociations": {
     "*.copilotmd": "vscode.markdown.preview.editor",
-    "*.pdf": "latex-workshop-pdf-hook"
+    "*.pdf": "latex-workshop-pdf-hook",
   },
   "workbench.editor.tabSizing": "shrink",
   "workbench.colorTheme": "Solarized Dark+ (Original)",
@@ -49,7 +49,7 @@
     "sideBar.border": "#555555",
     "editorGroup.border": "#555555",
     "panel.border": "#555555",
-    "editor.selectionBackground": "#555555"
+    "editor.selectionBackground": "#555555",
   },
 
   // Python
@@ -59,7 +59,7 @@
   "python.terminal.activateEnvInCurrentTerminal": false,
   "[python]": {
     "editor.defaultFormatter": "charliermarsh.ruff",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
   },
   // Python (Pylance)
   "python.analysis.typeCheckingMode": "off", // "off" or "basic" or "strict"
@@ -73,7 +73,7 @@
   // Go
   "go.toolsManagement.autoUpdate": true,
   "[go]": {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
   },
 
   // Terraform
@@ -83,12 +83,12 @@
     "editor.defaultFormatter": "hashicorp.terraform",
     "editor.indentationSize": 2,
     "editor.formatOnSave": true,
-    "editor.formatOnSaveMode": "file"
+    "editor.formatOnSaveMode": "file",
   },
   "[terraform-vars]": {
     "editor.defaultFormatter": "hashicorp.terraform",
     "editor.formatOnSave": true,
-    "editor.formatOnSaveMode": "file"
+    "editor.formatOnSaveMode": "file",
   },
 
   // LaTeX
@@ -96,32 +96,32 @@
   "latex-workshop.latex.recipes": [
     {
       "name": "latexmk",
-      "tools": ["latexmk"]
-    }
+      "tools": ["latexmk"],
+    },
   ],
   "latex-workshop.latex.tools": [
     {
       "name": "latexmk",
       "command": "latexmk",
-      "args": ["%DOC%"]
-    }
+      "args": ["%DOC%"],
+    },
   ],
   "latex-workshop.formatting.latex": "latexindent",
   "[latex]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "James-Yu.latex-workshop"
+    "editor.defaultFormatter": "James-Yu.latex-workshop",
   },
 
   // JSON
   "[json][jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
   },
 
   // TOML
   "[toml]": {
     "editor.defaultFormatter": "tamasfe.even-better-toml",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
   },
 
   // textlint
@@ -131,25 +131,25 @@
   "[javascript]": {
     "editor.tabSize": 2,
     "editor.formatOnSave": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[javascriptreact]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescript]": {
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
   "[typescriptreact]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
 
   // Re:VIEW
   "[review]": {
-    "editor.insertSpaces": false
+    "editor.insertSpaces": false,
   },
 
   // Rust
@@ -168,12 +168,12 @@
     "plaintext": false,
     "markdown": false,
     "scminput": false,
-    "go": true
+    "go": true,
   },
   "github.copilot.nextEditSuggestions.enabled": true,
 
   "makefile.configureOnOpen": false,
   "workbench.startupEditor": false,
   "docker.extension.enableComposeLanguageServer": false,
-  "chat.viewSessions.orientation": "stacked"
+  "chat.viewSessions.orientation": "stacked",
 }

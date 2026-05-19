@@ -70,6 +70,10 @@
   :config
   (load-theme 'solarized-dark t))
 
+(use-package rainbow-mode
+  :ensure t
+  :hook (prog-mode css-mode html-mode))
+
 (use-package helm
   :ensure t
   :config

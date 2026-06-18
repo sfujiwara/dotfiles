@@ -222,6 +222,8 @@
   (add-hook 'dired-mode-hook 'diff-hl-dired-mode)
   (unless (window-system) (diff-hl-margin-mode))
   (diff-hl-flydiff-mode +1)
+  :custom
+  (diff-hl-show-hunk-inline-smart-lines nil)
   :custom-face
   (diff-hl-insert ((t (:background "#2aa198"))))
   (diff-hl-delete ((t (:background "#dc322f"))))

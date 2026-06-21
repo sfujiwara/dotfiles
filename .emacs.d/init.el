@@ -63,7 +63,7 @@
   :ensure t
   :bind (("s-i" . blamer-show-commit-info)
          ("C-c i" . blamer-show-posframe-commit-info))
-  :defer 0
+  :defer 1
   :custom
   (blamer-idle-time 0.3)
   (blamer-min-offset 70)

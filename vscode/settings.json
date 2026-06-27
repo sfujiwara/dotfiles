@@ -42,7 +42,7 @@
     "*.pdf": "latex-workshop-pdf-hook",
   },
   "workbench.editor.tabSizing": "shrink",
-  "workbench.colorTheme": "Solarized Dark+ (Original)",
+  "workbench.colorTheme": "Iceberg Light",
 
   // Customize color theme
   "workbench.colorCustomizations": {

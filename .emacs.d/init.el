@@ -25,6 +25,13 @@
 (windmove-default-keybindings)        ;; Windmove
 (setq-default indent-tabs-mode nil)
 
+;; Send region to clipboard
+(defun clipboard-copy ()
+  (interactive)
+  (when (region-active-p)
+    (shell-command-on-region
+      (region-beginning) (region-end) "xsel -ib" nil nil)))
+
 ;; show-paren-mode
 (show-paren-mode t)
 (setq show-paren-style 'mixed)

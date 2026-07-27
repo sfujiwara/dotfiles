@@ -72,7 +72,7 @@
          ("C-c i" . blamer-show-posframe-commit-info))
   :defer 1
   :custom
-  (blamer-idle-time 0.3)
+  (blamer-idle-time 0.5)
   (blamer-min-offset 70)
   (blamer-type 'visual)
   :custom-face
@@ -109,8 +109,8 @@
 (use-package which-key
   :ensure t
   :custom
-  (which-key-idle-delay 0.1)
-  (which-key-idle-secondary-delay 0.1)
+  (which-key-idle-delay 0.5)
+  (which-key-idle-secondary-delay 0.5)
   :config
   (which-key-mode))
 

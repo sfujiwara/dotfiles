@@ -1,3 +1,5 @@
+;;; init.el --- Personal Emacs configuration -*- lexical-binding: t; -*-
+
 ;; Configurations for package.el
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
@@ -259,7 +261,7 @@
   (neo-theme (if (display-graphic-p) 'icons 'nerd-icons))
   (neo-window-width 30)
   :config
-  (add-hook 'neotree-mode-hook '(lambda () (display-line-numbers-mode -1)))
+  (add-hook 'neotree-mode-hook (lambda () (display-line-numbers-mode -1)))
   (global-set-key [f8] 'neotree-toggle))
 
 ;; Treemacs

@@ -223,6 +223,20 @@
 ;; YAML
 (use-package yaml-mode :ensure t)
 
+;; csv-mode
+(use-package csv-mode
+  :ensure t
+  :hook
+  (csv-mode . csv-align-mode)
+  :custom
+  (csv-align-style 'auto))
+
+;; rainbow-csv
+(use-package rainbow-csv
+  :vc (:url "https://github.com/emacs-vs/rainbow-csv" :rev :newest :branch "master")
+  :hook
+  (csv-mode . rainbow-csv-mode))
+
 ;; diff-hl
 (use-package diff-hl
   :ensure t
@@ -308,7 +322,10 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(company-show-quick-access nil nil nil "Customized with use-package company")
- '(package-selected-packages nil))
+ '(package-selected-packages nil)
+ '(package-vc-selected-packages
+   '((rainbow-csv :url "https://github.com/emacs-vs/rainbow-csv" :branch
+                  "master"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

@@ -29,9 +29,6 @@
     "mhutchie.git-graph",
     "eamodio.gitlens",
 
-    // Markdown
-    "bierner.markdown-mermaid",
-
     // CSV
     "mechatroner.rainbow-csv",
 

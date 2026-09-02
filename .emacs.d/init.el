@@ -1,5 +1,11 @@
 ;;; init.el --- Personal Emacs configuration -*- lexical-binding: t; -*-
 
+;;; Commentary:
+
+;; Personal Emacs configuration.
+
+;;; Code:
+
 ;; Configurations for package.el
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
@@ -29,6 +35,7 @@
 
 ;; Send region to clipboard
 (defun clipboard-copy ()
+  "Copy the active region to the system clipboard via xsel."
   (interactive)
   (when (region-active-p)
     (shell-command-on-region
@@ -66,6 +73,9 @@
   empty
 ))
 (setq whitespace-action '(auto-cleanup))
+
+;; Use js-ts-mode
+(add-to-list 'auto-mode-alist '("\\.js\\'" . js-ts-mode))
 
 ;; blamer
 (use-package blamer
@@ -155,7 +165,10 @@
   (company-minimum-prefix-length 1))
 
 ;; Flycheck
-(use-package flycheck :ensure t)
+(use-package flycheck
+  :ensure t
+  :init
+  (global-flycheck-mode))
 
 ;; yasnippet is required for LSP completion
 (use-package yasnippet
@@ -176,10 +189,16 @@
   :config
   (add-to-list 'eglot-server-programs '(python-mode . ("pylsp")))
   (add-to-list 'eglot-server-programs '(terraform-mode . ("terraform-ls" "serve")))
+  (add-to-list 'eglot-server-programs
+               '((typescript-ts-mode tsx-ts-mode js-ts-mode)
+                 . ("typescript-language-server" "--stdio")))
   :hook
   (terraform-mode . eglot-ensure)
   (go-mode . eglot-ensure)
-  (python-mode . eglot-ensure))
+  (python-mode . eglot-ensure)
+  (typescript-ts-mode . eglot-ensure)
+  (tsx-ts-mode . eglot-ensure)
+  (js-ts-mode . eglot-ensure))
 
 ;; jsonrpc
 (use-package jsonrpc
@@ -198,15 +217,6 @@
   :ensure t
   :hook
   ('before-save-hook . 'gofmt-before-save))
-
-(use-package web-mode
-  :ensure t
-  :init
-  (add-to-list 'auto-mode-alist '("\\.ts\\'" . web-mode))
-  (add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))
-  :config
-  (setq indent-tabs-mode nil)
-  (setq tab-width 2))
 
 ;; Docker
 (use-package dockerfile-mode :ensure t)
@@ -332,3 +342,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+(provide 'init)
+;;; init.el ends here

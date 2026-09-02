@@ -13,6 +13,9 @@
 .emacs.d/.cache
 .emacs.d/bookmarks
 .emacs.d/projects
+.emacs.d/projects.eld
+.emacs.d/tree-sitter
+.emacs.d/tramp
 *~
 *NeoTree*
 emacs

@@ -13,3 +13,5 @@
 	branch = cat
 [init]
 	defaultBranch = main
+[alias]
+	aicommit = "!git commit -m \"$(claude -p '/git-commit-message')\" --edit"

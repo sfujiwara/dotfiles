@@ -247,6 +247,15 @@
   :hook
   (csv-mode . rainbow-csv-mode))
 
+(use-package protobuf-mode
+  :ensure t
+  :hook
+  (protobuf-mode . (lambda ()
+                      (setq indent-tabs-mode t)
+                      (setq tab-width 4)
+                      (setq c-basic-offset 4)
+                      (setq-local backward-delete-char-untabify-method nil))))
+
 ;; diff-hl
 (use-package diff-hl
   :ensure t

@@ -54,3 +54,7 @@ ln -nfs $HOME/dotfiles/.config/alacritty/themes/solarized_dark.toml $HOME/.confi
 # Ghostty
 mkdir -p $HOME/.config/ghostty
 ln -nfs $HOME/dotfiles/.config/ghostty/config $HOME/.config/ghostty/config
+
+# Agent skills
+mkdir -p $HOME/.claude/skills
+ln -nfs $HOME/dotfiles/agent-skills/git-commit-message $HOME/.claude/skills/git-commit-message

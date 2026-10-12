@@ -161,7 +161,6 @@
   (company-idle-delay 0)
   (company-auto-expand t)
   (completion-ignore-case t)
-  (lsp-completion-provider :capf)
   (company-minimum-prefix-length 1))
 
 ;; yasnippet is required for LSP completion

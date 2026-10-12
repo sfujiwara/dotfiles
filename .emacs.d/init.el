@@ -164,12 +164,6 @@
   (lsp-completion-provider :capf)
   (company-minimum-prefix-length 1))
 
-;; Flycheck
-(use-package flycheck
-  :ensure t
-  :init
-  (global-flycheck-mode))
-
 ;; yasnippet is required for LSP completion
 (use-package yasnippet
   :ensure t

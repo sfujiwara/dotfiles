@@ -22,7 +22,13 @@ alias rockafellar="tmux splitw -h -l 64 && tmux select-pane -t 0 && tmux splitw 
 alias ghcd='cd "$(ghq list --full-path | peco)"'
 alias ghcode='code "$(ghq list --full-path | peco)"'
 alias pyshell="source ./.venv/bin/activate"
-alias gcm="claude -p '/git-commit-message'"
+
+# Generate git commit messages using LLM.
+ai-commit-message() { claude -p "/git-commit-message $*" }
+ai-commit() {
+  local msg
+  msg=$(ai-commit-message "${1:-3}" | peco) && [ -n "$msg" ] && git commit -m "$msg"
+}
 
 # TSUBAME
 export TSUBAME_USER=ug03757

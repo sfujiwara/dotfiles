@@ -22,6 +22,7 @@ alias rockafellar="tmux splitw -h -l 64 && tmux select-pane -t 0 && tmux splitw 
 alias ghcd='cd "$(ghq list --full-path | peco)"'
 alias ghcode='code "$(ghq list --full-path | peco)"'
 alias pyshell="source ./.venv/bin/activate"
+alias gcm="claude -p '/git-commit-message'"
 
 # TSUBAME
 export TSUBAME_USER=ug03757

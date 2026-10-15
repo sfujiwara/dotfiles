@@ -24,11 +24,8 @@ alias ghcode='code "$(ghq list --full-path | peco)"'
 alias pyshell="source ./.venv/bin/activate"
 
 # Generate git commit messages using LLM.
-ai-commit-message() { claude -p "/git-commit-message $*" }
-ai-commit() {
-  local msg
-  msg=$(ai-commit-message "${1:-3}" | peco) && [ -n "$msg" ] && git commit -m "$msg"
-}
+alias ai-commit-message="claude -p '/git-commit-message'"
+
 
 # TSUBAME
 export TSUBAME_USER=ug03757

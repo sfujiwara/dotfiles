@@ -176,4 +176,5 @@
   "workbench.startupEditor": false,
   "docker.extension.enableComposeLanguageServer": false,
   "chat.viewSessions.orientation": "stacked",
+  "claudeCode.hideOnboarding": true,
 }

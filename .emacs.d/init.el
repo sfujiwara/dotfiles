@@ -23,7 +23,6 @@
 (menu-bar-mode 0)                     ;; Not to show menu bar
 (electric-pair-mode t)                ;; Insert closing bracket
 (column-number-mode t)                ;; Show column number in mode line
-(setq dired-kill-when-opening-new-dired-buffer t)
 (setq ring-bell-function 'ignore)     ;; Not to ring bell
 (setq make-backup-files nil)          ;; Not to create backup
 (setq auto-save-default nil)          ;; Not to create backup
@@ -269,6 +268,34 @@
 
 ;; nerd-icons
 (use-package nerd-icons :ensure t)
+
+;; Dired
+(use-package dired
+  :custom
+  (dired-kill-when-opening-new-dired-buffer t)
+  (dired-listing-switches "-alh")
+  (dired-dwim-target t)
+  (dired-recursive-copies 'always)
+  (dired-recursive-deletes 'top)
+  (dired-create-destination-dirs 'ask)
+  (dired-vc-rename-file t)                  ;; Use git mv when renaming tracked files
+  (wdired-allow-to-change-permissions t))
+
+;; Use Emacs's own ls so that directories are listed first on macOS
+(use-package ls-lisp
+  :custom
+  (ls-lisp-use-insert-directory-program nil)
+  (ls-lisp-dirs-first t))
+
+;; Expand subdirectories inline with TAB
+(use-package dired-subtree
+  :ensure t
+  :after dired
+  :bind (:map dired-mode-map
+              ("TAB" . dired-subtree-toggle)
+              ("<backtab>" . dired-subtree-cycle))
+  :custom
+  (dired-subtree-use-backgrounds nil))
 
 ;; nerd-icons-dired-mode
 (use-package nerd-icons-dired

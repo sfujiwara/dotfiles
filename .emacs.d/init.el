@@ -271,6 +271,8 @@
 
 ;; Dired
 (use-package dired
+  :hook
+  (dired-mode . auto-revert-mode)
   :custom
   (dired-kill-when-opening-new-dired-buffer t)
   (dired-listing-switches "-alh")

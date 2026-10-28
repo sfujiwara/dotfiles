@@ -296,6 +296,8 @@
   :bind (:map dired-mode-map
               ("TAB" . dired-subtree-toggle)
               ("<backtab>" . dired-subtree-cycle))
+  :hook
+  (dired-subtree-after-insert . nerd-icons-dired--refresh)
   :custom
   (dired-subtree-use-backgrounds nil))
 

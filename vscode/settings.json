@@ -159,9 +159,6 @@
   "geminicodeassist.inlineSuggestions.enableAuto": false,
   "geminicodeassist.project": "wide-pad-gw11z",
 
-  // Claude Code
-  "claudeCode.preferredLocation": "panel",
-
   // GitHub Copilot
   "github.copilot.enable": {
     "*": true,
@@ -175,6 +172,4 @@
   "makefile.configureOnOpen": false,
   "workbench.startupEditor": false,
   "docker.extension.enableComposeLanguageServer": false,
-  "chat.viewSessions.orientation": "stacked",
-  "claudeCode.hideOnboarding": true,
 }

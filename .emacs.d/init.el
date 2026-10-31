@@ -44,6 +44,9 @@
 (show-paren-mode t)
 (setq show-paren-style 'mixed)
 
+;; repeat-mode
+(repeat-mode 1)
+
 ;; tab-line-mode
 (global-tab-line-mode 1)
 (global-set-key (kbd "C-<right>") 'tab-line-switch-to-next-tab)
@@ -201,9 +204,7 @@
 (use-package dape
   :ensure t
   :custom
-  (dape-buffer-window-arrangement 'right)
-  :config
-  (repeat-mode 1))
+  (dape-buffer-window-arrangement 'right))
 
 ;; Terraform
 (use-package terraform-mode

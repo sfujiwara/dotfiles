@@ -200,8 +200,9 @@
 ;; Debugger (Debug Adapter Protocol)
 (use-package dape
   :ensure t
+  :custom
+  (dape-buffer-window-arrangement 'right)
   :config
-  (setq dape-buffer-window-arrangement 'right)
   (repeat-mode 1))
 
 ;; Terraform

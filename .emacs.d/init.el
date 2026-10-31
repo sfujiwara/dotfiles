@@ -79,8 +79,7 @@
 ;; blamer
 (use-package blamer
   :ensure t
-  :bind (("s-i" . blamer-show-commit-info)
-         ("C-c i" . blamer-show-posframe-commit-info))
+  :bind (("C-c i" . blamer-show-commit-info))
   :defer 1
   :custom
   (blamer-idle-time 0.5)
@@ -197,6 +196,13 @@
   :config
   (setq jsonrpc-default-request-timeout 3000)
   (fset #'jsonrpc--log-event #'ignore))
+
+;; Debugger (Debug Adapter Protocol)
+(use-package dape
+  :ensure t
+  :config
+  (setq dape-buffer-window-arrangement 'right)
+  (repeat-mode 1))
 
 ;; Terraform
 (use-package terraform-mode
